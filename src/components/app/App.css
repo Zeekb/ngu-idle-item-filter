@@ -3,3 +3,10 @@
   position: absolute;
   min-height: 100%;
 }
+
+.text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

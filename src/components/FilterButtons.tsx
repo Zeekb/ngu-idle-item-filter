@@ -23,16 +23,14 @@ const FilterButtons = (props: FilterButtonsProps) => {
     margin: '6px',
     backgroundColor: '#DDD',
     outline: '4px solid',
-    fontWeight: 600,
     lineHeight: 1.4,
-    fontFamily: 'Franklin Gothic Medium, Arial Narrow, Arial, sans-serif',
   }
 
   return (
     <ButtonGroup className="button-group" style={buttonGroupStyle}>
       {buttons.map((button: ButtonType) => (
         <Button
-          className="button"
+          className="button text"
           styleType="borderless"
           style={buttonStyle}
           key={button.label}

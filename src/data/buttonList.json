@@ -1,6 +1,6 @@
 [
   {
-    "label": "All items",
+    "label": "All Items",
     "value": 0
   },
   {
@@ -9,15 +9,15 @@
   },
 
   {
-    "label": "Energy cap",
+    "label": "Energy Cap",
     "value": 2
   },
   {
-    "label": "Energy power",
+    "label": "Energy Power",
     "value": 3
   },
   {
-    "label": "Energy bars",
+    "label": "Energy Bars",
     "value": 4
   },
   {
@@ -29,19 +29,19 @@
     "value": 6
   },
   {
-    "label": "Seed gain",
+    "label": "Seed Gain",
     "value": 7
   },
   {
-    "label": "Wandoos speed",
+    "label": "Wandoos Speed",
     "value": 8
   },
   {
-    "label": "Augment speed",
+    "label": "Augment Speed",
     "value": 9
   },
   {
-    "label": "Unfinished items",
+    "label": "Unfinished Items",
     "value": 10
   },
 
@@ -51,15 +51,15 @@
   },
 
   {
-    "label": "Magic cap",
+    "label": "Magic Cap",
     "value": 12
   },
   {
-    "label": "Magic power",
+    "label": "Magic Power",
     "value": 13
   },
   {
-    "label": "Magic bars",
+    "label": "Magic Bars",
     "value": 14
   },
   {
@@ -68,21 +68,21 @@
   },
 
   {
-    "label": "Advanced training",
+    "label": "Advanced Training",
     "value": 16
   },
 
   {
-    "label": "Move cooldown",
+    "label": "Move Cooldown",
     "value": 17
   },
   {
-    "label": "Beard speed",
+    "label": "Beard Speed",
     "value": 18
   },
 
   {
-    "label": "NGU speed",
+    "label": "NGU Speed",
     "value": 19
   }
 ]

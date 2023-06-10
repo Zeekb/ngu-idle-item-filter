@@ -5,22 +5,18 @@
 }
 
 .item-container {
-  height: 380px;
+  height: 350px;
   margin: 11px;
   width: 284px;
   background-color: #c0c0c0;
   outline: 4px solid;
   border-radius: 2px;
   padding: 20px;
-  font-weight: 600;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.4;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .item-icon {
-  width: 80px;
+  width: 60px;
   outline: 3px solid;
   outline-offset: -3px;
 }
@@ -46,6 +42,7 @@
 
 .icon-container {
   height: 26%;
+  margin-top: 9px;
   border-bottom: 2px solid black;
 }
 

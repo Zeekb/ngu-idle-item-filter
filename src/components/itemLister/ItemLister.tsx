@@ -42,7 +42,7 @@ const ItemLister = (props: ItemListerProps) => {
 
   return (
     <>
-      <div className="container">{displayItemContainers(filter)}</div>
+      <div className="container text">{displayItemContainers(filter)}</div>
     </>
   )
 }
