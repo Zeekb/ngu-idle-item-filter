@@ -1,0 +1,57 @@
+.item-container {
+  display: inline-grid;
+  height: 400px;
+  margin: 11px;
+  width: 320px;
+  border-width: 0px;
+  border-style: solid;
+  background-color: #828282;
+  outline: 4px solid;
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item-icon {
+  width: 80px;
+  margin: 10px;
+  outline: 3px solid #828282;
+  outline-offset: -3px;
+}
+
+.prop {
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  border-bottom: 2px groove #828282;
+}
+
+.stat {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+  border-bottom: 2px groove #828282;
+}
+
+.title-container {
+  height: 20%;
+}
+
+.icon-container {
+  height: 30%;
+}
+
+.boosts {
+  border-top: 1px solid black;
+  padding: 10px 0 0 0;
+  height: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
