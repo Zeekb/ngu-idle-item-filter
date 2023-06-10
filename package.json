@@ -1,6 +1,6 @@
 {
-  "name": "ngu-loadout-manager",
-  "version": "0.1.0",
+  "name": "ngu-idle-item-filter",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@itwin/itwinui-icons": "^2.2.0",

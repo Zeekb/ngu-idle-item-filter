@@ -15,13 +15,13 @@ const App = () => {
   const items = data as Item[]
 
   const options = [
-    { value: 0, label: 'Get all items' },
-    { value: 1, label: 'Get all unfinished items' },
-    { value: 2, label: 'Get all items By slot - Accessory' },
-    { value: 3, label: 'Get all items By boost - Gold' },
-    { value: 4, label: 'Get all items By boost - Energy Cap' },
-    { value: 5, label: 'Get all items By boost - Energy Power' },
-    { value: 6, label: 'Get all items By boost - Magic Power' },
+    { value: 0, label: 'All items' },
+    { value: 1, label: 'Unfinished items' },
+    { value: 2, label: 'Accessories' },
+    { value: 3, label: 'Gold' },
+    { value: 4, label: 'Energy cap' },
+    { value: 5, label: 'Energy power' },
+    { value: 6, label: 'Magic power' },
   ]
 
   const useFilter: Item[][] = [
