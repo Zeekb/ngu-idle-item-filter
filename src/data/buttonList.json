@@ -1,0 +1,88 @@
+[
+  {
+    "label": "All items",
+    "value": 0
+  },
+  {
+    "label": "Power",
+    "value": 1
+  },
+
+  {
+    "label": "Energy cap",
+    "value": 2
+  },
+  {
+    "label": "Energy power",
+    "value": 3
+  },
+  {
+    "label": "Energy bars",
+    "value": 4
+  },
+  {
+    "label": "Drop",
+    "value": 5
+  },
+  {
+    "label": "Respawn",
+    "value": 6
+  },
+  {
+    "label": "Seed gain",
+    "value": 7
+  },
+  {
+    "label": "Wandoos speed",
+    "value": 8
+  },
+  {
+    "label": "Augment speed",
+    "value": 9
+  },
+  {
+    "label": "Unfinished items",
+    "value": 10
+  },
+
+  {
+    "label": "Toughness",
+    "value": 11
+  },
+
+  {
+    "label": "Magic cap",
+    "value": 12
+  },
+  {
+    "label": "Magic power",
+    "value": 13
+  },
+  {
+    "label": "Magic bars",
+    "value": 14
+  },
+  {
+    "label": "Gold",
+    "value": 15
+  },
+
+  {
+    "label": "Advanced training",
+    "value": 16
+  },
+
+  {
+    "label": "Move cooldown",
+    "value": 17
+  },
+  {
+    "label": "Beard speed",
+    "value": 18
+  },
+
+  {
+    "label": "NGU speed",
+    "value": 19
+  }
+]

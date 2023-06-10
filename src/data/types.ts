@@ -4,6 +4,11 @@ export type Stat = {
   cap?: number
 }
 
+export type ButtonType = {
+  label: string
+  value: number
+}
+
 export type Slot = 'Head' | 'Chest' | 'Legs' | 'Boots' | 'Weapon' | 'Accessory'
 
 export type Item = {
@@ -25,9 +30,4 @@ export type Item = {
   nguSpeed?: number
   augSpeed?: number
   beardSpeed?: number
-}
-
-export type ItemProperty = {
-  property?: string
-  value?: string | number | Stat
 }

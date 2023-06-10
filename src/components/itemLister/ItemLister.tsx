@@ -1,6 +1,6 @@
 import React from 'react'
-import { Item, Stat } from '../types'
-import ItemContainer from './ItemContainer'
+import { Item, Stat } from '../../data/types'
+import ItemContainer from '../ItemContainer'
 
 import './ItemLister.css'
 

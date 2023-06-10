@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item } from '../types'
+import { Item } from '../data/types'
 
 interface ItemContainerProps {
   item: Item
@@ -9,127 +9,127 @@ const ItemContainer = (props: ItemContainerProps) => {
   const { item } = props
   return (
     <div key={item.name} className="item-container">
-      <ul>
+      <div style={{ height: '100%' }}>
         <div className="title-container">
-          <li>
+          <div>
             {item.id} | {item.name}
-          </li>
-          <li>{item.slot}</li>
+          </div>
+          <div>{item.slot}</div>
         </div>
         <div className="icon-container">
           <img className="item-icon" src={item.iconUrl}></img>
         </div>
         <div className="boosts">
           {item.power && (
-            <li>
+            <div>
               <div className="prop">Power </div>
               <div className="stat">{item.power}</div>
-            </li>
+            </div>
           )}
           {item.toughness && (
-            <li>
+            <div>
               <div className="prop">Toughness</div>
               <div className="stat">{item.toughness}</div>
-            </li>
+            </div>
           )}
           {item.energy && item.energy.cap && (
-            <li>
+            <div>
               <div className="prop">Energy Cap</div>
               <div className="stat">{item.energy.cap}%</div>
-            </li>
+            </div>
           )}
           {item.energy && item.energy.power && (
-            <li>
+            <div>
               <div className="prop">Energy Power </div>
               <div className="stat">{item.energy.power}%</div>
-            </li>
+            </div>
           )}
           {item.energy && item.energy.bars && (
-            <li>
+            <div>
               <div className="prop">Energy Bars </div>
               <div className="stat">{item.energy.bars}%</div>
-            </li>
+            </div>
           )}
           {item.magic && item.magic.cap && (
-            <li>
+            <div>
               <div className="prop">Magic Cap </div>
               <div className="stat">{item.magic.cap}%</div>
-            </li>
+            </div>
           )}
           {item.magic && item.magic.power && (
-            <li>
+            <div>
               <div className="prop">Magic Power </div>
               <div className="stat">{item.magic.power}%</div>
-            </li>
+            </div>
           )}
           {item.magic && item.magic.bars && (
-            <li>
+            <div>
               <div className="prop">Magic Bars </div>
               <div className="stat">{item.magic.bars}%</div>
-            </li>
+            </div>
           )}
           {item.drop && (
-            <li>
+            <div>
               <div className="prop">Drop </div>
               <div className="stat">{item.drop}%</div>
-            </li>
+            </div>
           )}
           {item.gold && (
-            <li>
+            <div>
               <div className="prop">Gold </div>
               <div className="stat">{item.gold}%</div>
-            </li>
+            </div>
           )}
           {item.respawn && (
-            <li>
+            <div>
               <div className="prop">Respawn </div>
               <div className="stat">{item.respawn}%</div>
-            </li>
+            </div>
           )}
           {item.advancedTraining && (
-            <li>
+            <div>
               <div className="prop">Advanced Training </div>
               <div className="stat">{item.advancedTraining}%</div>
-            </li>
+            </div>
           )}
           {item.seedGain && (
-            <li>
+            <div>
               <div className="prop">Seed Gain </div>
               <div className="stat">{item.seedGain}%</div>
-            </li>
+            </div>
           )}
           {item.moveCooldown && (
-            <li>
+            <div>
               <div className="prop">Move Cooldown </div>
               <div className="stat">{item.moveCooldown}%</div>
-            </li>
+            </div>
           )}
           {item.wandoosSpeed && (
-            <li>
+            <div>
               <div className="prop">Wandoos Speed </div>
               <div className="stat">{item.wandoosSpeed}%</div>
-            </li>
+            </div>
           )}
           {item.nguSpeed && (
-            <li>
+            <div>
               <div className="prop">NGU Speed </div>
               <div className="stat">{item.nguSpeed}%</div>
-            </li>
+            </div>
           )}
           {item.augSpeed && (
-            <li>
+            <div>
               <div className="prop">Aug Speed </div>
               <div className="stat">{item.augSpeed}%</div>
-            </li>
+            </div>
           )}
           {item.beardSpeed && (
-            <li>
+            <div>
               <div className="prop">Beard Speed </div>
               <div className="stat">{item.beardSpeed}%</div>
-            </li>
+            </div>
           )}
         </div>
-      </ul>
+      </div>
     </div>
   )
 }
