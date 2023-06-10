@@ -199,9 +199,9 @@
     "slot": "Accessory",
     "power": 24000,
     "toughness": 24000,
-    "seedGain": 25.9,
-    "nguSpeed": 194.41,
-    "beardSpeed": 17.2
+    "seedGain": 30,
+    "nguSpeed": 200,
+    "beardSpeed": 20
   },
   {
     "iconUrl": "150_-_Wanderer's_Hat.webp",
@@ -428,7 +428,7 @@
   {
     "iconUrl": "168_-_Badly_Drawn_Gun.webp",
     "id": 168,
-    "name": "Badly Drawn Gun",
+    "name": "Badly Drawn Gun*",
     "slot": "Weapon",
     "power": 1000000,
     "toughness": 50000,
@@ -440,7 +440,7 @@
       "cap": 120,
       "power": 1200
     },
-    "augSpeed": 149.69
+    "augSpeed": 240
   },
   {
     "iconUrl": "169_-_King_Looty.webp",
