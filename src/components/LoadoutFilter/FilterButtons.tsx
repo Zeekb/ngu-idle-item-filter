@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { ButtonGroup, Button } from '@itwin/itwinui-react'
-import { ButtonType } from '../data/types'
-import buttonData from '../data/buttonList.json'
+import { ButtonType } from '../../data/types'
+import buttonData from '../../data/buttonList.json'
 
 interface FilterButtonsProps {
   setValue: React.Dispatch<React.SetStateAction<number>>

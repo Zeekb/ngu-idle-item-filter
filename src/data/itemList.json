@@ -1,6 +1,6 @@
 [
   {
-    "iconUrl": "76_-_Ascended_Forest_Pendant.webp",
+    "iconUrl": "./items/76.webp",
     "id": 76,
     "name": "Ascended Forest Pendant*",
     "slot": "Accessory",
@@ -10,14 +10,14 @@
     "gold": 400
   },
   {
-    "iconUrl": "91_-_The_Sands_of_Time.webp",
+    "iconUrl": "./items/91.webp",
     "id": 91,
     "name": "The Sands of Time*",
     "slot": "Accessory",
     "moveCooldown": 20
   },
   {
-    "iconUrl": "94_-_Ascended_Ascended_Forest_Pendant.webp",
+    "iconUrl": "./items/94.webp",
     "id": 94,
     "name": "Ascended Ascended Pendant*",
     "slot": "Accessory",
@@ -30,7 +30,7 @@
     "gold": 800
   },
   {
-    "iconUrl": "101_-_King_Circle's_Amulet_of_Helping_Random_Stuff.webp",
+    "iconUrl": "./items/101.webp",
     "id": 101,
     "name": "King Circle's Amulet of Helping Random Stuff*",
     "slot": "Accessory",
@@ -38,7 +38,7 @@
     "advancedTraining": 80
   },
   {
-    "iconUrl": "110_-_Dragon_Wings.webp",
+    "iconUrl": "./items/110.webp",
     "id": 110,
     "name": "Dragon Wings*",
     "slot": "Accessory",
@@ -51,7 +51,7 @@
     "gold": 400
   },
   {
-    "iconUrl": "116_-_A_Regular_Tie.webp",
+    "iconUrl": "./items/116.webp",
     "id": 116,
     "name": "A Regular Tie*",
     "slot": "Accessory",
@@ -63,7 +63,7 @@
     "nguSpeed": 120
   },
   {
-    "iconUrl": "118_-_Stapler.webp",
+    "iconUrl": "./items/118.webp",
     "id": 118,
     "name": "Stapler*",
     "slot": "Accessory",
@@ -74,14 +74,14 @@
     "respawn": 12
   },
   {
-    "iconUrl": "121_-_The_Triple_Flubber.webp",
+    "iconUrl": "./items/121.webp",
     "id": 121,
     "name": "The Triple Flubber*",
     "slot": "Accessory",
     "respawn": 8
   },
   {
-    "iconUrl": "128_-_Sir_Looty_McLootington_III,_Esquire.webp",
+    "iconUrl": "./items/128.webp",
     "id": 128,
     "name": "Sir Looty McLootington III, Esquire*",
     "slot": "Accessory",
@@ -96,7 +96,7 @@
     "drop": 80
   },
   {
-    "iconUrl": "136_-_Ring_of_Greed.webp",
+    "iconUrl": "./items/136.webp",
     "id": 136,
     "name": "Ring of Greed*",
     "slot": "Accessory",
@@ -105,7 +105,7 @@
     "respawn": 16
   },
   {
-    "iconUrl": "137_-_Ring_of_Might.webp",
+    "iconUrl": "./items/137.webp",
     "id": 137,
     "name": "Ring of Might*",
     "slot": "Accessory",
@@ -115,7 +115,7 @@
     "respawn": 4
   },
   {
-    "iconUrl": "138_-_Ring_of_Utility.webp",
+    "iconUrl": "./items/138.webp",
     "id": 138,
     "name": "Ring of Utility*",
     "slot": "Accessory",
@@ -126,7 +126,7 @@
     "advancedTraining": 100
   },
   {
-    "iconUrl": "139_-_Ring_of_Way_Too_Much_Energy.webp",
+    "iconUrl": "./items/139.webp",
     "id": 139,
     "name": "Ring of Way Too Much Energy*",
     "slot": "Accessory",
@@ -139,7 +139,7 @@
     }
   },
   {
-    "iconUrl": "140_-_Ring_of_Way_Too_Much_Magic.webp",
+    "iconUrl": "./items/140.webp",
     "id": 140,
     "name": "Ring of Way Too Much Magic*",
     "slot": "Accessory",
@@ -150,7 +150,7 @@
     }
   },
   {
-    "iconUrl": "142_-_Ascended_Ascended_Ascended_Pendant.webp",
+    "iconUrl": "./items/142.webp",
     "id": 142,
     "name": "Ascended Ascended Ascended Pendant",
     "slot": "Accessory",
@@ -163,7 +163,7 @@
     "gold": 800
   },
   {
-    "iconUrl": "147_-_Bearded_Axe.webp",
+    "iconUrl": "./items/147.webp",
     "id": 147,
     "name": "Bearded Axe*",
     "slot": "Weapon",
@@ -178,7 +178,7 @@
     "beardSpeed": 20
   },
   {
-    "iconUrl": "148_-_An_Infinitely_Long_Strand_of_Beard_Hair.webp",
+    "iconUrl": "./items/148.webp",
     "id": 148,
     "name": "An Infinitely Long Strand of Beard Hair*",
     "slot": "Accessory",
@@ -193,7 +193,7 @@
     "beardSpeed": 20
   },
   {
-    "iconUrl": "149_-_UUG's_'Special'_Ring.webp",
+    "iconUrl": "./items/149.webp",
     "id": 149,
     "name": "UUG's 'Special' Ring*",
     "slot": "Accessory",
@@ -204,7 +204,7 @@
     "beardSpeed": 20
   },
   {
-    "iconUrl": "150_-_Wanderer's_Hat.webp",
+    "iconUrl": "./items/150.webp",
     "id": 150,
     "name": "Wanderer's Hat*",
     "slot": "Head",
@@ -219,7 +219,7 @@
     }
   },
   {
-    "iconUrl": "151_-_Wanderer's_Chest.webp",
+    "iconUrl": "./items/151.webp",
     "id": 151,
     "name": "Wanderer's Chest*",
     "slot": "Chest",
@@ -234,7 +234,7 @@
     }
   },
   {
-    "iconUrl": "152_-_Wanderer's_Pants.webp",
+    "iconUrl": "./items/152.webp",
     "id": 152,
     "name": "Wanderer's Pants*",
     "slot": "Legs",
@@ -249,7 +249,7 @@
     }
   },
   {
-    "iconUrl": "153_-_Wanderer's_Boots.webp",
+    "iconUrl": "./items/153.webp",
     "id": 153,
     "name": "Wanderer's Boots*",
     "slot": "Boots",
@@ -259,7 +259,7 @@
     "nguSpeed": 120
   },
   {
-    "iconUrl": "155_-_taH_s'rerednaW.webp",
+    "iconUrl": "./items/155.webp",
     "id": 155,
     "name": "taH s'rerednaW*",
     "slot": "Head",
@@ -274,7 +274,7 @@
     }
   },
   {
-    "iconUrl": "156_-_tsehC_s'rerednaW.webp",
+    "iconUrl": "./items/156.webp",
     "id": 156,
     "name": "tsehC s'rerednaW*",
     "slot": "Chest",
@@ -289,7 +289,7 @@
     }
   },
   {
-    "iconUrl": "157_-_stnaP_s'rerednaW.webp",
+    "iconUrl": "./items/157.webp",
     "id": 157,
     "name": "stnaP s'rerednaW*",
     "slot": "Legs",
@@ -304,7 +304,7 @@
     }
   },
   {
-    "iconUrl": "158_-_stooB_s'rerednaW.webp",
+    "iconUrl": "./items/158.webp",
     "id": 158,
     "name": "stooB s'rerednaW*",
     "slot": "Boots",
@@ -314,7 +314,7 @@
     "beardSpeed": 80
   },
   {
-    "iconUrl": "159_-_The_Candy_Cane_of_Destiny.webp",
+    "iconUrl": "./items/159.webp",
     "id": 159,
     "name": "The Candy Cane of Destiny",
     "slot": "Weapon",
@@ -332,7 +332,7 @@
     }
   },
   {
-    "iconUrl": "160_-_Fanny_Pack.webp",
+    "iconUrl": "./items/160.webp",
     "id": 160,
     "name": "Fanny Pack",
     "slot": "Accessory",
@@ -349,7 +349,7 @@
     "drop": 48.9
   },
   {
-    "iconUrl": "161_-_Dorky_Glasses.webp",
+    "iconUrl": "./items/161.webp",
     "id": 161,
     "name": "Dorky Glasses",
     "slot": "Accessory",
@@ -366,7 +366,7 @@
   },
 
   {
-    "iconUrl": "164_-_Badly_Drawn_Smiley_Face.webp",
+    "iconUrl": "./items/164.webp",
     "id": 164,
     "name": "Badly Drawn Smiley Face*",
     "slot": "Head",
@@ -381,22 +381,22 @@
     "gold": 2400
   },
   {
-    "iconUrl": "165_-_Badly_Drawn_Chest.webp",
+    "iconUrl": "./items/165.webp",
     "id": 165,
     "name": "Badly Drawn Chest",
     "slot": "Chest",
     "toughness": 120000,
     "energy": {
-      "power": 1400,
+      "power": 2549,
       "bars": 900
     },
     "magic": {
-      "cap": 217.72,
+      "cap": 270,
       "bars": 900
     }
   },
   {
-    "iconUrl": "166_-_Badly_Drawn_Pants.webp",
+    "iconUrl": "./items/166.webp",
     "id": 166,
     "name": "Badly Drawn Pants",
     "slot": "Legs",
@@ -411,7 +411,7 @@
     }
   },
   {
-    "iconUrl": "167_-_Badly_Drawn_Foot.webp",
+    "iconUrl": "./items/167.webp",
     "id": 167,
     "name": "Badly Drawn Foot",
     "slot": "Boots",
@@ -426,7 +426,7 @@
     }
   },
   {
-    "iconUrl": "168_-_Badly_Drawn_Gun.webp",
+    "iconUrl": "./items/168.webp",
     "id": 168,
     "name": "Badly Drawn Gun*",
     "slot": "Weapon",
@@ -443,7 +443,7 @@
     "augSpeed": 240
   },
   {
-    "iconUrl": "169_-_King_Looty.webp",
+    "iconUrl": "./items/169.webp",
     "id": 169,
     "name": "King Looty",
     "slot": "Accessory",
@@ -458,84 +458,84 @@
     "drop": 102
   },
   {
-    "iconUrl": "173_-_Stealthy_Hat.webp",
+    "iconUrl": "./items/173.webp",
     "id": 173,
-    "name": "Stealthy Hat",
+    "name": "Stealthy Hat*",
     "slot": "Head",
-    "power": 8800,
-    "toughness": 197120,
+    "power": 10000,
+    "toughness": 224000,
     "energy": {
-      "cap": 308.0,
-      "power": 2112
+      "cap": 350,
+      "power": 2400
     },
     "magic": {
-      "cap": 149.6
+      "cap": 170
     }
   },
   {
-    "iconUrl": "174_-_Stealthy_Chest.webp",
+    "iconUrl": "./items/174.webp",
     "id": 174,
-    "name": "Stealthy Chest",
+    "name": "Stealthy Chest*",
     "slot": "Chest",
-    "power": 7850,
-    "toughness": 180550,
+    "power": 10000,
+    "toughness": 230000,
     "energy": {
-      "power": 1413,
-      "bars": 2983
+      "power": 1800,
+      "bars": 3800
     },
     "magic": {
-      "power": 1413,
-      "bars": 1256
+      "power": 1800,
+      "bars": 1600
     }
   },
   {
-    "iconUrl": "175_-_No_Pants.webp",
+    "iconUrl": "./items/175.webp",
     "id": 175,
-    "name": "No Pants",
+    "name": "No Pants*",
     "slot": "Legs",
-    "power": 7450,
-    "toughness": 175820,
+    "power": 10000,
+    "toughness": 236000,
     "energy": {
-      "power": 2607.5
+      "power": 3500
     },
     "magic": {
-      "power": 670.5,
-      "bars": 1490
+      "power": 900,
+      "bars": 2000
     }
   },
   {
-    "iconUrl": "176_-_High_Heeled_Boots.webp",
+    "iconUrl": "./items/176.webp",
     "id": 176,
-    "name": "High Heeled Boots",
+    "name": "High Heeled Boots*",
     "slot": "Boots",
-    "power": 7700,
-    "toughness": 187880,
+    "power": 10000,
+    "toughness": 244000,
     "energy": {
-      "cap": 308
+      "cap": 400
     },
     "magic": {
-      "cap": 92.4,
-      "power": 2156
+      "cap": 120,
+      "power": 2800
     }
   },
   {
-    "iconUrl": "177_-_A_Giant_Bazooka.webp",
+    "iconUrl": "./items/177.webp",
     "id": 177,
-    "name": "A Giant Bazooka",
+    "name": "A Giant Bazooka*",
     "slot": "Weapon",
-    "power": 1610000,
-    "toughness": 96600,
+    "power": 2000000,
+    "toughness": 120000,
     "energy": {
-      "cap": 193.2,
-      "power": 1932
+      "cap": 240,
+      "power": 2400
     },
     "magic": {
-      "cap": 193.2,
-      "power": 1932
+      "cap": 240,
+      "power": 2400
     }
   },
   {
-    "iconUrl": "439_-_Gaudy_Epaulettes.webp",
+    "iconUrl": "./items/439.webp",
     "id": 439,
     "name": "Gaudy Epaulettes*",
     "slot": "Accessory",
@@ -548,7 +548,7 @@
     }
   },
   {
-    "iconUrl": "440_-_The_F_Tank.webp",
+    "iconUrl": "./items/440.webp",
     "id": 440,
     "name": "The F Tank*",
     "slot": "Accessory",
@@ -561,7 +561,7 @@
     }
   },
   {
-    "iconUrl": "441_-_A_Beard_Comb.webp",
+    "iconUrl": "./items/441.webp",
     "id": 441,
     "name": "A Beard Comb*",
     "slot": "Accessory",
@@ -574,7 +574,7 @@
     "beardSpeed": 24
   },
   {
-    "iconUrl": "442_-_Random_Crayons.webp",
+    "iconUrl": "./items/442.webp",
     "id": 442,
     "name": "Random Crayons*",
     "slot": "Accessory",
@@ -589,7 +589,7 @@
     "drop": 42
   },
   {
-    "iconUrl": "443_-_Red_Lipstick.webp",
+    "iconUrl": "./items/443.webp",
     "id": 443,
     "name": "Red Lipstick",
     "slot": "Accessory",

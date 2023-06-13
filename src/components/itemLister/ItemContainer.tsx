@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item } from '../data/types'
+import { Item } from '../../data/types'
 
 interface ItemContainerProps {
   item: Item

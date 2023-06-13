@@ -1,4 +1,4 @@
-import { Item } from '../../data/types'
+import { Item } from './types'
 
 export const sortOnId = (list: Item[]): Item[] => {
   return list.sort((a, b) => {

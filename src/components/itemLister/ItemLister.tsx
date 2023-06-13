@@ -1,6 +1,6 @@
 import React from 'react'
 import { Item, Slot, Stat } from '../../data/types'
-import ItemContainer from '../ItemContainer'
+import ItemContainer from './ItemContainer'
 
 import './ItemLister.css'
 

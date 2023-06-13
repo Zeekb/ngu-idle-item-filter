@@ -25,8 +25,8 @@ import {
   sortOnSeedGain,
   sortOnToughness,
   sortOnWandoosSpeed,
-} from '../functions/sorts'
-import FilterButtons from '../FilterButtons'
+} from '../../data/sorts'
+import FilterButtons from '../LoadoutFilter/FilterButtons'
 import { Item, Slot } from '../../data/types'
 import LoadoutFilter from '../LoadoutFilter/LoadoutFilter'
 import itemData from '../../data/itemList.json'
