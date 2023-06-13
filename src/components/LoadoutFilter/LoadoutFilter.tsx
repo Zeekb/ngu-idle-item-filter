@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Slot } from '../../data/types'
 import './loadoutFilter.css'
 import { Button } from '@itwin/itwinui-react'
@@ -35,32 +35,56 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
       <h3>Loadout Filter</h3>
       <div className="grid">
         <img
-          className="item-icon loadout-slot accessory"
+          className={
+            slots.includes('Accessory')
+              ? 'item-icon loadout-slot'
+              : 'item-icon loadout-slot deselected'
+          }
           src="Empty Accessory Slot.png"
           onClick={() => handleSetSlots('Accessory')}
         ></img>
         <img
-          className="item-icon loadout-slot head"
+          className={
+            slots.includes('Head')
+              ? 'item-icon loadout-slot'
+              : 'item-icon loadout-slot deselected'
+          }
           src="Empty Head Slot.png"
           onClick={() => handleSetSlots('Head')}
         ></img>
         <img
-          className="item-icon loadout-slot chest"
+          className={
+            slots.includes('Chest')
+              ? 'item-icon loadout-slot'
+              : 'item-icon loadout-slot deselected'
+          }
           src="Empty Armor Slot.png"
           onClick={() => handleSetSlots('Chest')}
         ></img>
         <img
-          className="item-icon loadout-slot legs"
+          className={
+            slots.includes('Legs')
+              ? 'item-icon loadout-slot'
+              : 'item-icon loadout-slot deselected'
+          }
           src="Empty Pants Slot.png"
           onClick={() => handleSetSlots('Legs')}
         ></img>
         <img
-          className="item-icon loadout-slot boots"
+          className={
+            slots.includes('Boots')
+              ? 'item-icon loadout-slot'
+              : 'item-icon loadout-slot deselected'
+          }
           src="Empty Boots Slot.png"
           onClick={() => handleSetSlots('Boots')}
         ></img>
         <img
-          className="item-icon loadout-slot weapon"
+          className={
+            slots.includes('Weapon')
+              ? 'item-icon loadout-slot'
+              : 'item-icon loadout-slot deselected'
+          }
           src="Empty Weapon Slot.png"
           onClick={() => handleSetSlots('Weapon')}
         ></img>

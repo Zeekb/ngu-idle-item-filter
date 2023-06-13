@@ -9,6 +9,10 @@
   margin: 5px;
 }
 
+.deselected {
+  opacity: 0.3;
+}
+
 .reset-loadout-button {
   margin-top: 40px;
   height: 30px;
