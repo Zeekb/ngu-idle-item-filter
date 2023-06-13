@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, Stat } from '../../data/types'
+import { Item, Slot, Stat } from '../../data/types'
 import ItemContainer from '../ItemContainer'
 
 import './ItemLister.css'
@@ -33,6 +33,10 @@ const getAllItemsBySlot = (list: Item[], slot: string) => {
   return list.filter((item) => item.slot === slot)
 }
 
+const getAllItemsBySlots = (list: Item[], slots: Slot[]): Item[] => {
+  return slots.map((slot) => getAllItemsBySlot(list, slot)).flat()
+}
+
 const getAllUnfinishedItems = (list: Item[]): Item[] => {
   return list.filter((item) => item.name.indexOf('*') === -1)
 }
@@ -40,15 +44,12 @@ const getAllUnfinishedItems = (list: Item[]): Item[] => {
 const ItemLister = (props: ItemListerProps) => {
   const { filter } = props
 
-  return (
-    <>
-      <div className="container text">{displayItemContainers(filter)}</div>
-    </>
-  )
+  return <>{displayItemContainers(filter)}</>
 }
 export {
   ItemLister,
   getAllUnfinishedItems,
   getAllItemsBySlot,
+  getAllItemsBySlots,
   getAllItemsByBoost,
 }

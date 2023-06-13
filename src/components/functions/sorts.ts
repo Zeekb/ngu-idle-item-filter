@@ -1,5 +1,14 @@
 import { Item } from '../../data/types'
 
+export const sortOnId = (list: Item[]): Item[] => {
+  return list.sort((a, b) => {
+    if (a.id && b.id) {
+      return a.id > b.id ? 1 : -1
+    }
+    return 1
+  })
+}
+
 export const sortOnPower = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
     if (a.power && b.power) {

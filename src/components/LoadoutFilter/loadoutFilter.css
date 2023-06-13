@@ -1,0 +1,16 @@
+.grid {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.loadout-slot {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.reset-loadout-button {
+  margin-top: 40px;
+  height: 30px;
+  width: 50px;
+}

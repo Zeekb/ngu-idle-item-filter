@@ -14,10 +14,10 @@ const ItemContainer = (props: ItemContainerProps) => {
           <div>
             {item.id} | {item.name}
           </div>
-          <div>{item.slot}</div>
         </div>
         <div className="icon-container">
           <img className="item-icon" src={item.iconUrl} alt={item.name}></img>
+          <div>{item.slot}</div>
         </div>
         <div className="boosts">
           {item.power && (

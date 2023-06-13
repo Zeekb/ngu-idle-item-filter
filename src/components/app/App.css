@@ -2,6 +2,33 @@
   background-color: #828282;
   position: absolute;
   min-height: 100%;
+  justify-content: center;
+}
+
+.items-container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+}
+
+.filter-container {
+  width: calc(80% - 40px);
+  float: left;
+}
+
+.loadout-container {
+  margin-top: 20px;
+  margin-right: 80px;
+  width: calc(20% - 40px - 80px);
+  height: auto;
+  float: right;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #c0c0c0;
 }
 
 .text {
