@@ -1,6 +1,7 @@
 {
   "name": "ngu-idle-item-filter",
-  "version": "0.3.1",
+  "homepage": "http://Zeekb.github.io/ngu-idle-items-filter",
+  "version": "0.3.2",
   "private": true,
   "dependencies": {
     "@itwin/itwinui-icons": "^2.2.0",
@@ -24,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -50,6 +53,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8",
     "typescript": "4.9.5"
   }
