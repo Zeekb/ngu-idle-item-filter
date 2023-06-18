@@ -1,568 +1,778 @@
 [
   {
-    "iconUrl": "./items/76.webp",
-    "id": 76,
-    "name": "Ascended Forest Pendant*",
-    "slot": "Accessory",
-    "power": 200,
-    "toughness": 200,
-    "drop": 40,
-    "gold": 400
+    "metadata": {
+      "iconUrl": "./items/76.webp",
+      "id": 76,
+      "name": "Ascended Forest Pendant*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 200,
+      "toughness": 200,
+      "drop": 40,
+      "gold": 400
+    }
   },
   {
-    "iconUrl": "./items/91.webp",
-    "id": 91,
-    "name": "The Sands of Time*",
-    "slot": "Accessory",
-    "moveCooldown": 20
+    "metadata": {
+      "iconUrl": "./items/91.webp",
+      "id": 91,
+      "name": "The Sands of Time*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "moveCooldown": 20
+    }
   },
   {
-    "iconUrl": "./items/94.webp",
-    "id": 94,
-    "name": "Ascended Ascended Pendant*",
-    "slot": "Accessory",
-    "power": 1600,
-    "toughness": 1600,
-    "magicPower": 200,
-    "drop": 80,
-    "gold": 800
+    "metadata": {
+      "iconUrl": "./items/94.webp",
+      "id": 94,
+      "name": "Ascended Ascended Pendant*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 1600,
+      "toughness": 1600,
+      "magicPower": 200,
+      "drop": 80,
+      "gold": 800
+    }
   },
   {
-    "iconUrl": "./items/101.webp",
-    "id": 101,
-    "name": "King Circle's Amulet of Helping Random Stuff*",
-    "slot": "Accessory",
-    "wandoosSpeed": 60,
-    "advancedTraining": 80
+    "metadata": {
+      "iconUrl": "./items/101.webp",
+      "id": 101,
+      "name": "King Circle's Amulet of Helping Random Stuff*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "wandoosSpeed": 60,
+      "advancedTraining": 80
+    }
   },
   {
-    "iconUrl": "./items/110.webp",
-    "id": 110,
-    "name": "Dragon Wings*",
-    "slot": "Accessory",
-    "power": 164,
-    "toughness": 164,
-    "magicCap": 45.64,
-    "magicPower": 216.4,
-    "gold": 400
+    "metadata": {
+      "iconUrl": "./items/110.webp",
+      "id": 110,
+      "name": "Dragon Wings*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 164,
+      "toughness": 164,
+      "magicCap": 45.64,
+      "magicPower": 216.4,
+      "gold": 400
+    }
   },
   {
-    "iconUrl": "./items/116.webp",
-    "id": 116,
-    "name": "A Regular Tie*",
-    "slot": "Accessory",
-    "toughness": 164,
-    "magicPower": 216.4,
-    "gold": 400,
-    "nguSpeed": 120
+    "metadata": {
+      "iconUrl": "./items/116.webp",
+      "id": 116,
+      "name": "A Regular Tie*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "toughness": 164,
+      "magicPower": 216.4,
+      "gold": 400,
+      "nguSpeed": 120
+    }
   },
   {
-    "iconUrl": "./items/118.webp",
-    "id": 118,
-    "name": "Stapler*",
-    "slot": "Accessory",
-    "power": 1000,
-    "energyCap": 60,
-    "respawn": 12
+    "metadata": {
+      "iconUrl": "./items/118.webp",
+      "id": 118,
+      "name": "Stapler*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 1000,
+      "energyCap": 60,
+      "respawn": 12
+    }
   },
   {
-    "iconUrl": "./items/121.webp",
-    "id": 121,
-    "name": "The Triple Flubber*",
-    "slot": "Accessory",
-    "respawn": 8
+    "metadata": {
+      "iconUrl": "./items/121.webp",
+      "id": 121,
+      "name": "The Triple Flubber*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "respawn": 8
+    }
   },
   {
-    "iconUrl": "./items/128.webp",
-    "id": 128,
-    "name": "Sir Looty McLootington III, Esquire*",
-    "slot": "Accessory",
-    "power": 400,
-    "toughness": 400,
-    "energyPower": 200,
-    "magicPower": 200,
-    "drop": 80
+    "metadata": {
+      "iconUrl": "./items/128.webp",
+      "id": 128,
+      "name": "Sir Looty McLootington III, Esquire*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 400,
+      "toughness": 400,
+      "energyPower": 200,
+      "magicPower": 200,
+      "drop": 80
+    }
   },
   {
-    "iconUrl": "./items/136.webp",
-    "id": 136,
-    "name": "Ring of Greed*",
-    "slot": "Accessory",
-    "gold": 1600,
-    "drop": 120,
-    "respawn": 16
+    "metadata": {
+      "iconUrl": "./items/136.webp",
+      "id": 136,
+      "name": "Ring of Greed*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "gold": 1600,
+      "drop": 120,
+      "respawn": 16
+    }
   },
   {
-    "iconUrl": "./items/137.webp",
-    "id": 137,
-    "name": "Ring of Might*",
-    "slot": "Accessory",
-    "power": 13332,
-    "toughness": 13332,
-    "moveCooldown": 20,
-    "respawn": 4
+    "metadata": {
+      "iconUrl": "./items/137.webp",
+      "id": 137,
+      "name": "Ring of Might*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 13332,
+      "toughness": 13332,
+      "moveCooldown": 20,
+      "respawn": 4
+    }
   },
   {
-    "iconUrl": "./items/138.webp",
-    "id": 138,
-    "name": "Ring of Utility*",
-    "slot": "Accessory",
-    "power": 2000,
-    "toughness": 2000,
-    "nguSpeed": 100,
-    "wandoosSpeed": 100,
-    "advancedTraining": 100
+    "metadata": {
+      "iconUrl": "./items/138.webp",
+      "id": 138,
+      "name": "Ring of Utility*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 2000,
+      "nguSpeed": 100,
+      "wandoosSpeed": 100,
+      "advancedTraining": 100
+    }
   },
   {
-    "iconUrl": "./items/139.webp",
-    "id": 139,
-    "name": "Ring of Way Too Much energy*",
-    "slot": "Accessory",
-    "power": 2000,
-    "toughness": 2000,
-    "energyCap": 80,
-    "energyPower": 500,
-    "energyBars": 240
+    "metadata": {
+      "iconUrl": "./items/139.webp",
+      "id": 139,
+      "name": "Ring of Way Too Much energy*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 2000,
+      "energyCap": 80,
+      "energyPower": 500,
+      "energyBars": 240
+    }
   },
   {
-    "iconUrl": "./items/140.webp",
-    "id": 140,
-    "name": "Ring of Way Too Much magic*",
-    "slot": "Accessory",
-    "magicCap": 80,
-    "magicPower": 500,
-    "magicBars": 240
+    "metadata": {
+      "iconUrl": "./items/140.webp",
+      "id": 140,
+      "name": "Ring of Way Too Much magic*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "magicCap": 80,
+      "magicPower": 500,
+      "magicBars": 240
+    }
   },
   {
-    "iconUrl": "./items/142.webp",
-    "id": 142,
-    "name": "Ascended Ascended Ascended Pendant",
-    "slot": "Accessory",
-    "power": 40000,
-    "toughness": 40000,
-    "energyPower": 270,
-    "drop": 100,
-    "gold": 800
+    "metadata": {
+      "iconUrl": "./items/142.webp",
+      "id": 142,
+      "name": "Ascended Ascended Ascended Pendant",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 40000,
+      "toughness": 40000,
+      "energyPower": 270,
+      "drop": 100,
+      "gold": 800
+    }
   },
   {
-    "iconUrl": "./items/147.webp",
-    "id": 147,
-    "name": "Bearded Axe*",
-    "slot": "Weapon",
-    "power": 166000,
-    "toughness": 12000,
-    "energyBars": 440,
-    "magicBars": 440,
-    "beardSpeed": 20
+    "metadata": {
+      "iconUrl": "./items/147.webp",
+      "id": 147,
+      "name": "Bearded Axe*",
+      "slot": "Weapon"
+    },
+    "stats": {
+      "power": 166000,
+      "toughness": 12000,
+      "energyBars": 440,
+      "magicBars": 440,
+      "beardSpeed": 20
+    }
   },
   {
-    "iconUrl": "./items/148.webp",
-    "id": 148,
-    "name": "An Infinitely Long Strand of Beard Hair*",
-    "slot": "Accessory",
-    "power": 16000,
-    "toughness": 16000,
-    "energyPower": 900,
-    "magicPower": 700,
-    "beardSpeed": 20
+    "metadata": {
+      "iconUrl": "./items/148.webp",
+      "id": 148,
+      "name": "An Infinitely Long Strand of Beard Hair*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 16000,
+      "toughness": 16000,
+      "energyPower": 900,
+      "magicPower": 700,
+      "beardSpeed": 20
+    }
   },
   {
-    "iconUrl": "./items/149.webp",
-    "id": 149,
-    "name": "UUG's 'Special' Ring*",
-    "slot": "Accessory",
-    "power": 24000,
-    "toughness": 24000,
-    "seedGain": 30,
-    "nguSpeed": 200,
-    "beardSpeed": 20
+    "metadata": {
+      "iconUrl": "./items/149.webp",
+      "id": 149,
+      "name": "UUG's 'Special' Ring*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 24000,
+      "toughness": 24000,
+      "seedGain": 30,
+      "nguSpeed": 200,
+      "beardSpeed": 20
+    }
   },
   {
-    "iconUrl": "./items/150.webp",
-    "id": 150,
-    "name": "Wanderer's Hat*",
-    "slot": "Head",
-    "power": 2000,
-    "toughness": 44000,
-    "energyCap": 170,
-    "energyPower": 1500,
-    "magicPower": 400
+    "metadata": {
+      "iconUrl": "./items/150.webp",
+      "id": 150,
+      "name": "Wanderer's Hat*",
+      "slot": "Head"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 44000,
+      "energyCap": 170,
+      "energyPower": 1500,
+      "magicPower": 400
+    }
   },
   {
-    "iconUrl": "./items/151.webp",
-    "id": 151,
-    "name": "Wanderer's Chest*",
-    "slot": "Chest",
-    "power": 2000,
-    "toughness": 46000,
-    "energyPower": 1600,
-    "energyBars": 1200,
-    "magicCap": 60
+    "metadata": {
+      "iconUrl": "./items/151.webp",
+      "id": 151,
+      "name": "Wanderer's Chest*",
+      "slot": "Chest"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 46000,
+      "energyPower": 1600,
+      "energyBars": 1200,
+      "magicCap": 60
+    }
   },
   {
-    "iconUrl": "./items/152.webp",
-    "id": 152,
-    "name": "Wanderer's Pants*",
-    "slot": "Legs",
-    "power": 2000,
-    "toughness": 46000,
-    "energyCap": 170,
-    "energyBars": 1600,
-    "magicBars": 400
+    "metadata": {
+      "iconUrl": "./items/152.webp",
+      "id": 152,
+      "name": "Wanderer's Pants*",
+      "slot": "Legs"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 46000,
+      "energyCap": 170,
+      "energyBars": 1600,
+      "magicBars": 400
+    }
   },
   {
-    "iconUrl": "./items/153.webp",
-    "id": 153,
-    "name": "Wanderer's Boots*",
-    "slot": "Boots",
-    "power": 2000,
-    "toughness": 48000,
-    "wandoosSpeed": 260,
-    "nguSpeed": 120
+    "metadata": {
+      "iconUrl": "./items/153.webp",
+      "id": 153,
+      "name": "Wanderer's Boots*",
+      "slot": "Boots"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 48000,
+      "wandoosSpeed": 260,
+      "nguSpeed": 120
+    }
   },
   {
-    "iconUrl": "./items/155.webp",
-    "id": 155,
-    "name": "taH s'rerednaW*",
-    "slot": "Head",
-    "power": 2000,
-    "toughness": 42000,
-    "energyPower": 400,
-    "magicCap": 170,
-    "magicPower": 1500
+    "metadata": {
+      "iconUrl": "./items/155.webp",
+      "id": 155,
+      "name": "taH s'rerednaW*",
+      "slot": "Head"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 42000,
+      "energyPower": 400,
+      "magicCap": 170,
+      "magicPower": 1500
+    }
   },
   {
-    "iconUrl": "./items/156.webp",
-    "id": 156,
-    "name": "tsehC s'rerednaW*",
-    "slot": "Chest",
-    "power": 2000,
-    "toughness": 44000,
-    "energyCap": 60,
-    "magicPower": 1200,
-    "magicBars": 1600
+    "metadata": {
+      "iconUrl": "./items/156.webp",
+      "id": 156,
+      "name": "tsehC s'rerednaW*",
+      "slot": "Chest"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 44000,
+      "energyCap": 60,
+      "magicPower": 1200,
+      "magicBars": 1600
+    }
   },
   {
-    "iconUrl": "./items/157.webp",
-    "id": 157,
-    "name": "stnaP s'rerednaW*",
-    "slot": "Legs",
-    "power": 2000,
-    "toughness": 46000,
-    "energyBars": 400,
-    "magicCap": 170,
-    "magicBars": 1600
+    "metadata": {
+      "iconUrl": "./items/157.webp",
+      "id": 157,
+      "name": "stnaP s'rerednaW*",
+      "slot": "Legs"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 46000,
+      "energyBars": 400,
+      "magicCap": 170,
+      "magicBars": 1600
+    }
   },
   {
-    "iconUrl": "./items/158.webp",
-    "id": 158,
-    "name": "stooB s'rerednaW*",
-    "slot": "Boots",
-    "power": 2000,
-    "toughness": 48000,
-    "seedGain": 60,
-    "beardSpeed": 80
+    "metadata": {
+      "iconUrl": "./items/158.webp",
+      "id": 158,
+      "name": "stooB s'rerednaW*",
+      "slot": "Boots"
+    },
+    "stats": {
+      "power": 2000,
+      "toughness": 48000,
+      "seedGain": 60,
+      "beardSpeed": 80
+    }
   },
   {
-    "iconUrl": "./items/159.webp",
-    "id": 159,
-    "name": "The Candy Cane of Destiny",
-    "slot": "Weapon",
-    "power": 210591,
-    "toughness": 20880,
-    "energyCap": 105.19,
-    "energyPower": 1082.61,
-    "energyBars": 1060,
-    "magicCap": 105.19,
-    "magicPower": 1082.61,
-    "magicBars": 1060
+    "metadata": {
+      "iconUrl": "./items/159.webp",
+      "id": 159,
+      "name": "The Candy Cane of Destiny",
+      "slot": "Weapon"
+    },
+    "stats": {
+      "power": 210591,
+      "toughness": 20880,
+      "energyCap": 105.19,
+      "energyPower": 1082.61,
+      "energyBars": 1060,
+      "magicCap": 105.19,
+      "magicPower": 1082.61,
+      "magicBars": 1060
+    }
   },
   {
-    "iconUrl": "./items/160.webp",
-    "id": 160,
-    "name": "Fanny Pack",
-    "slot": "Accessory",
-    "power": 30000,
-    "toughness": 30000,
-    "energyCap": 49.2,
-    "energyPower": 820,
-    "magicCap": 49.2,
-    "magicPower": 820,
-    "drop": 49.2
+    "metadata": {
+      "iconUrl": "./items/160.webp",
+      "id": 160,
+      "name": "Fanny Pack",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 30000,
+      "toughness": 30000,
+      "energyCap": 49.2,
+      "energyPower": 820,
+      "magicCap": 49.2,
+      "magicPower": 820,
+      "drop": 49.2
+    }
   },
   {
-    "iconUrl": "./items/161.webp",
-    "id": 161,
-    "name": "Dorky Glasses",
-    "slot": "Accessory",
-    "power": 7600,
-    "toughness": 7600,
-    "energyBars": 679.01,
-    "magicBars": 679.01,
-    "nguSpeed": 190.5,
-    "wandoosSpeed": 152.4
+    "metadata": {
+      "iconUrl": "./items/161.webp",
+      "id": 161,
+      "name": "Dorky Glasses",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 7600,
+      "toughness": 7600,
+      "energyBars": 679.01,
+      "magicBars": 679.01,
+      "nguSpeed": 190.5,
+      "wandoosSpeed": 152.4
+    }
   },
 
   {
-    "iconUrl": "./items/164.webp",
-    "id": 164,
-    "name": "Badly Drawn Smiley Face*",
-    "slot": "Head",
-    "toughness": 120000,
-    "energyBars": 900,
-    "magicBars": 900,
-    "advancedTraining": 320,
-    "gold": 2400
+    "metadata": {
+      "iconUrl": "./items/164.webp",
+      "id": 164,
+      "name": "Badly Drawn Smiley Face*",
+      "slot": "Head"
+    },
+    "stats": {
+      "toughness": 120000,
+      "energyBars": 900,
+      "magicBars": 900,
+      "advancedTraining": 320,
+      "gold": 2400
+    }
   },
   {
-    "iconUrl": "./items/165.webp",
-    "id": 165,
-    "name": "Badly Drawn Chest",
-    "slot": "Chest",
-    "toughness": 120000,
-    "energyPower": 2549,
-    "energyBars": 900,
-    "magicCap": 270,
-    "magicBars": 900
+    "metadata": {
+      "iconUrl": "./items/165.webp",
+      "id": 165,
+      "name": "Badly Drawn Chest",
+      "slot": "Chest"
+    },
+    "stats": {
+      "toughness": 120000,
+      "energyPower": 2549,
+      "energyBars": 900,
+      "magicCap": 270,
+      "magicBars": 900
+    }
   },
   {
-    "iconUrl": "./items/166.webp",
-    "id": 166,
-    "name": "Badly Drawn Pants",
-    "slot": "Legs",
-    "toughness": 120000,
-    "energyCap": 130,
-    "energyPower": 424.66,
-    "magicPower": 424.66,
-    "magicBars": 500
+    "metadata": {
+      "iconUrl": "./items/166.webp",
+      "id": 166,
+      "name": "Badly Drawn Pants",
+      "slot": "Legs"
+    },
+    "stats": {
+      "toughness": 120000,
+      "energyCap": 130,
+      "energyPower": 424.66,
+      "magicPower": 424.66,
+      "magicBars": 500
+    }
   },
   {
-    "iconUrl": "./items/167.webp",
-    "id": 167,
-    "name": "Badly Drawn Foot",
-    "slot": "Boots",
-    "toughness": 120000,
-    "energyCap": 46.07,
-    "energyBars": 1200,
-    "magicPower": 1200,
-    "magicBars": 1200
+    "metadata": {
+      "iconUrl": "./items/167.webp",
+      "id": 167,
+      "name": "Badly Drawn Foot",
+      "slot": "Boots"
+    },
+    "stats": {
+      "toughness": 120000,
+      "energyCap": 46.07,
+      "energyBars": 1200,
+      "magicPower": 1200,
+      "magicBars": 1200
+    }
   },
   {
-    "iconUrl": "./items/168.webp",
-    "id": 168,
-    "name": "Badly Drawn Gun*",
-    "slot": "Weapon",
-    "power": 1000000,
-    "toughness": 50000,
-    "energyCap": 120,
-    "energyPower": 1200,
-    "magicCap": 120,
-    "magicPower": 1200,
-    "augSpeed": 240
+    "metadata": {
+      "iconUrl": "./items/168.webp",
+      "id": 168,
+      "name": "Badly Drawn Gun*",
+      "slot": "Weapon"
+    },
+    "stats": {
+      "power": 1000000,
+      "toughness": 50000,
+      "energyCap": 120,
+      "energyPower": 1200,
+      "magicCap": 120,
+      "magicPower": 1200,
+      "augSpeed": 240
+    }
   },
   {
-    "iconUrl": "./items/169.webp",
-    "id": 169,
-    "name": "King Looty",
-    "slot": "Accessory",
-    "energyCap": 40.8,
-    "energyPower": 408,
-    "magicCap": 40.8,
-    "magicPower": 408,
-    "drop": 102
+    "metadata": {
+      "iconUrl": "./items/169.webp",
+      "id": 169,
+      "name": "King Looty",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "energyCap": 40.8,
+      "energyPower": 408,
+      "magicCap": 40.8,
+      "magicPower": 408,
+      "drop": 102
+    }
   },
   {
-    "iconUrl": "./items/173.webp",
-    "id": 173,
-    "name": "Stealthy Hat*",
-    "slot": "Head",
-    "power": 10000,
-    "toughness": 224000,
-    "energyCap": 350,
-    "energyPower": 2400,
-    "magicCap": 170
+    "metadata": {
+      "iconUrl": "./items/173.webp",
+      "id": 173,
+      "name": "Stealthy Hat*",
+      "slot": "Head"
+    },
+    "stats": {
+      "power": 10000,
+      "toughness": 224000,
+      "energyCap": 350,
+      "energyPower": 2400,
+      "magicCap": 170
+    }
   },
   {
-    "iconUrl": "./items/174.webp",
-    "id": 174,
-    "name": "Stealthy Chest*",
-    "slot": "Chest",
-    "power": 10000,
-    "toughness": 230000,
-    "energyPpower": 1800,
-    "energyBars": 3800,
-    "magicPower": 1800,
-    "magicBars": 1600
+    "metadata": {
+      "iconUrl": "./items/174.webp",
+      "id": 174,
+      "name": "Stealthy Chest*",
+      "slot": "Chest"
+    },
+    "stats": {
+      "power": 10000,
+      "toughness": 230000,
+      "energyPpower": 1800,
+      "energyBars": 3800,
+      "magicPower": 1800,
+      "magicBars": 1600
+    }
   },
   {
-    "iconUrl": "./items/175.webp",
-    "id": 175,
-    "name": "No Pants*",
-    "slot": "Legs",
-    "power": 10000,
-    "toughness": 236000,
-    "energyPower": 3500,
-    "magicPower": 900,
-    "magicBars": 2000
+    "metadata": {
+      "iconUrl": "./items/175.webp",
+      "id": 175,
+      "name": "No Pants*",
+      "slot": "Legs"
+    },
+    "stats": {
+      "power": 10000,
+      "toughness": 236000,
+      "energyPower": 3500,
+      "magicPower": 900,
+      "magicBars": 2000
+    }
   },
   {
-    "iconUrl": "./items/176.webp",
-    "id": 176,
-    "name": "High Heeled Boots*",
-    "slot": "Boots",
-    "power": 10000,
-    "toughness": 244000,
-    "energyCap": 400,
-    "magicCap": 120,
-    "magicPower": 2800
+    "metadata": {
+      "iconUrl": "./items/176.webp",
+      "id": 176,
+      "name": "High Heeled Boots*",
+      "slot": "Boots"
+    },
+    "stats": {
+      "power": 10000,
+      "toughness": 244000,
+      "energyCap": 400,
+      "magicCap": 120,
+      "magicPower": 2800
+    }
   },
   {
-    "iconUrl": "./items/177.webp",
-    "id": 177,
-    "name": "A Giant Bazooka*",
-    "slot": "Weapon",
-    "power": 2000000,
-    "toughness": 120000,
-    "energyCap": 240,
-    "energyPower": 2400,
-    "magicCap": 240,
-    "magicPower": 2400
+    "metadata": {
+      "iconUrl": "./items/177.webp",
+      "id": 177,
+      "name": "A Giant Bazooka*",
+      "slot": "Weapon"
+    },
+    "stats": {
+      "power": 2000000,
+      "toughness": 120000,
+      "energyCap": 240,
+      "energyPower": 2400,
+      "magicCap": 240,
+      "magicPower": 2400
+    }
   },
   {
-    "iconUrl": "./items/439.webp",
-    "id": 439,
-    "name": "Gaudy Epaulettes*",
-    "slot": "Accessory",
-    "power": 1800,
-    "toughness": 1800,
-    "energyCap": 48,
-    "energyPower": 180,
-    "energyBars": 200
+    "metadata": {
+      "iconUrl": "./items/439.webp",
+      "id": 439,
+      "name": "Gaudy Epaulettes*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 1800,
+      "toughness": 1800,
+      "energyCap": 48,
+      "energyPower": 180,
+      "energyBars": 200
+    }
   },
   {
-    "iconUrl": "./items/440.webp",
-    "id": 440,
-    "name": "The F Tank*",
-    "slot": "Accessory",
-    "power": 8000,
-    "toughness": 8000,
-    "energyCap": 100,
-    "energyPower": 320,
-    "energyBars": 200
+    "metadata": {
+      "iconUrl": "./items/440.webp",
+      "id": 440,
+      "name": "The F Tank*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 8000,
+      "toughness": 8000,
+      "energyCap": 100,
+      "energyPower": 320,
+      "energyBars": 200
+    }
   },
   {
-    "iconUrl": "./items/441.webp",
-    "id": 441,
-    "name": "A Beard Comb*",
-    "slot": "Accessory",
-    "energyCap": 120,
-    "magicPower": 900,
-    "beardSpeed": 24
+    "metadata": {
+      "iconUrl": "./items/441.webp",
+      "id": 441,
+      "name": "A Beard Comb*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "energyCap": 120,
+      "magicPower": 900,
+      "beardSpeed": 24
+    }
   },
   {
-    "iconUrl": "./items/442.webp",
-    "id": 442,
-    "name": "Random Crayons*",
-    "slot": "Accessory",
-    "energyCap": 42,
-    "energyPower": 759.74,
-    "magicCap": 42,
-    "magicPower": 759.74,
-    "drop": 42
+    "metadata": {
+      "iconUrl": "./items/442.webp",
+      "id": 442,
+      "name": "Random Crayons*",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "energyCap": 42,
+      "energyPower": 759.74,
+      "magicCap": 42,
+      "magicPower": 759.74,
+      "drop": 42
+    }
   },
   {
-    "iconUrl": "./items/443.webp",
-    "id": 443,
-    "name": "Red Lipstick",
-    "slot": "Accessory",
-    "energyPower": 1380,
-    "magicCap": 207,
-    "magicPower": 1380,
-    "beardSpeed": 34.5
+    "metadata": {
+      "iconUrl": "./items/443.webp",
+      "id": 443,
+      "name": "Red Lipstick",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "energyPower": 1380,
+      "magicCap": 207,
+      "magicPower": 1380,
+      "beardSpeed": 34.5
+    }
   },
   {
-    "iconUrl": "./items/188.webp",
-    "id": 188,
-    "name": "The Fists of Flubber",
-    "slot": "Weapon",
-    "power": 4158000,
-    "toughness": 183000,
-    "magicBars": 1200,
-    "magicCap": 204.97,
-    "magicPower": 2000
+    "metadata": {
+      "iconUrl": "./items/188.webp",
+      "id": 188,
+      "name": "The Fists of Flubber",
+      "slot": "Weapon"
+    },
+    "stats": {
+      "power": 4158000,
+      "stats": {
+        "toughness": 183000,
+        "magicBars": 1200,
+        "magicCap": 204.97,
+        "magicPower": 2000
+      }
+    }
   },
   {
-    "iconUrl": "./items/184.webp",
-    "id": 184,
-    "name": "Slimy Helmet",
-    "slot": "Head",
-    "power": 18260,
-    "toughness": 401720,
-    "energyPower": 1412.57,
-    "magicCap": 150,
-    "magicPower": 1412.57,
-    "magicBars": 1000
+    "metadata": {
+      "iconUrl": "./items/184.webp",
+      "id": 184,
+      "name": "Slimy Helmet",
+      "slot": "Head"
+    },
+    "stats": {
+      "power": 18260,
+      "toughness": 401720,
+      "energyPower": 1412.57,
+      "magicCap": 150,
+      "magicPower": 1412.57,
+      "magicBars": 1000
+    }
   },
   {
-    "iconUrl": "./items/185.webp",
-    "id": 185,
-    "name": "Slimy Chest",
-    "slot": "Chest",
-    "power": 21120,
-    "toughness": 480000,
-    "energyCap": 150,
-    "energyBars": 1200,
-    "magicCap": 150,
-    "magicPower": 1400
+    "metadata": {
+      "iconUrl": "./items/185.webp",
+      "id": 185,
+      "name": "Slimy Chest",
+      "slot": "Chest"
+    },
+    "stats": {
+      "power": 21120,
+      "toughness": 480000,
+      "energyCap": 150,
+      "energyBars": 1200,
+      "magicCap": 150,
+      "magicPower": 1400
+    }
   },
   {
-    "iconUrl": "./items/186.webp",
-    "id": 186,
-    "name": "Slimy Pants",
-    "slot": "Legs",
-    "power": 16500,
-    "toughness": 404250,
-    "energyCap": 160,
-    "energyPower": 1800,
-    "energyBars": 1082.39,
-    "magicBars": 1082.39
+    "metadata": {
+      "iconUrl": "./items/186.webp",
+      "id": 186,
+      "name": "Slimy Pants",
+      "slot": "Legs"
+    },
+    "stats": {
+      "power": 16500,
+      "toughness": 404250,
+      "energyCap": 160,
+      "energyPower": 1800,
+      "energyBars": 1082.39,
+      "magicBars": 1082.39
+    }
   },
   {
-    "iconUrl": "./items/187.webp",
-    "id": 187,
-    "name": "Slimy Boots",
-    "slot": "Boots",
-    "power": 17200,
-    "toughness": 412800,
-    "energyCap": 140,
-    "energyPower": 1400,
-    "energyBars": 1400,
-    "magicCap": 140,
-    "magicPower": 1400,
-    "magicBars": 1400
+    "metadata": {
+      "iconUrl": "./items/187.webp",
+      "id": 187,
+      "name": "Slimy Boots",
+      "slot": "Boots"
+    },
+    "stats": {
+      "power": 17200,
+      "toughness": 412800,
+      "energyCap": 140,
+      "energyPower": 1400,
+      "energyBars": 1400,
+      "magicCap": 140,
+      "magicPower": 1400,
+      "magicBars": 1400
+    }
   },
   {
-    "iconUrl": "./items/178.webp",
-    "id": 178,
-    "name": "The Stealthiest Armour",
-    "slot": "Chest",
-    "power": 9840,
-    "toughness": 184500,
-    "energyCap": 231.44,
-    "energyBars": 2460,
-    "magicCap": 231.44,
-    "magicBars": 2460,
-    "nguSpeed": 200
+    "metadata": {
+      "iconUrl": "./items/178.webp",
+      "id": 178,
+      "name": "The Stealthiest Armour",
+      "slot": "Chest"
+    },
+    "stats": {
+      "power": 9840,
+      "toughness": 184500,
+      "energyCap": 231.44,
+      "energyBars": 2460,
+      "magicCap": 231.44,
+      "magicBars": 2460,
+      "nguSpeed": 200
+    }
   },
   {
-    "iconUrl": "./items/189.webp",
-    "id": 189,
-    "name": "A Bald Egg",
-    "slot": "Accessory",
-    "power": 47332,
-    "toughness": 47332,
-    "energyCap": 150,
-    "magicCap": 150,
-    "wandoosSpeed": 200
+    "metadata": {
+      "iconUrl": "./items/189.webp",
+      "id": 189,
+      "name": "A Bald Egg",
+      "slot": "Accessory"
+    },
+    "stats": {
+      "power": 47332,
+      "toughness": 47332,
+      "energyCap": 150,
+      "magicCap": 150,
+      "wandoosSpeed": 200
+    }
   }
 ]

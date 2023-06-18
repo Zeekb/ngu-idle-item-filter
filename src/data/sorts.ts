@@ -2,8 +2,8 @@ import { Item } from './types'
 
 export const sortOnId = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.id && b.id) {
-      return a.id > b.id ? 1 : -1
+    if (a.metadata.id && b.metadata.id) {
+      return a.metadata.id > b.metadata.id ? 1 : -1
     }
     return 1
   })
@@ -11,8 +11,8 @@ export const sortOnId = (list: Item[]): Item[] => {
 
 export const sortOnPower = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.power && b.power) {
-      return a.power < b.power ? 1 : -1
+    if (a.stats.power && b.stats.power) {
+      return a.stats.power < b.stats.power ? 1 : -1
     }
     return 1
   })
@@ -20,8 +20,8 @@ export const sortOnPower = (list: Item[]): Item[] => {
 
 export const sortOnToughness = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.toughness && b.toughness) {
-      return a.toughness < b.toughness ? 1 : -1
+    if (a.stats.toughness && b.stats.toughness) {
+      return a.stats.toughness < b.stats.toughness ? 1 : -1
     }
     return 1
   })
@@ -29,8 +29,8 @@ export const sortOnToughness = (list: Item[]): Item[] => {
 
 export const sortOnDrop = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.drop && b.drop) {
-      return a.drop < b.drop ? 1 : -1
+    if (a.stats.drop && b.stats.drop) {
+      return a.stats.drop < b.stats.drop ? 1 : -1
     }
     return 1
   })
@@ -38,8 +38,8 @@ export const sortOnDrop = (list: Item[]): Item[] => {
 
 export const sortOnGold = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.gold && b.gold) {
-      return a.gold < b.gold ? 1 : -1
+    if (a.stats.gold && b.stats.gold) {
+      return a.stats.gold < b.stats.gold ? 1 : -1
     }
     return 1
   })
@@ -47,8 +47,8 @@ export const sortOnGold = (list: Item[]): Item[] => {
 
 export const sortOnEnergyCap = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.energyCap && b.energyCap) {
-      return a.energyCap < b.energyCap ? 1 : -1
+    if (a.stats.energyCap && b.stats.energyCap) {
+      return a.stats.energyCap < b.stats.energyCap ? 1 : -1
     }
     return 1
   })
@@ -56,8 +56,8 @@ export const sortOnEnergyCap = (list: Item[]): Item[] => {
 
 export const sortOnEnergyPower = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.energyPower && b.energyPower) {
-      return a.energyPower < b.energyPower ? 1 : -1
+    if (a.stats.energyPower && b.stats.energyPower) {
+      return a.stats.energyPower < b.stats.energyPower ? 1 : -1
     }
     return 1
   })
@@ -65,8 +65,8 @@ export const sortOnEnergyPower = (list: Item[]): Item[] => {
 
 export const sortOnEnergyBars = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.energyBars && b.energyBars) {
-      return a.energyBars < b.energyBars ? 1 : -1
+    if (a.stats.energyBars && b.stats.energyBars) {
+      return a.stats.energyBars < b.stats.energyBars ? 1 : -1
     }
     return 1
   })
@@ -74,8 +74,8 @@ export const sortOnEnergyBars = (list: Item[]): Item[] => {
 
 export const sortOnMagicCap = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.magicCap && b.magicCap) {
-      return a.magicCap < b.magicCap ? 1 : -1
+    if (a.stats.magicCap && b.stats.magicCap) {
+      return a.stats.magicCap < b.stats.magicCap ? 1 : -1
     }
     return 1
   })
@@ -83,8 +83,8 @@ export const sortOnMagicCap = (list: Item[]): Item[] => {
 
 export const sortOnMagicPower = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.magicPower && b.magicPower) {
-      return a.magicPower < b.magicPower ? 1 : -1
+    if (a.stats.magicPower && b.stats.magicPower) {
+      return a.stats.magicPower < b.stats.magicPower ? 1 : -1
     }
     return 1
   })
@@ -92,8 +92,8 @@ export const sortOnMagicPower = (list: Item[]): Item[] => {
 
 export const sortOnMagicBars = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.magicBars && b.magicBars) {
-      return a.magicBars < b.magicBars ? 1 : -1
+    if (a.stats.magicBars && b.stats.magicBars) {
+      return a.stats.magicBars < b.stats.magicBars ? 1 : -1
     }
     return 1
   })
@@ -101,8 +101,8 @@ export const sortOnMagicBars = (list: Item[]): Item[] => {
 
 export const sortOnRespawn = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.respawn && b.respawn) {
-      return a.respawn < b.respawn ? 1 : -1
+    if (a.stats.respawn && b.stats.respawn) {
+      return a.stats.respawn < b.stats.respawn ? 1 : -1
     }
     return 1
   })
@@ -110,8 +110,8 @@ export const sortOnRespawn = (list: Item[]): Item[] => {
 
 export const sortOnAdvancedTraining = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.advancedTraining && b.advancedTraining) {
-      return a.advancedTraining < b.advancedTraining ? 1 : -1
+    if (a.stats.advancedTraining && b.stats.advancedTraining) {
+      return a.stats.advancedTraining < b.stats.advancedTraining ? 1 : -1
     }
     return 1
   })
@@ -119,8 +119,8 @@ export const sortOnAdvancedTraining = (list: Item[]): Item[] => {
 
 export const sortOnSeedGain = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.seedGain && b.seedGain) {
-      return a.seedGain < b.seedGain ? 1 : -1
+    if (a.stats.seedGain && b.stats.seedGain) {
+      return a.stats.seedGain < b.stats.seedGain ? 1 : -1
     }
     return 1
   })
@@ -128,8 +128,8 @@ export const sortOnSeedGain = (list: Item[]): Item[] => {
 
 export const sortOnMoveCooldown = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.moveCooldown && b.moveCooldown) {
-      return a.moveCooldown < b.moveCooldown ? 1 : -1
+    if (a.stats.moveCooldown && b.stats.moveCooldown) {
+      return a.stats.moveCooldown < b.stats.moveCooldown ? 1 : -1
     }
     return 1
   })
@@ -137,8 +137,8 @@ export const sortOnMoveCooldown = (list: Item[]): Item[] => {
 
 export const sortOnWandoosSpeed = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.wandoosSpeed && b.wandoosSpeed) {
-      return a.wandoosSpeed < b.wandoosSpeed ? 1 : -1
+    if (a.stats.wandoosSpeed && b.stats.wandoosSpeed) {
+      return a.stats.wandoosSpeed < b.stats.wandoosSpeed ? 1 : -1
     }
     return 1
   })
@@ -146,8 +146,8 @@ export const sortOnWandoosSpeed = (list: Item[]): Item[] => {
 
 export const sortOnNguSpeed = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.nguSpeed && b.nguSpeed) {
-      return a.nguSpeed < b.nguSpeed ? 1 : -1
+    if (a.stats.nguSpeed && b.stats.nguSpeed) {
+      return a.stats.nguSpeed < b.stats.nguSpeed ? 1 : -1
     }
     return 1
   })
@@ -155,8 +155,8 @@ export const sortOnNguSpeed = (list: Item[]): Item[] => {
 
 export const sortOnAugSpeed = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.augSpeed && b.augSpeed) {
-      return a.augSpeed < b.augSpeed ? 1 : -1
+    if (a.stats.augSpeed && b.stats.augSpeed) {
+      return a.stats.augSpeed < b.stats.augSpeed ? 1 : -1
     }
     return 1
   })
@@ -164,8 +164,8 @@ export const sortOnAugSpeed = (list: Item[]): Item[] => {
 
 export const sortOnBeardSpeed = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.beardSpeed && b.beardSpeed) {
-      return a.beardSpeed < b.beardSpeed ? 1 : -1
+    if (a.stats.beardSpeed && b.stats.beardSpeed) {
+      return a.stats.beardSpeed < b.stats.beardSpeed ? 1 : -1
     }
     return 1
   })

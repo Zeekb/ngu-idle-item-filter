@@ -111,6 +111,7 @@ const App = () => {
     ),
   ]
 
+  console.log(useFilter[value])
   return (
     <div className="app-container">
       <div className="filter-container">

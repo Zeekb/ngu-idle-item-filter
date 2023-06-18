@@ -7,7 +7,9 @@ interface LoadoutProps {
 }
 
 const Loadout = (props: LoadoutProps) => {
-  const accessories = props.loadout.filter((item) => item.slot === 'Accessory')
+  const accessories = props.loadout.filter(
+    (item) => item.metadata.slot === 'Accessory',
+  )
   const index = useRef(0)
 
   useEffect(() => {
@@ -18,14 +20,14 @@ const Loadout = (props: LoadoutProps) => {
     let url = `./slots/${slot}Slot.png`
 
     if (slot === 'Accessory' && accessories.length > index.current) {
-      url = accessories[index.current].iconUrl
+      url = accessories[index.current].metadata.iconUrl
       index.current += 1
     } else {
       const item = props.loadout.find(
-        (item) => item.slot === slot && slot !== 'Accessory',
+        (item) => item.metadata.slot === slot && slot !== 'Accessory',
       )
       if (item) {
-        url = item.iconUrl
+        url = item.metadata.iconUrl
       }
     }
 

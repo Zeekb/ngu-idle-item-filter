@@ -10,16 +10,16 @@ interface ItemListerProps {
 
 const displayItemContainers = (list: Item[]): JSX.Element[] => {
   return list.map((item) => {
-    return <ItemContainer key={item.name} item={item} />
+    return <ItemContainer key={item.metadata.name} item={item} />
   })
 }
 
 const getAllItemsByBoost = (list: Item[], boost: string) => {
-  return list.filter((item) => Object.hasOwn(item, boost))
+  return list.filter(({ stats }) => Object.hasOwn(stats, boost))
 }
 
 const getAllItemsBySlot = (list: Item[], slot: string) => {
-  return list.filter((item) => item.slot === slot)
+  return list.filter((item) => item.metadata.slot === slot)
 }
 
 const getAllItemsBySlots = (list: Item[], slots: Slot[]): Item[] => {
@@ -27,7 +27,7 @@ const getAllItemsBySlots = (list: Item[], slots: Slot[]): Item[] => {
 }
 
 const getAllUnfinishedItems = (list: Item[]): Item[] => {
-  return list.filter((item) => item.name.indexOf('*') === -1)
+  return list.filter((item) => item.metadata.name.indexOf('*') === -1)
 }
 
 const getLoadoutFromList = (list: Item[]) => {
@@ -47,7 +47,7 @@ const getLoadoutFromList = (list: Item[]) => {
   ]
   const loadout = [] as Item[]
   for (const item of list) {
-    const slot = item.slot
+    const slot = item.metadata.slot
     if (loadoutSlots.includes(slot) && loadoutSlots.length > 0) {
       loadout.push(item)
       loadoutSlots.splice(loadoutSlots.indexOf(slot), 1)
