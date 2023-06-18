@@ -38,7 +38,11 @@ const ItemContainer = (props: ItemContainerProps) => {
               statValue && (
                 <React.Fragment key={statName}>
                   <div className="prop">{getBoostName(statName)}</div>
-                  <div className="stat">
+                  <div
+                    className={
+                      metadata.name.includes('*') ? 'stat finished' : 'stat'
+                    }
+                  >
                     {statValue}
                     {statName === 'power' || statName === 'toughness'
                       ? ''

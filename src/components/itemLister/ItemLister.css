@@ -27,6 +27,9 @@
   display: inline-block;
   width: 40%;
   border-bottom: 2px groove #c0c0c0;
+}
+
+.finished {
   color: #008000;
 }
 
