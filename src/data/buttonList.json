@@ -1,88 +1,108 @@
 [
   {
     "label": "All Items",
-    "value": 0
+    "value": 0,
+    "isSelected": true
   },
   {
     "label": "Power",
-    "value": 1
+    "value": 1,
+    "isSelected": false
   },
 
   {
     "label": "Energy Cap",
-    "value": 2
+    "value": 2,
+    "isSelected": false
   },
   {
     "label": "Energy Power",
-    "value": 3
+    "value": 3,
+    "isSelected": false
   },
   {
     "label": "Energy Bars",
-    "value": 4
+    "value": 4,
+    "isSelected": false
   },
   {
     "label": "Gold",
-    "value": 5
+    "value": 5,
+    "isSelected": false
   },
   {
     "label": "Drop",
-    "value": 6
+    "value": 6,
+    "isSelected": false
   },
   {
     "label": "Unfinished Items",
-    "value": 7
+    "value": 7,
+    "isSelected": false
   },
   {
     "label": "Toughness",
-    "value": 8
+    "value": 8,
+    "isSelected": false
   },
   {
     "label": "Magic Cap",
-    "value": 9
+    "value": 9,
+    "isSelected": false
   },
   {
     "label": "Magic Power",
-    "value": 10
+    "value": 10,
+    "isSelected": false
   },
 
   {
     "label": "Magic Bars",
-    "value": 11
+    "value": 11,
+    "isSelected": false
   },
 
   {
     "label": "Respawn",
-    "value": 12
+    "value": 12,
+    "isSelected": false
   },
   {
     "label": "Move Cooldown",
-    "value": 13
+    "value": 13,
+    "isSelected": false
   },
   {
     "label": "Advanced Training",
-    "value": 14
+    "value": 14,
+    "isSelected": false
   },
   {
     "label": "Seed Gain",
-    "value": 15
+    "value": 15,
+    "isSelected": false
   },
 
   {
     "label": "Augment Speed",
-    "value": 16
+    "value": 16,
+    "isSelected": false
   },
 
   {
     "label": "Wandoos Speed",
-    "value": 17
+    "value": 17,
+    "isSelected": false
   },
   {
     "label": "Beard Speed",
-    "value": 18
+    "value": 18,
+    "isSelected": false
   },
 
   {
     "label": "NGU Speed",
-    "value": 19
+    "value": 19,
+    "isSelected": false
   }
 ]

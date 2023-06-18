@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, { useState } from 'react'
 import { ButtonGroup, Button } from '@itwin/itwinui-react'
 import { ButtonType } from '../../data/types'
 import buttonData from '../../data/buttonList.json'
@@ -9,7 +9,21 @@ interface FilterButtonsProps {
 }
 
 const FilterButtons = (props: FilterButtonsProps) => {
-  const buttons: ButtonType[] = buttonData as ButtonType[]
+  const [buttons, setButtons] = useState(buttonData as ButtonType[])
+
+  const handleClick = (value: number) => {
+    setButtons((prevButtons) => {
+      console.log(prevButtons)
+      const resetButtons = prevButtons.map((button) =>
+        button.isSelected === true ? { ...button, isSelected: false } : button,
+      )
+      return resetButtons.map((button) => {
+        return button.value === value
+          ? { ...button, isSelected: !button.isSelected }
+          : button
+      })
+    })
+  }
 
   const buttonGroupStyle = {
     flexDirection: 'row' as const,
@@ -25,19 +39,19 @@ const FilterButtons = (props: FilterButtonsProps) => {
     outline: '2px solid',
     lineHeight: 1.4,
   }
-  const selectedButtonStyle = {
-    opacity: 0.3,
-  }
 
   return (
     <ButtonGroup className="button-group" style={buttonGroupStyle}>
       {buttons.map((button: ButtonType) => (
         <Button
-          className="button text"
+          className={
+            button.isSelected ? 'button text' : 'button text deselected'
+          }
           styleType="borderless"
           style={buttonStyle}
           key={button.label}
           onClick={() => {
+            handleClick(button.value)
             props.setValue(button.value)
           }}
         >

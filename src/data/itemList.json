@@ -669,12 +669,10 @@
     },
     "stats": {
       "power": 4158000,
-      "stats": {
-        "toughness": 183000,
-        "magicBars": 1200,
-        "magicCap": 204.97,
-        "magicPower": 2000
-      }
+      "toughness": 183000,
+      "magicBars": 1200,
+      "magicCap": 204.97,
+      "magicPower": 2000
     }
   },
   {
