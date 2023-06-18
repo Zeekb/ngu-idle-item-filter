@@ -1,32 +1,12 @@
 import React, { useState } from 'react'
 import {
   ItemLister,
-  getAllUnfinishedItems,
-  getAllItemsBySlots,
-  getAllItemsByBoost,
-  getLoadoutFromList,
+  getUnfinished,
+  getBySlots,
+  getByBoost,
+  getLoadout,
 } from '../itemLister/ItemLister'
-import {
-  sortOnAdvancedTraining,
-  sortOnAugSpeed,
-  sortOnBeardSpeed,
-  sortOnDrop,
-  sortOnEnergyBars,
-  sortOnEnergyCap,
-  sortOnEnergyPower,
-  sortOnGold,
-  sortOnId,
-  sortOnMagicBars,
-  sortOnMagicCap,
-  sortOnMagicPower,
-  sortOnMoveCooldown,
-  sortOnNguSpeed,
-  sortOnPower,
-  sortOnRespawn,
-  sortOnSeedGain,
-  sortOnToughness,
-  sortOnWandoosSpeed,
-} from '../../data/sorts'
+import Sorts from '../../data/sorts'
 import FilterButtons from '../LoadoutFilter/FilterButtons'
 import { Item, Slot } from '../../data/types'
 import LoadoutFilter from '../LoadoutFilter/LoadoutFilter'
@@ -37,6 +17,7 @@ import Loadout from '../Loadout/Loadout'
 const App = () => {
   const [value, setValue] = useState(0)
   const items = itemData as Item[]
+  const sorts = new Sorts()
   const [slotFilter, setSlotFilter] = useState([
     'Head',
     'Chest',
@@ -46,72 +27,32 @@ const App = () => {
     'Accessory',
   ] as Slot[])
 
-  //TODO: move out the annoying 3 extra functions I need for each function
+  const filteredItems = (boost: string) =>
+    getByBoost(getBySlots(items, slotFilter), boost)
+
   const useFilter: Item[][] = [
-    sortOnId(getAllItemsBySlots(items, slotFilter)),
-    sortOnPower(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'power'),
-    ),
-    sortOnEnergyCap(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'energyCap'),
-    ),
-
-    sortOnEnergyPower(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'energyPower'),
-    ),
-
-    sortOnEnergyBars(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'energyBars'),
-    ),
-    sortOnGold(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'gold'),
-    ),
-    sortOnDrop(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'drop'),
-    ),
-    sortOnId(getAllUnfinishedItems(items)),
-    sortOnToughness(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'toughness'),
-    ),
-    sortOnMagicCap(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magicCap'),
-    ),
-    sortOnMagicPower(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magicPower'),
-    ),
-    sortOnMagicBars(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magicBars'),
-    ),
-    sortOnRespawn(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'respawn'),
-    ),
-    sortOnMoveCooldown(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'moveCooldown'),
-    ),
-    sortOnAdvancedTraining(
-      getAllItemsByBoost(
-        getAllItemsBySlots(items, slotFilter),
-        'advancedTraining',
-      ),
-    ),
-    sortOnSeedGain(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'seedGain'),
-    ),
-    sortOnAugSpeed(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'augSpeed'),
-    ),
-    sortOnWandoosSpeed(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'wandoosSpeed'),
-    ),
-    sortOnBeardSpeed(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'beardSpeed'),
-    ),
-    sortOnNguSpeed(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'nguSpeed'),
-    ),
+    sorts.sortOnId(getBySlots(items, slotFilter)),
+    sorts.sortOnPower(filteredItems('power')),
+    sorts.sortOnEnergyCap(filteredItems('energyCap')),
+    sorts.sortOnEnergyPower(filteredItems('energyPower')),
+    sorts.sortOnEnergyBars(filteredItems('energyBars')),
+    sorts.sortOnGold(filteredItems('gold')),
+    sorts.sortOnDrop(filteredItems('drop')),
+    sorts.sortOnId(getUnfinished(items)),
+    sorts.sortOnToughness(filteredItems('toughness')),
+    sorts.sortOnMagicCap(filteredItems('magicCap')),
+    sorts.sortOnMagicPower(filteredItems('magicPower')),
+    sorts.sortOnMagicBars(filteredItems('magicBars')),
+    sorts.sortOnRespawn(filteredItems('respawn')),
+    sorts.sortOnMoveCooldown(filteredItems('moveCooldown')),
+    sorts.sortOnAdvancedTraining(filteredItems('advancedTraining')),
+    sorts.sortOnSeedGain(filteredItems('seedGain')),
+    sorts.sortOnAugSpeed(filteredItems('augSpeed')),
+    sorts.sortOnWandoosSpeed(filteredItems('wandoosSpeed')),
+    sorts.sortOnBeardSpeed(filteredItems('beardSpeed')),
+    sorts.sortOnNguSpeed(filteredItems('nguSpeed')),
   ]
 
-  console.log(useFilter[value])
   return (
     <div className="app-container">
       <div className="filter-container">
@@ -124,7 +65,7 @@ const App = () => {
       </div>
       <div className="item-container loadout-container text">
         <LoadoutFilter slotFilter={slotFilter} setSlotFilter={setSlotFilter} />
-        <Loadout loadout={getLoadoutFromList(useFilter[value])} />
+        <Loadout loadout={getLoadout(useFilter[value])} />
       </div>
     </div>
   )

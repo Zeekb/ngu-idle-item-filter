@@ -3,6 +3,14 @@ import { Slot } from '../../data/types'
 import './loadoutFilter.css'
 import { Button } from '@itwin/itwinui-react'
 
+const buttonStyle = {
+  width: '90%',
+  marginTop: '12px',
+  backgroundColor: '#DDD',
+  outline: '2px solid',
+  lineHeight: 1.4,
+}
+
 interface LoadoutFilterProps {
   slotFilter: Slot[]
   setSlotFilter: React.Dispatch<React.SetStateAction<Slot[]>>
@@ -10,6 +18,15 @@ interface LoadoutFilterProps {
 
 const LoadoutFilter = (props: LoadoutFilterProps) => {
   const { slotFilter, setSlotFilter } = props
+  const slotClassName = 'item-icon loadout-slot'
+  const fullSlots: Slot[] = [
+    'Accessory',
+    'Head',
+    'Chest',
+    'Legs',
+    'Boots',
+    'Weapon',
+  ]
 
   const handleSetSlots = (slot: Slot) => {
     slotFilter.includes(slot)
@@ -17,88 +34,28 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
       : setSlotFilter([...slotFilter, slot])
   }
 
-  const buttonStyle = {
-    width: '90%',
-    marginTop: '12px',
-    backgroundColor: '#DDD',
-    outline: '2px solid',
-    lineHeight: 1.4,
-  }
-
-  //TODO: make each stat div into a button that filters????????!!!!!!!!
   return (
     <>
       <h3>Loadout Filter</h3>
       <div className="grid">
-        <img
-          className={
-            slotFilter.includes('Accessory')
-              ? 'item-icon loadout-slot'
-              : 'item-icon loadout-slot deselected'
-          }
-          src="./slots/AccessorySlot.png"
-          onClick={() => handleSetSlots('Accessory')}
-        ></img>
-        <img
-          className={
-            slotFilter.includes('Head')
-              ? 'item-icon loadout-slot'
-              : 'item-icon loadout-slot deselected'
-          }
-          src="./slots/HeadSlot.png"
-          onClick={() => handleSetSlots('Head')}
-        ></img>
-        <img
-          className={
-            slotFilter.includes('Chest')
-              ? 'item-icon loadout-slot'
-              : 'item-icon loadout-slot deselected'
-          }
-          src="./slots/ChestSlot.png"
-          onClick={() => handleSetSlots('Chest')}
-        ></img>
-        <img
-          className={
-            slotFilter.includes('Legs')
-              ? 'item-icon loadout-slot'
-              : 'item-icon loadout-slot deselected'
-          }
-          src="./slots/LegsSlot.png"
-          onClick={() => handleSetSlots('Legs')}
-        ></img>
-        <img
-          className={
-            slotFilter.includes('Boots')
-              ? 'item-icon loadout-slot'
-              : 'item-icon loadout-slot deselected'
-          }
-          src="./slots/BootsSlot.png"
-          onClick={() => handleSetSlots('Boots')}
-        ></img>
-        <img
-          className={
-            slotFilter.includes('Weapon')
-              ? 'item-icon loadout-slot'
-              : 'item-icon loadout-slot deselected'
-          }
-          src="./slots/WeaponSlot.png"
-          onClick={() => handleSetSlots('Weapon')}
-        ></img>
+        {fullSlots.map((slot) => (
+          <img
+            key={slot}
+            className={
+              slotFilter.includes(slot)
+                ? slotClassName
+                : slotClassName + ' deselected'
+            }
+            src={`./slots/${slot}Slot.png`}
+            onClick={() => handleSetSlots(slot)}
+          />
+        ))}
       </div>
       <Button
         className="button text"
         styleType="borderless"
         style={buttonStyle}
-        onClick={() =>
-          setSlotFilter([
-            'Head',
-            'Chest',
-            'Legs',
-            'Boots',
-            'Weapon',
-            'Accessory',
-          ])
-        }
+        onClick={() => setSlotFilter(fullSlots)}
       >
         Reset
       </Button>

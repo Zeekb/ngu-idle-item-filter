@@ -4,7 +4,8 @@ import { Item } from '../../data/types'
 interface ItemContainerProps {
   item: Item
 }
-
+// TODO: fix this mess
+//TODO: make each stat div into a button that filters?
 const ItemContainer = (props: ItemContainerProps) => {
   const { item } = props
   return (

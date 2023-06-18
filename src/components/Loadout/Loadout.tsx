@@ -7,10 +7,10 @@ interface LoadoutProps {
 }
 
 const Loadout = (props: LoadoutProps) => {
+  const index = useRef(0)
   const accessories = props.loadout.filter(
     (item) => item.metadata.slot === 'Accessory',
   )
-  const index = useRef(0)
 
   useEffect(() => {
     index.current = 0
@@ -18,7 +18,6 @@ const Loadout = (props: LoadoutProps) => {
 
   const getSlotUrl = (slot: Slot): string => {
     let url = `./slots/${slot}Slot.png`
-
     if (slot === 'Accessory' && accessories.length > index.current) {
       url = accessories[index.current].metadata.iconUrl
       index.current += 1
@@ -26,21 +25,18 @@ const Loadout = (props: LoadoutProps) => {
       const item = props.loadout.find(
         (item) => item.metadata.slot === slot && slot !== 'Accessory',
       )
-      if (item) {
-        url = item.metadata.iconUrl
-      }
+      if (item) url = item.metadata.iconUrl
     }
-
     return url
   }
 
   return (
     <div className="loadout-grid">
-      <div className="loadout-row two-slots">
+      <div className="loadout-row">
         <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
         <img className="item-icon loadout" src={getSlotUrl('Head')} />
       </div>
-      <div className="loadout-row four-slots">
+      <div className="loadout-row">
         <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
         <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
         <img className="item-icon loadout" src={getSlotUrl('Chest')} />

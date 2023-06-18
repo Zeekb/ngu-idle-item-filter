@@ -1,9 +1,3 @@
-export type ButtonType = {
-  label: string
-  value: number
-  isSelected: boolean
-}
-
 export type Slot = 'Head' | 'Chest' | 'Legs' | 'Boots' | 'Weapon' | 'Accessory'
 
 export type Item = {
@@ -33,4 +27,10 @@ export type Item = {
     augSpeed?: number
     beardSpeed?: number
   }
+}
+
+export type ButtonType = {
+  label: string
+  value: number
+  isSelected: boolean
 }

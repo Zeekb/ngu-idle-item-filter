@@ -14,23 +14,23 @@ const displayItemContainers = (list: Item[]): JSX.Element[] => {
   })
 }
 
-const getAllItemsByBoost = (list: Item[], boost: string) => {
+const getByBoost = (list: Item[], boost: string) => {
   return list.filter(({ stats }) => Object.hasOwn(stats, boost))
 }
 
-const getAllItemsBySlot = (list: Item[], slot: string) => {
+const getBySlot = (list: Item[], slot: string) => {
   return list.filter((item) => item.metadata.slot === slot)
 }
 
-const getAllItemsBySlots = (list: Item[], slots: Slot[]): Item[] => {
-  return slots.map((slot) => getAllItemsBySlot(list, slot)).flat()
+const getBySlots = (list: Item[], slots: Slot[]): Item[] => {
+  return slots.map((slot) => getBySlot(list, slot)).flat()
 }
 
-const getAllUnfinishedItems = (list: Item[]): Item[] => {
+const getUnfinished = (list: Item[]): Item[] => {
   return list.filter((item) => item.metadata.name.indexOf('*') === -1)
 }
 
-const getLoadoutFromList = (list: Item[]) => {
+const getLoadout = (list: Item[]) => {
   const loadoutSlots = [
     'Head',
     'Chest',
@@ -61,11 +61,4 @@ const ItemLister = (props: ItemListerProps) => {
 
   return <>{displayItemContainers(filter)}</>
 }
-export {
-  ItemLister,
-  getAllUnfinishedItems,
-  getAllItemsBySlot,
-  getAllItemsBySlots,
-  getAllItemsByBoost,
-  getLoadoutFromList,
-}
+export { ItemLister, getUnfinished, getBySlots, getByBoost, getLoadout }

@@ -11,9 +11,6 @@
   justify-content: center;
 }
 
-.buttons-container {
-}
-
 .filter-container {
   width: calc(80% - 40px);
   float: left;
@@ -35,5 +32,5 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium';
 }
