@@ -22,7 +22,10 @@ const ItemContainer = (props: ItemContainerProps) => {
     <div key={metadata.name} className="item-container">
       <div style={{ height: '100%' }}>
         <div className="title-container">
-          {metadata.id} | {metadata.name}
+          {metadata.id} |{' '}
+          {metadata.name.includes('*')
+            ? metadata.name.slice(0, -1)
+            : metadata.name}
         </div>
         <div className="icon-container">
           <img
@@ -43,7 +46,7 @@ const ItemContainer = (props: ItemContainerProps) => {
                       metadata.name.includes('*') ? 'stat finished' : 'stat'
                     }
                   >
-                    {statValue}
+                    {statValue.toLocaleString()}
                     {statName === 'power' || statName === 'toughness'
                       ? ''
                       : '%'}
