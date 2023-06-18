@@ -21,59 +21,59 @@
     "value": 4
   },
   {
-    "label": "Drop",
+    "label": "Gold",
     "value": 5
   },
   {
-    "label": "Respawn",
+    "label": "Drop",
     "value": 6
   },
   {
-    "label": "Seed Gain",
+    "label": "Unfinished Items",
     "value": 7
   },
   {
-    "label": "Wandoos Speed",
+    "label": "Toughness",
     "value": 8
   },
   {
-    "label": "Augment Speed",
+    "label": "Magic Cap",
     "value": 9
   },
   {
-    "label": "Unfinished Items",
+    "label": "Magic Power",
     "value": 10
   },
 
   {
-    "label": "Toughness",
+    "label": "Magic Bars",
     "value": 11
   },
 
   {
-    "label": "Magic Cap",
+    "label": "Respawn",
     "value": 12
   },
   {
-    "label": "Magic Power",
+    "label": "Move Cooldown",
     "value": 13
   },
   {
-    "label": "Magic Bars",
+    "label": "Advanced Training",
     "value": 14
   },
   {
-    "label": "Gold",
+    "label": "Seed Gain",
     "value": 15
   },
 
   {
-    "label": "Advanced Training",
+    "label": "Augment Speed",
     "value": 16
   },
 
   {
-    "label": "Move Cooldown",
+    "label": "Wandoos Speed",
     "value": 17
   },
   {

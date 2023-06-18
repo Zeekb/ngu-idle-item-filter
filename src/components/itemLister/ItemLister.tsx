@@ -41,6 +41,32 @@ const getAllUnfinishedItems = (list: Item[]): Item[] => {
   return list.filter((item) => item.name.indexOf('*') === -1)
 }
 
+const getLoadoutFromList = (list: Item[]) => {
+  const loadoutSlots = [
+    'Head',
+    'Chest',
+    'Legs',
+    'Boots',
+    'Weapon',
+    'Accessory',
+    'Accessory',
+    'Accessory',
+    'Accessory',
+    'Accessory',
+    'Accessory',
+    'Accessory',
+  ]
+  const loadout = [] as Item[]
+  for (const item of list) {
+    const slot = item.slot
+    if (loadoutSlots.includes(slot) && loadoutSlots.length > 0) {
+      loadout.push(item)
+      loadoutSlots.splice(loadoutSlots.indexOf(slot), 1)
+    }
+  }
+  return loadout
+}
+
 const ItemLister = (props: ItemListerProps) => {
   const { filter } = props
 
@@ -52,4 +78,5 @@ export {
   getAllItemsBySlot,
   getAllItemsBySlots,
   getAllItemsByBoost,
+  getLoadoutFromList,
 }

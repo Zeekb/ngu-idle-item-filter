@@ -128,7 +128,7 @@
   {
     "iconUrl": "./items/139.webp",
     "id": 139,
-    "name": "Ring of Way Too Much Energy*",
+    "name": "Ring of Way Too Much energy*",
     "slot": "Accessory",
     "power": 2000,
     "toughness": 2000,
@@ -141,7 +141,7 @@
   {
     "iconUrl": "./items/140.webp",
     "id": 140,
-    "name": "Ring of Way Too Much Magic*",
+    "name": "Ring of Way Too Much magic*",
     "slot": "Accessory",
     "magic": {
       "cap": 80,
@@ -336,30 +336,30 @@
     "id": 160,
     "name": "Fanny Pack",
     "slot": "Accessory",
-    "power": 24450,
-    "toughness": 24450,
+    "power": 30000,
+    "toughness": 30000,
     "energy": {
-      "cap": 48.9,
-      "power": 815
+      "cap": 49.2,
+      "power": 820
     },
     "magic": {
-      "cap": 48.9,
-      "power": 815
+      "cap": 49.2,
+      "power": 820
     },
-    "drop": 48.9
+    "drop": 49.2
   },
   {
     "iconUrl": "./items/161.webp",
     "id": 161,
     "name": "Dorky Glasses",
     "slot": "Accessory",
-    "power": 6350,
-    "toughness": 6350,
+    "power": 7600,
+    "toughness": 7600,
     "energy": {
-      "bars": 635
+      "bars": 679.01
     },
     "magic": {
-      "bars": 635
+      "bars": 679.01
     },
     "nguSpeed": 190.5,
     "wandoosSpeed": 152.4
@@ -601,5 +601,116 @@
       "power": 1380
     },
     "beardSpeed": 34.5
+  },
+  {
+    "iconUrl": "./items/188.webp",
+    "id": 188,
+    "name": "The Fists of Flubber",
+    "slot": "Weapon",
+    "power": 3590767,
+    "toughness": 183000,
+    "magic": {
+      "bars": 1200,
+      "cap": 204.97,
+      "power": 2000
+    }
+  },
+  {
+    "iconUrl": "./items/184.webp",
+    "id": 184,
+    "name": "Slimy Helmet",
+    "slot": "Head",
+    "power": 18260,
+    "toughness": 401720,
+    "energy": {
+      "power": 1412.57
+    },
+    "magic": {
+      "cap": 150,
+      "power": 1412.57,
+      "bars": 1000
+    }
+  },
+  {
+    "iconUrl": "./items/185.webp",
+    "id": 185,
+    "name": "Slimy Chest",
+    "slot": "Chest",
+    "power": 21120,
+    "toughness": 480000,
+    "energy": {
+      "cap": 150,
+      "bars": 1200
+    },
+    "magic": {
+      "cap": 150,
+      "power": 1400
+    }
+  },
+  {
+    "iconUrl": "./items/186.webp",
+    "id": 186,
+    "name": "Slimy Pants",
+    "slot": "Legs",
+    "power": 16500,
+    "toughness": 404250,
+    "energy": {
+      "cap": 160,
+      "power": 1800,
+      "bars": 1082.39
+    },
+    "magic": {
+      "bars": 1082.39
+    }
+  },
+  {
+    "iconUrl": "./items/187.webp",
+    "id": 187,
+    "name": "Slimy Boots",
+    "slot": "Boots",
+    "power": 17200,
+    "toughness": 412800,
+    "energy": {
+      "cap": 140,
+      "power": 1400,
+      "bars": 1400
+    },
+    "magic": {
+      "cap": 140,
+      "power": 1400,
+      "bars": 1400
+    }
+  },
+  {
+    "iconUrl": "./items/178.webp",
+    "id": 178,
+    "name": "The Stealthiest Armour",
+    "slot": "Chest",
+    "power": 9840,
+    "toughness": 184500,
+    "energy": {
+      "cap": 231.44,
+      "bars": 2460
+    },
+    "magic": {
+      "cap": 231.44,
+      "bars": 2460
+    },
+    "nguSpeed": 200
+  },
+  {
+    "iconUrl": "./items/189.webp",
+    "id": 189,
+    "name": "A Bald Egg",
+    "slot": "Accessory",
+    "power": 47332,
+    "toughness": 47332,
+    "energy": {
+      "cap": 150
+    },
+    "magic": {
+      "cap": 150
+    },
+    "wandoosSpeed": 200
   }
 ]

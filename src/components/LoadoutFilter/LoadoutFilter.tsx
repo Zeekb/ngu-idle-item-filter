@@ -4,31 +4,27 @@ import './loadoutFilter.css'
 import { Button } from '@itwin/itwinui-react'
 
 interface LoadoutFilterProps {
-  slots: Slot[]
-  setSlots: React.Dispatch<React.SetStateAction<Slot[]>>
+  slotFilter: Slot[]
+  setSlotFilter: React.Dispatch<React.SetStateAction<Slot[]>>
 }
 
 const LoadoutFilter = (props: LoadoutFilterProps) => {
-  const { slots, setSlots } = props
+  const { slotFilter, setSlotFilter } = props
 
   const handleSetSlots = (slot: Slot) => {
-    slots.includes(slot)
-      ? setSlots(slots.filter((slot_) => slot_ !== slot))
-      : setSlots([...slots, slot])
+    slotFilter.includes(slot)
+      ? setSlotFilter(slotFilter.filter((slot_) => slot_ !== slot))
+      : setSlotFilter([...slotFilter, slot])
   }
 
   const buttonStyle = {
     width: '90%',
     marginTop: '12px',
     backgroundColor: '#DDD',
-    outline: '4px solid',
+    outline: '2px solid',
     lineHeight: 1.4,
   }
 
-  //TODO: make them buttons that get grayed out when deselected
-  //TODO: make the grayed out buttons in paint
-
-  //TODO: rename all images to id
   //TODO: make each stat div into a button that filters????????!!!!!!!!
   return (
     <>
@@ -36,7 +32,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
       <div className="grid">
         <img
           className={
-            slots.includes('Accessory')
+            slotFilter.includes('Accessory')
               ? 'item-icon loadout-slot'
               : 'item-icon loadout-slot deselected'
           }
@@ -45,7 +41,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         ></img>
         <img
           className={
-            slots.includes('Head')
+            slotFilter.includes('Head')
               ? 'item-icon loadout-slot'
               : 'item-icon loadout-slot deselected'
           }
@@ -54,7 +50,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         ></img>
         <img
           className={
-            slots.includes('Chest')
+            slotFilter.includes('Chest')
               ? 'item-icon loadout-slot'
               : 'item-icon loadout-slot deselected'
           }
@@ -63,7 +59,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         ></img>
         <img
           className={
-            slots.includes('Legs')
+            slotFilter.includes('Legs')
               ? 'item-icon loadout-slot'
               : 'item-icon loadout-slot deselected'
           }
@@ -72,7 +68,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         ></img>
         <img
           className={
-            slots.includes('Boots')
+            slotFilter.includes('Boots')
               ? 'item-icon loadout-slot'
               : 'item-icon loadout-slot deselected'
           }
@@ -81,7 +77,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         ></img>
         <img
           className={
-            slots.includes('Weapon')
+            slotFilter.includes('Weapon')
               ? 'item-icon loadout-slot'
               : 'item-icon loadout-slot deselected'
           }
@@ -94,7 +90,14 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         styleType="borderless"
         style={buttonStyle}
         onClick={() =>
-          setSlots(['Head', 'Chest', 'Legs', 'Boots', 'Weapon', 'Accessory'])
+          setSlotFilter([
+            'Head',
+            'Chest',
+            'Legs',
+            'Boots',
+            'Weapon',
+            'Accessory',
+          ])
         }
       >
         Reset

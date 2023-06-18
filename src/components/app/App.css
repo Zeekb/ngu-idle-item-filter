@@ -15,14 +15,14 @@
 }
 
 .filter-container {
-  width: calc(80% - 40px);
+  width: calc(76% - 40px);
   float: left;
 }
 
 .loadout-container {
   margin-top: 20px;
   margin-right: 80px;
-  width: calc(20% - 40px - 80px);
+  width: calc(24% - 40px - 80px);
   height: auto;
   float: right;
   align-content: center;

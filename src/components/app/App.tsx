@@ -4,6 +4,7 @@ import {
   getAllUnfinishedItems,
   getAllItemsBySlots,
   getAllItemsByBoost,
+  getLoadoutFromList,
 } from '../itemLister/ItemLister'
 import {
   sortOnAdvancedTraining,
@@ -31,11 +32,12 @@ import { Item, Slot } from '../../data/types'
 import LoadoutFilter from '../LoadoutFilter/LoadoutFilter'
 import itemData from '../../data/itemList.json'
 import './App.css'
+import Loadout from '../Loadout/Loadout'
 
 const App = () => {
   const [value, setValue] = useState(0)
   const items = itemData as Item[]
-  const [slots, setSlots] = useState([
+  const [slotFilter, setSlotFilter] = useState([
     'Head',
     'Chest',
     'Legs',
@@ -46,113 +48,88 @@ const App = () => {
 
   //TODO: move out the annoying 3 extra functions I need for each function
   const useFilter: Item[][] = [
-    sortOnId(getAllItemsBySlots(items, slots)),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnPower(getAllItemsByBoost(items, 'power')),
-        slots,
+    sortOnId(getAllItemsBySlots(items, slotFilter)),
+    sortOnPower(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'power'),
+    ),
+    sortOnEnergyCap(
+      getAllItemsByBoost(
+        getAllItemsBySlots(items, slotFilter),
+        'energy',
+        'cap',
       ),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnEnergyCap(getAllItemsByBoost(items, 'energy', 'cap')),
-        slots,
+
+    sortOnEnergyPower(
+      getAllItemsByBoost(
+        getAllItemsBySlots(items, slotFilter),
+        'energy',
+        'power',
       ),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnEnergyPower(getAllItemsByBoost(items, 'energy', 'power')),
-        slots,
+
+    sortOnEnergyBars(
+      getAllItemsByBoost(
+        getAllItemsBySlots(items, slotFilter),
+        'energy',
+        'bars',
       ),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnEnergyBars(getAllItemsByBoost(items, 'energy', 'bars')),
-        slots,
+    sortOnGold(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'gold'),
+    ),
+    sortOnDrop(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'drop'),
+    ),
+    sortOnId(getAllUnfinishedItems(items)),
+    sortOnToughness(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'toughness'),
+    ),
+    sortOnMagicCap(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magic', 'cap'),
+    ),
+    sortOnMagicPower(
+      getAllItemsByBoost(
+        getAllItemsBySlots(items, slotFilter),
+        'magic',
+        'power',
       ),
     ),
-    sortOnId(
-      getAllItemsBySlots(sortOnDrop(getAllItemsByBoost(items, 'drop')), slots),
-    ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnRespawn(getAllItemsByBoost(items, 'respawn')),
-        slots,
+    sortOnMagicBars(
+      getAllItemsByBoost(
+        getAllItemsBySlots(items, slotFilter),
+        'magic',
+        'bars',
       ),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnSeedGain(getAllItemsByBoost(items, 'seedGain')),
-        slots,
+    sortOnRespawn(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'respawn'),
+    ),
+    sortOnMoveCooldown(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'moveCooldown'),
+    ),
+    sortOnAdvancedTraining(
+      getAllItemsByBoost(
+        getAllItemsBySlots(items, slotFilter),
+        'advancedTraining',
       ),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnWandoosSpeed(getAllItemsByBoost(items, 'wandoosSpeed')),
-        slots,
-      ),
+    sortOnSeedGain(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'seedGain'),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnAugSpeed(getAllItemsByBoost(items, 'augSpeed')),
-        slots,
-      ),
+    sortOnAugSpeed(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'augSpeed'),
     ),
-    sortOnId(getAllItemsBySlots(getAllUnfinishedItems(items), slots)),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnToughness(getAllItemsByBoost(items, 'toughness')),
-        slots,
-      ),
+    sortOnWandoosSpeed(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'wandoosSpeed'),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnMagicCap(getAllItemsByBoost(items, 'magic', 'cap')),
-        slots,
-      ),
+    sortOnBeardSpeed(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'beardSpeed'),
     ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnMagicPower(getAllItemsByBoost(items, 'magic', 'power')),
-        slots,
-      ),
-    ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnMagicBars(getAllItemsByBoost(items, 'magic', 'bars')),
-        slots,
-      ),
-    ),
-    sortOnId(
-      getAllItemsBySlots(sortOnGold(getAllItemsByBoost(items, 'gold')), slots),
-    ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnAdvancedTraining(getAllItemsByBoost(items, 'advancedTraining')),
-        slots,
-      ),
-    ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnMoveCooldown(getAllItemsByBoost(items, 'moveCooldown')),
-        slots,
-      ),
-    ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnBeardSpeed(getAllItemsByBoost(items, 'beardSpeed')),
-        slots,
-      ),
-    ),
-    sortOnId(
-      getAllItemsBySlots(
-        sortOnNguSpeed(getAllItemsByBoost(items, 'nguSpeed')),
-        slots,
-      ),
+    sortOnNguSpeed(
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'nguSpeed'),
     ),
   ]
-
-  console.log(getAllItemsBySlots(items, slots))
 
   return (
     <div className="app-container">
@@ -165,7 +142,8 @@ const App = () => {
         </div>
       </div>
       <div className="item-container loadout-container text">
-        <LoadoutFilter slots={slots} setSlots={setSlots} />
+        <LoadoutFilter slotFilter={slotFilter} setSlotFilter={setSlotFilter} />
+        <Loadout loadout={getLoadoutFromList(useFilter[value])} />
       </div>
     </div>
   )

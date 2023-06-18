@@ -22,8 +22,11 @@ const FilterButtons = (props: FilterButtonsProps) => {
     width: '160px',
     margin: '6px',
     backgroundColor: '#DDD',
-    outline: '4px solid',
+    outline: '2px solid',
     lineHeight: 1.4,
+  }
+  const selectedButtonStyle = {
+    opacity: 0.3,
   }
 
   return (

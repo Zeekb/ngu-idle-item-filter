@@ -3,7 +3,7 @@
   margin: 11px;
   width: 284px;
   background-color: #c0c0c0;
-  outline: 4px solid;
+  outline: 2px solid;
   border-radius: 2px;
   padding: 20px;
   text-align: center;
@@ -11,8 +11,8 @@
 
 .item-icon {
   width: 60px;
-  outline: 3px solid;
-  outline-offset: -3px;
+  outline: 2px solid;
+  outline-offset: -2px;
 }
 
 .prop {
@@ -27,6 +27,7 @@
   display: inline-block;
   width: 50%;
   border-bottom: 2px groove #c0c0c0;
+  color: #008000;
 }
 
 .title-container {
