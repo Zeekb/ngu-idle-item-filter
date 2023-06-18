@@ -536,7 +536,7 @@
     "stats": {
       "power": 10000,
       "toughness": 230000,
-      "energyPpower": 1800,
+      "energyPower": 1800,
       "energyBars": 3800,
       "magicPower": 1800,
       "magicBars": 1600

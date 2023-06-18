@@ -29,7 +29,6 @@ const FilterButtons = (props: FilterButtonsProps) => {
 
   const handleClick = (value: number) => {
     setButtons((prevButtons) => {
-      console.log(prevButtons)
       const resetButtons = prevButtons.map((button) =>
         button.isSelected === true ? { ...button, isSelected: false } : button,
       )
