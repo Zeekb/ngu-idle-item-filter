@@ -47,8 +47,8 @@ export const sortOnGold = (list: Item[]): Item[] => {
 
 export const sortOnEnergyCap = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.energy?.cap && b.energy?.cap) {
-      return a.energy.cap < b.energy.cap ? 1 : -1
+    if (a.energyCap && b.energyCap) {
+      return a.energyCap < b.energyCap ? 1 : -1
     }
     return 1
   })
@@ -56,8 +56,8 @@ export const sortOnEnergyCap = (list: Item[]): Item[] => {
 
 export const sortOnEnergyPower = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.energy?.power && b.energy?.power) {
-      return a.energy?.power < b.energy?.power ? 1 : -1
+    if (a.energyPower && b.energyPower) {
+      return a.energyPower < b.energyPower ? 1 : -1
     }
     return 1
   })
@@ -65,8 +65,8 @@ export const sortOnEnergyPower = (list: Item[]): Item[] => {
 
 export const sortOnEnergyBars = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.energy?.bars && b.energy?.bars) {
-      return a.energy?.bars < b.energy?.bars ? 1 : -1
+    if (a.energyBars && b.energyBars) {
+      return a.energyBars < b.energyBars ? 1 : -1
     }
     return 1
   })
@@ -74,8 +74,8 @@ export const sortOnEnergyBars = (list: Item[]): Item[] => {
 
 export const sortOnMagicCap = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.magic?.cap && b.magic?.cap) {
-      return a.magic?.cap < b.magic?.cap ? 1 : -1
+    if (a.magicCap && b.magicCap) {
+      return a.magicCap < b.magicCap ? 1 : -1
     }
     return 1
   })
@@ -83,8 +83,8 @@ export const sortOnMagicCap = (list: Item[]): Item[] => {
 
 export const sortOnMagicPower = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.magic?.power && b.magic?.power) {
-      return a.magic?.power < b.magic?.power ? 1 : -1
+    if (a.magicPower && b.magicPower) {
+      return a.magicPower < b.magicPower ? 1 : -1
     }
     return 1
   })
@@ -92,8 +92,8 @@ export const sortOnMagicPower = (list: Item[]): Item[] => {
 
 export const sortOnMagicBars = (list: Item[]): Item[] => {
   return list.sort((a, b) => {
-    if (a.magic?.bars && b.magic?.bars) {
-      return a.magic?.bars < b.magic?.bars ? 1 : -1
+    if (a.magicBars && b.magicBars) {
+      return a.magicBars < b.magicBars ? 1 : -1
     }
     return 1
   })

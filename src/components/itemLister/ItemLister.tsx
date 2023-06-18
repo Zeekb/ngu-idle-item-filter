@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, Slot, Stat } from '../../data/types'
+import { Item, Slot } from '../../data/types'
 import ItemContainer from './ItemContainer'
 
 import './ItemLister.css'
@@ -14,19 +14,8 @@ const displayItemContainers = (list: Item[]): JSX.Element[] => {
   })
 }
 
-const getAllItemsByBoost = (
-  list: Item[],
-  boost: string,
-  secondaryBoost?: string,
-) => {
-  return list.filter((item) => {
-    const stat = item[boost === 'energy' ? 'energy' : 'magic']
-    if (secondaryBoost && stat) {
-      return Object.hasOwn(stat as Stat, secondaryBoost)
-    } else {
-      return Object.hasOwn(item, boost)
-    }
-  })
+const getAllItemsByBoost = (list: Item[], boost: string) => {
+  return list.filter((item) => Object.hasOwn(item, boost))
 }
 
 const getAllItemsBySlot = (list: Item[], slot: string) => {

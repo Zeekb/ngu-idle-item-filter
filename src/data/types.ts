@@ -1,9 +1,3 @@
-export type Stat = {
-  bars?: number
-  power?: number
-  cap?: number
-}
-
 export type ButtonType = {
   label: string
   value: number
@@ -18,8 +12,12 @@ export type Item = {
   slot: Slot
   power?: number
   toughness?: number
-  energy?: Stat
-  magic?: Stat
+  energyCap?: number
+  energyPower?: number
+  energyBars?: number
+  magicCap?: number
+  magicPower?: number
+  magicBars?: number
   drop?: number
   gold?: number
   respawn?: number

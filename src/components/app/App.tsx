@@ -53,27 +53,15 @@ const App = () => {
       getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'power'),
     ),
     sortOnEnergyCap(
-      getAllItemsByBoost(
-        getAllItemsBySlots(items, slotFilter),
-        'energy',
-        'cap',
-      ),
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'energyCap'),
     ),
 
     sortOnEnergyPower(
-      getAllItemsByBoost(
-        getAllItemsBySlots(items, slotFilter),
-        'energy',
-        'power',
-      ),
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'energyPower'),
     ),
 
     sortOnEnergyBars(
-      getAllItemsByBoost(
-        getAllItemsBySlots(items, slotFilter),
-        'energy',
-        'bars',
-      ),
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'energyBars'),
     ),
     sortOnGold(
       getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'gold'),
@@ -86,21 +74,13 @@ const App = () => {
       getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'toughness'),
     ),
     sortOnMagicCap(
-      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magic', 'cap'),
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magicCap'),
     ),
     sortOnMagicPower(
-      getAllItemsByBoost(
-        getAllItemsBySlots(items, slotFilter),
-        'magic',
-        'power',
-      ),
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magicPower'),
     ),
     sortOnMagicBars(
-      getAllItemsByBoost(
-        getAllItemsBySlots(items, slotFilter),
-        'magic',
-        'bars',
-      ),
+      getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'magicBars'),
     ),
     sortOnRespawn(
       getAllItemsByBoost(getAllItemsBySlots(items, slotFilter), 'respawn'),

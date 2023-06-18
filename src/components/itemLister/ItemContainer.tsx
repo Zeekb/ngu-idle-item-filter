@@ -32,40 +32,40 @@ const ItemContainer = (props: ItemContainerProps) => {
               <div className="stat">{item.toughness}</div>
             </div>
           )}
-          {item.energy && item.energy.cap && (
+          {item.energyCap && (
             <div>
               <div className="prop">Energy Cap</div>
-              <div className="stat">{item.energy.cap}%</div>
+              <div className="stat">{item.energyCap}%</div>
             </div>
           )}
-          {item.energy && item.energy.power && (
+          {item.energyPower && (
             <div>
               <div className="prop">Energy Power </div>
-              <div className="stat">{item.energy.power}%</div>
+              <div className="stat">{item.energyPower}%</div>
             </div>
           )}
-          {item.energy && item.energy.bars && (
+          {item.energyBars && (
             <div>
               <div className="prop">Energy Bars </div>
-              <div className="stat">{item.energy.bars}%</div>
+              <div className="stat">{item.energyBars}%</div>
             </div>
           )}
-          {item.magic && item.magic.cap && (
+          {item.magicCap && (
             <div>
               <div className="prop">Magic Cap </div>
-              <div className="stat">{item.magic.cap}%</div>
+              <div className="stat">{item.magicCap}%</div>
             </div>
           )}
-          {item.magic && item.magic.power && (
+          {item.magicPower && (
             <div>
               <div className="prop">Magic Power </div>
-              <div className="stat">{item.magic.power}%</div>
+              <div className="stat">{item.magicPower}%</div>
             </div>
           )}
-          {item.magic && item.magic.bars && (
+          {item.magicBars && (
             <div>
               <div className="prop">Magic Bars </div>
-              <div className="stat">{item.magic.bars}%</div>
+              <div className="stat">{item.magicBars}%</div>
             </div>
           )}
           {item.drop && (

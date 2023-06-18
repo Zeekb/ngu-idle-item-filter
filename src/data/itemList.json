@@ -23,9 +23,7 @@
     "slot": "Accessory",
     "power": 1600,
     "toughness": 1600,
-    "magic": {
-      "power": 200
-    },
+    "magicPower": 200,
     "drop": 80,
     "gold": 800
   },
@@ -44,10 +42,8 @@
     "slot": "Accessory",
     "power": 164,
     "toughness": 164,
-    "magic": {
-      "cap": 45.64,
-      "power": 216.4
-    },
+    "magicCap": 45.64,
+    "magicPower": 216.4,
     "gold": 400
   },
   {
@@ -56,9 +52,7 @@
     "name": "A Regular Tie*",
     "slot": "Accessory",
     "toughness": 164,
-    "magic": {
-      "power": 216.4
-    },
+    "magicPower": 216.4,
     "gold": 400,
     "nguSpeed": 120
   },
@@ -68,9 +62,7 @@
     "name": "Stapler*",
     "slot": "Accessory",
     "power": 1000,
-    "energy": {
-      "cap": 60
-    },
+    "energyCap": 60,
     "respawn": 12
   },
   {
@@ -87,12 +79,8 @@
     "slot": "Accessory",
     "power": 400,
     "toughness": 400,
-    "energy": {
-      "power": 200
-    },
-    "magic": {
-      "power": 200
-    },
+    "energyPower": 200,
+    "magicPower": 200,
     "drop": 80
   },
   {
@@ -132,22 +120,18 @@
     "slot": "Accessory",
     "power": 2000,
     "toughness": 2000,
-    "energy": {
-      "cap": 80,
-      "power": 500,
-      "bars": 240
-    }
+    "energyCap": 80,
+    "energyPower": 500,
+    "energyBars": 240
   },
   {
     "iconUrl": "./items/140.webp",
     "id": 140,
     "name": "Ring of Way Too Much magic*",
     "slot": "Accessory",
-    "magic": {
-      "cap": 80,
-      "power": 500,
-      "bars": 240
-    }
+    "magicCap": 80,
+    "magicPower": 500,
+    "magicBars": 240
   },
   {
     "iconUrl": "./items/142.webp",
@@ -156,9 +140,7 @@
     "slot": "Accessory",
     "power": 40000,
     "toughness": 40000,
-    "energy": {
-      "power": 270
-    },
+    "energyPower": 270,
     "drop": 100,
     "gold": 800
   },
@@ -169,12 +151,8 @@
     "slot": "Weapon",
     "power": 166000,
     "toughness": 12000,
-    "energy": {
-      "bars": 440
-    },
-    "magic": {
-      "bars": 440
-    },
+    "energyBars": 440,
+    "magicBars": 440,
     "beardSpeed": 20
   },
   {
@@ -184,12 +162,8 @@
     "slot": "Accessory",
     "power": 16000,
     "toughness": 16000,
-    "energy": {
-      "power": 900
-    },
-    "magic": {
-      "power": 700
-    },
+    "energyPower": 900,
+    "magicPower": 700,
     "beardSpeed": 20
   },
   {
@@ -210,13 +184,9 @@
     "slot": "Head",
     "power": 2000,
     "toughness": 44000,
-    "energy": {
-      "cap": 170,
-      "power": 1500
-    },
-    "magic": {
-      "power": 400
-    }
+    "energyCap": 170,
+    "energyPower": 1500,
+    "magicPower": 400
   },
   {
     "iconUrl": "./items/151.webp",
@@ -225,13 +195,9 @@
     "slot": "Chest",
     "power": 2000,
     "toughness": 46000,
-    "energy": {
-      "power": 1600,
-      "bars": 1200
-    },
-    "magic": {
-      "cap": 60
-    }
+    "energyPower": 1600,
+    "energyBars": 1200,
+    "magicCap": 60
   },
   {
     "iconUrl": "./items/152.webp",
@@ -240,13 +206,9 @@
     "slot": "Legs",
     "power": 2000,
     "toughness": 46000,
-    "energy": {
-      "cap": 170,
-      "bars": 1600
-    },
-    "magic": {
-      "bars": 400
-    }
+    "energyCap": 170,
+    "energyBars": 1600,
+    "magicBars": 400
   },
   {
     "iconUrl": "./items/153.webp",
@@ -265,13 +227,9 @@
     "slot": "Head",
     "power": 2000,
     "toughness": 42000,
-    "energy": {
-      "power": 400
-    },
-    "magic": {
-      "cap": 170,
-      "power": 1500
-    }
+    "energyPower": 400,
+    "magicCap": 170,
+    "magicPower": 1500
   },
   {
     "iconUrl": "./items/156.webp",
@@ -280,13 +238,9 @@
     "slot": "Chest",
     "power": 2000,
     "toughness": 44000,
-    "energy": {
-      "cap": 60
-    },
-    "magic": {
-      "power": 1200,
-      "bars": 1600
-    }
+    "energyCap": 60,
+    "magicPower": 1200,
+    "magicBars": 1600
   },
   {
     "iconUrl": "./items/157.webp",
@@ -295,13 +249,9 @@
     "slot": "Legs",
     "power": 2000,
     "toughness": 46000,
-    "energy": {
-      "bars": 400
-    },
-    "magic": {
-      "cap": 170,
-      "bars": 1600
-    }
+    "energyBars": 400,
+    "magicCap": 170,
+    "magicBars": 1600
   },
   {
     "iconUrl": "./items/158.webp",
@@ -320,16 +270,12 @@
     "slot": "Weapon",
     "power": 210591,
     "toughness": 20880,
-    "energy": {
-      "cap": 105.19,
-      "power": 1082.61,
-      "bars": 1060
-    },
-    "magic": {
-      "cap": 105.19,
-      "power": 1082.61,
-      "bars": 1060
-    }
+    "energyCap": 105.19,
+    "energyPower": 1082.61,
+    "energyBars": 1060,
+    "magicCap": 105.19,
+    "magicPower": 1082.61,
+    "magicBars": 1060
   },
   {
     "iconUrl": "./items/160.webp",
@@ -338,14 +284,10 @@
     "slot": "Accessory",
     "power": 30000,
     "toughness": 30000,
-    "energy": {
-      "cap": 49.2,
-      "power": 820
-    },
-    "magic": {
-      "cap": 49.2,
-      "power": 820
-    },
+    "energyCap": 49.2,
+    "energyPower": 820,
+    "magicCap": 49.2,
+    "magicPower": 820,
     "drop": 49.2
   },
   {
@@ -355,12 +297,8 @@
     "slot": "Accessory",
     "power": 7600,
     "toughness": 7600,
-    "energy": {
-      "bars": 679.01
-    },
-    "magic": {
-      "bars": 679.01
-    },
+    "energyBars": 679.01,
+    "magicBars": 679.01,
     "nguSpeed": 190.5,
     "wandoosSpeed": 152.4
   },
@@ -371,12 +309,8 @@
     "name": "Badly Drawn Smiley Face*",
     "slot": "Head",
     "toughness": 120000,
-    "energy": {
-      "bars": 900
-    },
-    "magic": {
-      "bars": 900
-    },
+    "energyBars": 900,
+    "magicBars": 900,
     "advancedTraining": 320,
     "gold": 2400
   },
@@ -386,14 +320,10 @@
     "name": "Badly Drawn Chest",
     "slot": "Chest",
     "toughness": 120000,
-    "energy": {
-      "power": 2549,
-      "bars": 900
-    },
-    "magic": {
-      "cap": 270,
-      "bars": 900
-    }
+    "energyPower": 2549,
+    "energyBars": 900,
+    "magicCap": 270,
+    "magicBars": 900
   },
   {
     "iconUrl": "./items/166.webp",
@@ -401,14 +331,10 @@
     "name": "Badly Drawn Pants",
     "slot": "Legs",
     "toughness": 120000,
-    "energy": {
-      "cap": 130,
-      "power": 424.66
-    },
-    "magic": {
-      "power": 424.66,
-      "bars": 500
-    }
+    "energyCap": 130,
+    "energyPower": 424.66,
+    "magicPower": 424.66,
+    "magicBars": 500
   },
   {
     "iconUrl": "./items/167.webp",
@@ -416,14 +342,10 @@
     "name": "Badly Drawn Foot",
     "slot": "Boots",
     "toughness": 120000,
-    "energy": {
-      "cap": 46.07,
-      "bars": 1200
-    },
-    "magic": {
-      "power": 1200,
-      "bars": 1200
-    }
+    "energyCap": 46.07,
+    "energyBars": 1200,
+    "magicPower": 1200,
+    "magicBars": 1200
   },
   {
     "iconUrl": "./items/168.webp",
@@ -432,14 +354,10 @@
     "slot": "Weapon",
     "power": 1000000,
     "toughness": 50000,
-    "energy": {
-      "cap": 120,
-      "power": 1200
-    },
-    "magic": {
-      "cap": 120,
-      "power": 1200
-    },
+    "energyCap": 120,
+    "energyPower": 1200,
+    "magicCap": 120,
+    "magicPower": 1200,
     "augSpeed": 240
   },
   {
@@ -447,14 +365,10 @@
     "id": 169,
     "name": "King Looty",
     "slot": "Accessory",
-    "energy": {
-      "cap": 40.8,
-      "power": 408
-    },
-    "magic": {
-      "cap": 40.8,
-      "power": 408
-    },
+    "energyCap": 40.8,
+    "energyPower": 408,
+    "magicCap": 40.8,
+    "magicPower": 408,
     "drop": 102
   },
   {
@@ -464,13 +378,9 @@
     "slot": "Head",
     "power": 10000,
     "toughness": 224000,
-    "energy": {
-      "cap": 350,
-      "power": 2400
-    },
-    "magic": {
-      "cap": 170
-    }
+    "energyCap": 350,
+    "energyPower": 2400,
+    "magicCap": 170
   },
   {
     "iconUrl": "./items/174.webp",
@@ -479,14 +389,10 @@
     "slot": "Chest",
     "power": 10000,
     "toughness": 230000,
-    "energy": {
-      "power": 1800,
-      "bars": 3800
-    },
-    "magic": {
-      "power": 1800,
-      "bars": 1600
-    }
+    "energyPpower": 1800,
+    "energyBars": 3800,
+    "magicPower": 1800,
+    "magicBars": 1600
   },
   {
     "iconUrl": "./items/175.webp",
@@ -495,13 +401,9 @@
     "slot": "Legs",
     "power": 10000,
     "toughness": 236000,
-    "energy": {
-      "power": 3500
-    },
-    "magic": {
-      "power": 900,
-      "bars": 2000
-    }
+    "energyPower": 3500,
+    "magicPower": 900,
+    "magicBars": 2000
   },
   {
     "iconUrl": "./items/176.webp",
@@ -510,13 +412,9 @@
     "slot": "Boots",
     "power": 10000,
     "toughness": 244000,
-    "energy": {
-      "cap": 400
-    },
-    "magic": {
-      "cap": 120,
-      "power": 2800
-    }
+    "energyCap": 400,
+    "magicCap": 120,
+    "magicPower": 2800
   },
   {
     "iconUrl": "./items/177.webp",
@@ -525,14 +423,10 @@
     "slot": "Weapon",
     "power": 2000000,
     "toughness": 120000,
-    "energy": {
-      "cap": 240,
-      "power": 2400
-    },
-    "magic": {
-      "cap": 240,
-      "power": 2400
-    }
+    "energyCap": 240,
+    "energyPower": 2400,
+    "magicCap": 240,
+    "magicPower": 2400
   },
   {
     "iconUrl": "./items/439.webp",
@@ -541,11 +435,9 @@
     "slot": "Accessory",
     "power": 1800,
     "toughness": 1800,
-    "energy": {
-      "cap": 48,
-      "power": 180,
-      "bars": 200
-    }
+    "energyCap": 48,
+    "energyPower": 180,
+    "energyBars": 200
   },
   {
     "iconUrl": "./items/440.webp",
@@ -554,23 +446,17 @@
     "slot": "Accessory",
     "power": 8000,
     "toughness": 8000,
-    "energy": {
-      "cap": 100,
-      "power": 320,
-      "bars": 200
-    }
+    "energyCap": 100,
+    "energyPower": 320,
+    "energyBars": 200
   },
   {
     "iconUrl": "./items/441.webp",
     "id": 441,
     "name": "A Beard Comb*",
     "slot": "Accessory",
-    "energy": {
-      "cap": 120
-    },
-    "magic": {
-      "power": 900
-    },
+    "energyCap": 120,
+    "magicPower": 900,
     "beardSpeed": 24
   },
   {
@@ -578,14 +464,10 @@
     "id": 442,
     "name": "Random Crayons*",
     "slot": "Accessory",
-    "energy": {
-      "cap": 42,
-      "power": 759.74
-    },
-    "magic": {
-      "cap": 42,
-      "power": 759.74
-    },
+    "energyCap": 42,
+    "energyPower": 759.74,
+    "magicCap": 42,
+    "magicPower": 759.74,
     "drop": 42
   },
   {
@@ -593,13 +475,9 @@
     "id": 443,
     "name": "Red Lipstick",
     "slot": "Accessory",
-    "energy": {
-      "power": 1380
-    },
-    "magic": {
-      "cap": 207,
-      "power": 1380
-    },
+    "energyPower": 1380,
+    "magicCap": 207,
+    "magicPower": 1380,
     "beardSpeed": 34.5
   },
   {
@@ -607,13 +485,11 @@
     "id": 188,
     "name": "The Fists of Flubber",
     "slot": "Weapon",
-    "power": 3590767,
+    "power": 4158000,
     "toughness": 183000,
-    "magic": {
-      "bars": 1200,
-      "cap": 204.97,
-      "power": 2000
-    }
+    "magicBars": 1200,
+    "magicCap": 204.97,
+    "magicPower": 2000
   },
   {
     "iconUrl": "./items/184.webp",
@@ -622,14 +498,10 @@
     "slot": "Head",
     "power": 18260,
     "toughness": 401720,
-    "energy": {
-      "power": 1412.57
-    },
-    "magic": {
-      "cap": 150,
-      "power": 1412.57,
-      "bars": 1000
-    }
+    "energyPower": 1412.57,
+    "magicCap": 150,
+    "magicPower": 1412.57,
+    "magicBars": 1000
   },
   {
     "iconUrl": "./items/185.webp",
@@ -638,14 +510,10 @@
     "slot": "Chest",
     "power": 21120,
     "toughness": 480000,
-    "energy": {
-      "cap": 150,
-      "bars": 1200
-    },
-    "magic": {
-      "cap": 150,
-      "power": 1400
-    }
+    "energyCap": 150,
+    "energyBars": 1200,
+    "magicCap": 150,
+    "magicPower": 1400
   },
   {
     "iconUrl": "./items/186.webp",
@@ -654,14 +522,10 @@
     "slot": "Legs",
     "power": 16500,
     "toughness": 404250,
-    "energy": {
-      "cap": 160,
-      "power": 1800,
-      "bars": 1082.39
-    },
-    "magic": {
-      "bars": 1082.39
-    }
+    "energyCap": 160,
+    "energyPower": 1800,
+    "energyBars": 1082.39,
+    "magicBars": 1082.39
   },
   {
     "iconUrl": "./items/187.webp",
@@ -670,16 +534,12 @@
     "slot": "Boots",
     "power": 17200,
     "toughness": 412800,
-    "energy": {
-      "cap": 140,
-      "power": 1400,
-      "bars": 1400
-    },
-    "magic": {
-      "cap": 140,
-      "power": 1400,
-      "bars": 1400
-    }
+    "energyCap": 140,
+    "energyPower": 1400,
+    "energyBars": 1400,
+    "magicCap": 140,
+    "magicPower": 1400,
+    "magicBars": 1400
   },
   {
     "iconUrl": "./items/178.webp",
@@ -688,14 +548,10 @@
     "slot": "Chest",
     "power": 9840,
     "toughness": 184500,
-    "energy": {
-      "cap": 231.44,
-      "bars": 2460
-    },
-    "magic": {
-      "cap": 231.44,
-      "bars": 2460
-    },
+    "energyCap": 231.44,
+    "energyBars": 2460,
+    "magicCap": 231.44,
+    "magicBars": 2460,
     "nguSpeed": 200
   },
   {
@@ -705,12 +561,8 @@
     "slot": "Accessory",
     "power": 47332,
     "toughness": 47332,
-    "energy": {
-      "cap": 150
-    },
-    "magic": {
-      "cap": 150
-    },
+    "energyCap": 150,
+    "magicCap": 150,
     "wandoosSpeed": 200
   }
 ]
