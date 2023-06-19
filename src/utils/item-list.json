@@ -1815,18 +1815,18 @@
       "iconUrl": "./items/160.webp",
       "id": 160,
       "name": "Fanny Pack",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 18
     },
     "stats": {
       "power": 30000,
       "toughness": 30000,
-      "energyCap": 49.2,
-      "energyPower": 820,
-      "magicCap": 49.2,
-      "magicPower": 820,
-      "drop": 49.2
+      "energyCap": 60,
+      "energyPower": 1000,
+      "magicCap": 60,
+      "magicPower": 1000,
+      "drop": 60
     }
   },
   {
@@ -1834,20 +1834,19 @@
       "iconUrl": "./items/161.webp",
       "id": 161,
       "name": "Dorky Glasses",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 18
     },
     "stats": {
-      "power": 7600,
-      "toughness": 7600,
-      "energyBars": 679.01,
-      "magicBars": 679.01,
-      "nguSpeed": 190.5,
-      "wandoosSpeed": 152.4
+      "power": 10000,
+      "toughness": 10000,
+      "energyBars": 1000,
+      "magicBars": 1000,
+      "nguSpeed": 300,
+      "wandoosSpeed": 240
     }
   },
-
   {
     "metadata": {
       "iconUrl": "./items/164.webp",
@@ -1870,13 +1869,13 @@
       "iconUrl": "./items/165.webp",
       "id": 165,
       "name": "Badly Drawn Chest",
-      "completed": false,
+      "completed": true,
       "slot": "Chest",
       "zone": 19
     },
     "stats": {
       "toughness": 120000,
-      "energyPower": 2549,
+      "energyPower": 2800,
       "energyBars": 900,
       "magicCap": 270,
       "magicBars": 900
@@ -2143,17 +2142,17 @@
       "iconUrl": "./items/184.webp",
       "id": 184,
       "name": "Slimy Helmet",
-      "completed": false,
+      "completed": true,
       "slot": "Head",
       "zone": 21
     },
     "stats": {
-      "power": 18260,
-      "toughness": 401720,
-      "energyPower": 1412.57,
-      "magicCap": 150,
-      "magicPower": 1412.57,
-      "magicBars": 1000
+      "power": 22000,
+      "toughness": 484000,
+      "energyPower": 2800,
+      "magicCap": 300,
+      "magicPower": 2800,
+      "magicBars": 2000
     }
   },
   {
@@ -2161,17 +2160,17 @@
       "iconUrl": "./items/185.webp",
       "id": 185,
       "name": "Slimy Chest",
-      "completed": false,
+      "completed": true,
       "slot": "Chest",
       "zone": 21
     },
     "stats": {
-      "power": 21120,
-      "toughness": 480000,
-      "energyCap": 150,
-      "energyBars": 1200,
-      "magicCap": 150,
-      "magicPower": 1400
+      "power": 22000,
+      "toughness": 500000,
+      "energyCap": 300,
+      "energyBars": 2400,
+      "magicCap": 300,
+      "magicPower": 2800
     }
   },
   {
@@ -2179,17 +2178,17 @@
       "iconUrl": "./items/186.webp",
       "id": 186,
       "name": "Slimy Pants",
-      "completed": false,
+      "completed": true,
       "slot": "Legs",
       "zone": 21
     },
     "stats": {
-      "power": 16500,
-      "toughness": 404250,
-      "energyCap": 160,
-      "energyPower": 1800,
-      "energyBars": 1082.39,
-      "magicBars": 1082.39
+      "power": 20000,
+      "toughness": 490000,
+      "energyCap": 320,
+      "energyPower": 3600,
+      "energyBars": 2000,
+      "magicBars": 2000
     }
   },
   {
