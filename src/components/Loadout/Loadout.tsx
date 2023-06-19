@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { Item, Slot } from '../../data/types'
+import { Item, Slot } from '../../utils/types'
 import './loadout.css'
 
 interface LoadoutProps {

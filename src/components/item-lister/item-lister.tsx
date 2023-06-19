@@ -1,8 +1,8 @@
 import React from 'react'
-import { Item, Slot } from '../../data/types'
-import ItemContainer from './ItemContainer'
+import { Item, Slot } from '../../utils/types'
+import ItemContainer from './item-container'
 
-import './ItemLister.css'
+import './item-lister.css'
 
 interface ItemListerProps {
   filter: Item[]

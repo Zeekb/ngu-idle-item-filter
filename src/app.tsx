@@ -6,14 +6,14 @@ import {
   getByBoost,
   getByZone,
   getLoadout,
-} from '../itemLister/ItemLister'
-import Sorts from '../../data/sorts'
-import FilterButtons from '../LoadoutFilter/FilterButtons'
-import { Item, Slot } from '../../data/types'
-import LoadoutFilter from '../LoadoutFilter/LoadoutFilter'
-import itemData from '../../data/itemList.json'
-import './App.css'
-import Loadout from '../Loadout/Loadout'
+} from './components//item-lister/item-lister'
+import Sorts from './utils/sorts'
+import FilterButtons from './components/loadout-filter/filter-buttons'
+import { Item, Slot } from './utils/types'
+import LoadoutFilter from './components/loadout-filter/loadout-filter'
+import itemData from './utils/item-list.json'
+import './app.css'
+import Loadout from './components/loadout/loadout'
 import { Button, Label } from '@itwin/itwinui-react'
 
 const buttonStyle = {

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Slot } from '../../data/types'
-import './loadoutFilter.css'
+import { Slot } from '../../utils/types'
+import './loadout-filter.css'
 import { Button } from '@itwin/itwinui-react'
 
 const buttonStyle = {

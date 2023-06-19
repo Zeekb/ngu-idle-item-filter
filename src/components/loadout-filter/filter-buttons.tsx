@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import { ButtonGroup, Button } from '@itwin/itwinui-react'
-import { ButtonType } from '../../data/types'
-import buttonData from '../../data/buttonList.json'
+import { ButtonType } from '../../utils/types'
+import buttonData from '../../utils/button-list.json'
 
 const buttonGroupStyle = {
   flexDirection: 'row' as const,
