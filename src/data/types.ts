@@ -5,7 +5,9 @@ export type Item = {
     iconUrl: string
     id: number
     name: string
+    completed: boolean
     slot: Slot
+    zone: number // TODO: set list of values to list of names
   }
   stats: {
     power?: number
@@ -13,9 +15,11 @@ export type Item = {
     energyCap?: number
     energyPower?: number
     energyBars?: number
+    energySpeed?: number
     magicCap?: number
     magicPower?: number
     magicBars?: number
+    magicSpeed?: number
     drop?: number
     gold?: number
     respawn?: number
@@ -26,6 +30,7 @@ export type Item = {
     nguSpeed?: number
     augSpeed?: number
     beardSpeed?: number
+    cooking?: number
   }
 }
 

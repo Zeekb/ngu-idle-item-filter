@@ -27,7 +27,7 @@ const getBySlots = (list: Item[], slots: Slot[]): Item[] => {
 }
 
 const getUnfinished = (list: Item[]): Item[] => {
-  return list.filter((item) => item.metadata.name.indexOf('*') === -1)
+  return list.filter((item) => !item.metadata.completed)
 }
 
 const getLoadout = (list: Item[]) => {

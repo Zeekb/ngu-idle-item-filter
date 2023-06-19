@@ -29,6 +29,7 @@ const App = () => {
 
   const filteredItems = (boost: string) =>
     getByBoost(getBySlots(items, slotFilter), boost)
+  // TODO: getByZone(items, zone)
 
   const useFilter: Item[][] = [
     sorts.sortOnId(getBySlots(items, slotFilter)),
@@ -38,7 +39,7 @@ const App = () => {
     sorts.sortOnEnergyBars(filteredItems('energyBars')),
     sorts.sortOnGold(filteredItems('gold')),
     sorts.sortOnDrop(filteredItems('drop')),
-    sorts.sortOnId(getUnfinished(items)),
+    sorts.sortOnId(getUnfinished(getBySlots(items, slotFilter))),
     sorts.sortOnToughness(filteredItems('toughness')),
     sorts.sortOnMagicCap(filteredItems('magicCap')),
     sorts.sortOnMagicPower(filteredItems('magicPower')),
@@ -52,6 +53,11 @@ const App = () => {
     sorts.sortOnBeardSpeed(filteredItems('beardSpeed')),
     sorts.sortOnNguSpeed(filteredItems('nguSpeed')),
   ]
+
+  // TODO: add filter on zone increasing
+  //        [-][{ zone }][+]
+  //  2 = [Tutorial Zone, Sewer]
+  //  6 = [Tutorial Zone, Sewer, Forest, Cave of Many Things, The Sky]
 
   return (
     <div className="app-container">
