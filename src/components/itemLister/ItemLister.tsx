@@ -26,6 +26,10 @@ const getBySlots = (list: Item[], slots: Slot[]): Item[] => {
   return slots.map((slot) => getBySlot(list, slot)).flat()
 }
 
+const getByZone = (list: Item[], zone: number): Item[] => {
+  return list.filter((item) => item.metadata.zone <= zone)
+}
+
 const getUnfinished = (list: Item[]): Item[] => {
   return list.filter((item) => !item.metadata.completed)
 }
@@ -61,4 +65,11 @@ const ItemLister = (props: ItemListerProps) => {
 
   return <>{displayItemContainers(filter)}</>
 }
-export { ItemLister, getUnfinished, getBySlots, getByBoost, getLoadout }
+export {
+  ItemLister,
+  getUnfinished,
+  getBySlots,
+  getByBoost,
+  getByZone,
+  getLoadout,
+}

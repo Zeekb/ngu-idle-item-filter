@@ -4,6 +4,7 @@ import {
   getUnfinished,
   getBySlots,
   getByBoost,
+  getByZone,
   getLoadout,
 } from '../itemLister/ItemLister'
 import Sorts from '../../data/sorts'
@@ -13,11 +14,22 @@ import LoadoutFilter from '../LoadoutFilter/LoadoutFilter'
 import itemData from '../../data/itemList.json'
 import './App.css'
 import Loadout from '../Loadout/Loadout'
+import { Button, Label } from '@itwin/itwinui-react'
+
+const buttonStyle = {
+  width: '60px',
+  margin: '6px',
+  fontWeight: '600',
+  fontSize: 'larger',
+  backgroundColor: '#DDD',
+  outline: '2px solid',
+  lineHeight: 1.4,
+}
 
 const App = () => {
-  const [value, setValue] = useState(0)
-  const items = itemData as Item[]
   const sorts = new Sorts()
+
+  const [value, setValue] = useState(0)
   const [slotFilter, setSlotFilter] = useState([
     'Head',
     'Chest',
@@ -27,19 +39,49 @@ const App = () => {
     'Accessory',
   ] as Slot[])
 
+  const items = itemData as Item[]
+  const zones: string[] = [
+    '0. None',
+    '1. Safe Zone: Awakening Site',
+    '2. Tutorial Zone',
+    '3. Sewers',
+    '4. Forest',
+    '5. Cave of Many Things',
+    '6. The Sky',
+    '7. High Security Base',
+    '8. Gordon Ramsay Bolton',
+    '9. Clock Dimension',
+    '10. Grand Corrupted Tree',
+    '11. The 2D Universe',
+    '12. Ancient Battlefield',
+    '13. Jake from Accounting',
+    '14. A Very Strange Place',
+    '15. Mega Lands',
+    '16. UUG, The Unmentionable',
+    '17. The Beardverse',
+    '18. Walderp',
+    '19. Badly Drawn World',
+    '20. Boring-Ass Earth',
+    '21. The Beast',
+  ]
+
+  const [zone, setZone] = useState(zones.length - 1)
+
   const filteredItems = (boost: string) =>
-    getByBoost(getBySlots(items, slotFilter), boost)
-  // TODO: getByZone(items, zone)
+    getByZone(getByBoost(getBySlots(items, slotFilter), boost), zone)
 
   const useFilter: Item[][] = [
-    sorts.sortOnId(getBySlots(items, slotFilter)),
+    getByZone(sorts.sortOnId(getBySlots(items, slotFilter)), zone),
     sorts.sortOnPower(filteredItems('power')),
     sorts.sortOnEnergyCap(filteredItems('energyCap')),
     sorts.sortOnEnergyPower(filteredItems('energyPower')),
     sorts.sortOnEnergyBars(filteredItems('energyBars')),
     sorts.sortOnGold(filteredItems('gold')),
     sorts.sortOnDrop(filteredItems('drop')),
-    sorts.sortOnId(getUnfinished(getBySlots(items, slotFilter))),
+    getByZone(
+      sorts.sortOnId(getUnfinished(getBySlots(items, slotFilter))),
+      zone,
+    ),
     sorts.sortOnToughness(filteredItems('toughness')),
     sorts.sortOnMagicCap(filteredItems('magicCap')),
     sorts.sortOnMagicPower(filteredItems('magicPower')),
@@ -53,11 +95,7 @@ const App = () => {
     sorts.sortOnBeardSpeed(filteredItems('beardSpeed')),
     sorts.sortOnNguSpeed(filteredItems('nguSpeed')),
   ]
-
-  // TODO: add filter on zone increasing
-  //        [-][{ zone }][+]
-  //  2 = [Tutorial Zone, Sewer]
-  //  6 = [Tutorial Zone, Sewer, Forest, Cave of Many Things, The Sky]
+  const itemFilter = useFilter[value]
 
   return (
     <div className="app-container">
@@ -65,13 +103,62 @@ const App = () => {
         <div className="buttons-container text">
           <FilterButtons setValue={setValue} />
         </div>
+        <div
+          style={{
+            display: 'inline-flex',
+            margin: '0 30%',
+          }}
+        >
+          <Button
+            onClick={() => {
+              if (zone > 0) setZone(1)
+            }}
+            style={buttonStyle}
+          >
+            {'<'}
+          </Button>
+          <Button
+            onClick={() => {
+              if (zone > 0) setZone(zone - 1)
+            }}
+            style={buttonStyle}
+          >
+            -
+          </Button>
+          <Label
+            style={{
+              padding: '0 20px',
+              marginTop: '10px',
+              width: '300px',
+              textAlign: 'center',
+            }}
+          >
+            {zones[zone]}
+          </Label>
+          <Button
+            onClick={() => {
+              if (zone < zones.length - 1) setZone(zone + 1)
+            }}
+            style={buttonStyle}
+          >
+            +
+          </Button>
+          <Button
+            onClick={() => {
+              if (zone < zones.length - 1) setZone(zones.length - 1)
+            }}
+            style={buttonStyle}
+          >
+            {'>'}
+          </Button>
+        </div>
         <div className="items-container text">
-          <ItemLister filter={useFilter[value]} />
+          <ItemLister filter={itemFilter} />
         </div>
       </div>
       <div className="item-container loadout-container text">
         <LoadoutFilter slotFilter={slotFilter} setSlotFilter={setSlotFilter} />
-        <Loadout loadout={getLoadout(useFilter[value])} />
+        <Loadout loadout={getLoadout(itemFilter)} />
       </div>
     </div>
   )
