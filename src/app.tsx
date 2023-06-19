@@ -119,7 +119,7 @@ const App = () => {
           </Button>
           <Button
             onClick={() => {
-              if (zone > 0) setZone(zone - 1)
+              if (zone > 1) setZone(zone - 1)
             }}
             style={buttonStyle}
           >
