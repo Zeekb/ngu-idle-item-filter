@@ -106,7 +106,7 @@ const App = () => {
         <div
           style={{
             display: 'inline-flex',
-            margin: '0 30%',
+            margin: '0 calc(30% + 3px)',
           }}
         >
           <Button
@@ -126,6 +126,7 @@ const App = () => {
             -
           </Button>
           <Label
+            className="text"
             style={{
               padding: '0 20px',
               marginTop: '10px',
