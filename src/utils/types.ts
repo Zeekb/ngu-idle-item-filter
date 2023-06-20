@@ -30,6 +30,7 @@ export type Item = {
     nguSpeed?: number
     augSpeed?: number
     beardSpeed?: number
+    questDrop?: number
     cooking?: number
   }
 }

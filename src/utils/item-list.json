@@ -1263,6 +1263,24 @@
   },
   {
     "metadata": {
+      "iconUrl": "./items/170.webp",
+      "id": 170,
+      "name": "Ascended x4 Pendant",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": -1
+    },
+    "stats": {
+      "power": 100000,
+      "toughness": 100000,
+      "energyCap": 120,
+      "magicCap": 120,
+      "drop": 250,
+      "questDrop": 5
+    }
+  },
+  {
+    "metadata": {
       "iconUrl": "./items/432.webp",
       "id": 432,
       "name": "The Tuba of Time",
@@ -2196,19 +2214,19 @@
       "iconUrl": "./items/187.webp",
       "id": 187,
       "name": "Slimy Boots",
-      "completed": false,
+      "completed": true,
       "slot": "Boots",
       "zone": 21
     },
     "stats": {
-      "power": 17200,
-      "toughness": 412800,
-      "energyCap": 140,
-      "energyPower": 1400,
-      "energyBars": 1400,
-      "magicCap": 140,
-      "magicPower": 1400,
-      "magicBars": 1400
+      "power": 20000,
+      "toughness": 480000,
+      "energyCap": 280,
+      "energyPower": 2800,
+      "energyBars": 2800,
+      "magicCap": 280,
+      "magicPower": 2800,
+      "magicBars": 2800
     }
   },
   {
