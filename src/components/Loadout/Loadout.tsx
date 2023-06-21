@@ -56,4 +56,4 @@ const Loadout = (props: LoadoutProps) => {
   )
 }
 
-export default Loadout
+export { Loadout }

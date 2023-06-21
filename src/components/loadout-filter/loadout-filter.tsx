@@ -12,12 +12,12 @@ const buttonStyle = {
 }
 
 interface LoadoutFilterProps {
-  slotFilter: Slot[]
-  setSlotFilter: React.Dispatch<React.SetStateAction<Slot[]>>
+  slots: Slot[]
+  setSlots: React.Dispatch<React.SetStateAction<Slot[]>>
 }
 
 const LoadoutFilter = (props: LoadoutFilterProps) => {
-  const { slotFilter, setSlotFilter } = props
+  const { slots, setSlots } = props
   const slotClassName = 'item-icon loadout-slot'
   const fullSlots: Slot[] = [
     'Accessory',
@@ -29,9 +29,9 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
   ]
 
   const handleSetSlots = (slot: Slot) => {
-    slotFilter.includes(slot)
-      ? setSlotFilter(slotFilter.filter((slot_) => slot_ !== slot))
-      : setSlotFilter([...slotFilter, slot])
+    slots.includes(slot)
+      ? setSlots(slots.filter((slot_) => slot_ !== slot))
+      : setSlots([...slots, slot])
   }
 
   return (
@@ -42,7 +42,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
           <img
             key={slot}
             className={
-              slotFilter.includes(slot)
+              slots.includes(slot)
                 ? slotClassName
                 : slotClassName + ' deselected'
             }
@@ -55,7 +55,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
         className="button text"
         styleType="borderless"
         style={buttonStyle}
-        onClick={() => setSlotFilter(fullSlots)}
+        onClick={() => setSlots(fullSlots)}
       >
         Reset
       </Button>
@@ -63,4 +63,4 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
   )
 }
 
-export default LoadoutFilter
+export { LoadoutFilter }

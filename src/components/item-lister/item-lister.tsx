@@ -63,7 +63,9 @@ const getLoadout = (list: Item[]) => {
 const ItemLister = (props: ItemListerProps) => {
   const { filter } = props
 
-  return <>{displayItemContainers(filter)}</>
+  return (
+    <div className="items-container text">{displayItemContainers(filter)}</div>
+  )
 }
 export {
   ItemLister,

@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.filter-container {
+.item-filter-container {
   width: calc(80% - 40px);
   float: left;
 }

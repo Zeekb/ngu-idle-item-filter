@@ -1,6 +1,6 @@
 {
   "name": "ngu-idle-item-filter",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "private": true,
   "dependencies": {
     "@itwin/itwinui-icons": "^2.2.0",

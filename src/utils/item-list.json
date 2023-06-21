@@ -2127,15 +2127,15 @@
       "iconUrl": "./items/443.webp",
       "id": 443,
       "name": "Red Lipstick",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 20
     },
     "stats": {
-      "energyPower": 1380,
-      "magicCap": 207,
-      "magicPower": 1380,
-      "beardSpeed": 34.5
+      "energyPower": 2000,
+      "magicCap": 300,
+      "magicPower": 2000,
+      "beardSpeed": 50
     }
   },
   {
@@ -2143,16 +2143,16 @@
       "iconUrl": "./items/188.webp",
       "id": 188,
       "name": "The Fists of Flubber",
-      "completed": false,
+      "completed": true,
       "slot": "Weapon",
       "zone": 21
     },
     "stats": {
-      "power": 4158000,
-      "toughness": 183000,
-      "magicBars": 1200,
-      "magicCap": 204.97,
-      "magicPower": 2000
+      "power": 4400000,
+      "toughness": 200000,
+      "magicBars": 2400,
+      "magicCap": 400,
+      "magicPower": 4000
     }
   },
   {
