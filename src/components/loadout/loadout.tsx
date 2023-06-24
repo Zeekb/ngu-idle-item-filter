@@ -61,7 +61,9 @@ const Loadout = (props: LoadoutProps) => {
   }
 
   // TODO: combined stats not ordered in the way I want them, although they are not ordered anywhere its just expected theyll be right
-  //          see stat boosts in power and toughness with no weapon or accessories, same items but ordered differently
+  //          - see stat boosts in power and toughness with no weapon or
+  //              accessories, same items but ordered differently
+
   getCombinedStats()
 
   useEffect(() => {
@@ -81,6 +83,10 @@ const Loadout = (props: LoadoutProps) => {
     }
     return url
   }
+
+  // TODO: show more obviously when a slot is disabled,
+  //            - a different icon change?
+  //            - styles?
 
   return (
     <>

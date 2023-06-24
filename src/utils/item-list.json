@@ -1776,13 +1776,13 @@
       "iconUrl": "./items/166.webp",
       "id": 166,
       "name": "Badly Drawn Pants",
-      "completed": false,
+      "completed": true,
       "slot": "Legs",
       "zone": 19
     },
     "stats": {
       "toughness": 120000,
-      "energyCap": 130.2,
+      "energyCap": 260,
       "energyPower": 800,
       "magicPower": 800,
       "magicBars": 2800
