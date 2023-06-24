@@ -1120,7 +1120,7 @@
       "name": "The Triple Flubber",
       "completed": true,
       "slot": "Accessory",
-      "zone": 4
+      "zone": 16
     },
     "stats": {
       "respawn": 8
@@ -1402,16 +1402,16 @@
       "iconUrl": "./items/142.webp",
       "id": 142,
       "name": "Ascended Ascended Ascended Pendant",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 17
     },
     "stats": {
-      "power": 40000,
-      "toughness": 40000,
-      "energyPower": 270,
-      "drop": 100,
-      "gold": 800
+      "power": 80000,
+      "toughness": 80000,
+      "energyPower": 540,
+      "drop": 200,
+      "gold": 1600
     }
   },
   {
@@ -1685,19 +1685,19 @@
       "iconUrl": "./items/159.webp",
       "id": 159,
       "name": "The Candy Cane of Destiny",
-      "completed": false,
+      "completed": true,
       "slot": "Weapon",
       "zone": 18
     },
     "stats": {
-      "power": 210591,
-      "toughness": 20880,
-      "energyCap": 105.19,
-      "energyPower": 1082.61,
-      "energyBars": 1060,
-      "magicCap": 105.19,
-      "magicPower": 1082.61,
-      "magicBars": 1060
+      "power": 340000,
+      "toughness": 24000,
+      "energyCap": 200,
+      "energyPower": 2000,
+      "energyBars": 2000,
+      "magicCap": 200,
+      "magicPower": 2000,
+      "magicBars": 2000
     }
   },
   {
@@ -1782,10 +1782,10 @@
     },
     "stats": {
       "toughness": 120000,
-      "energyCap": 130,
-      "energyPower": 424.66,
-      "magicPower": 424.66,
-      "magicBars": 500
+      "energyCap": 130.2,
+      "energyPower": 800,
+      "magicPower": 800,
+      "magicBars": 2800
     }
   },
   {
@@ -1793,16 +1793,16 @@
       "iconUrl": "./items/167.webp",
       "id": 167,
       "name": "Badly Drawn Foot",
-      "completed": false,
+      "completed": true,
       "slot": "Boots",
       "zone": 19
     },
     "stats": {
       "toughness": 120000,
-      "energyCap": 46.07,
-      "energyBars": 1200,
-      "magicPower": 1200,
-      "magicBars": 1200
+      "energyCap": 80,
+      "energyBars": 2400,
+      "magicCap": 80,
+      "magicPower": 2400
     }
   },
   {
@@ -1953,18 +1953,18 @@
       "iconUrl": "./items/178.webp",
       "id": 178,
       "name": "The Stealthiest Armour",
-      "completed": false,
+      "completed": true,
       "slot": "Chest",
       "zone": 20
     },
     "stats": {
-      "power": 9840,
-      "toughness": 184500,
-      "energyCap": 231.44,
-      "energyBars": 2460,
-      "magicCap": 231.44,
-      "magicBars": 2460,
-      "nguSpeed": 200
+      "power": 16000,
+      "toughness": 300000,
+      "energyCap": 420,
+      "energyBars": 4000,
+      "magicCap": 420,
+      "magicBars": 4000,
+      "nguSpeed": 400
     }
   },
   {
@@ -2063,16 +2063,16 @@
       "iconUrl": "./items/189.webp",
       "id": 189,
       "name": "A Bald Egg",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 21
     },
     "stats": {
-      "power": 47332,
-      "toughness": 47332,
-      "energyCap": 150,
-      "magicCap": 150,
-      "wandoosSpeed": 200
+      "power": 66666,
+      "toughness": 66666,
+      "energyCap": 300,
+      "magicCap": 300,
+      "wandoosSpeed": 400
     }
   },
   {

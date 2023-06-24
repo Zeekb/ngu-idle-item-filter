@@ -3,31 +3,31 @@
     "label": "All Items",
     "value": 0,
     "isSelected": true,
-    "backgroundColor": "#DDD"
+    "backgroundColor": "#ddd"
   },
   {
     "label": "Power",
     "value": 1,
     "isSelected": false,
-    "backgroundColor": "#ec3434"
+    "backgroundColor": "#9576c1"
   },
   {
     "label": "Energy Cap",
     "value": 2,
     "isSelected": false,
-    "backgroundColor": "#388642"
+    "backgroundColor": "#56ce7f"
   },
   {
     "label": "Energy Power",
     "value": 3,
     "isSelected": false,
-    "backgroundColor": "#66a025"
+    "backgroundColor": "#56ce7f"
   },
   {
     "label": "Energy Bars",
     "value": 4,
     "isSelected": false,
-    "backgroundColor": "#91c191"
+    "backgroundColor": "#56ce7f"
   },
   {
     "label": "Gold",
@@ -39,25 +39,25 @@
     "label": "Drop",
     "value": 6,
     "isSelected": false,
-    "backgroundColor": "#daf31a"
+    "backgroundColor": "#ffd33c"
   },
   {
     "label": "Unfinished Items",
     "value": 7,
     "isSelected": false,
-    "backgroundColor": "#c8bfe7"
+    "backgroundColor": "#ddd"
   },
   {
     "label": "Toughness",
     "value": 8,
     "isSelected": false,
-    "backgroundColor": "#f3bd6c"
+    "backgroundColor": "#9576c1"
   },
   {
     "label": "Magic Cap",
     "value": 9,
     "isSelected": false,
-    "backgroundColor": "#5a62b2"
+    "backgroundColor": "#7b95f6"
   },
   {
     "label": "Magic Power",
@@ -69,19 +69,19 @@
     "label": "Magic Bars",
     "value": 11,
     "isSelected": false,
-    "backgroundColor": "#99d9ea"
+    "backgroundColor": "#7b95f6"
   },
   {
     "label": "Respawn",
     "value": 12,
     "isSelected": false,
-    "backgroundColor": "#a6dfb9"
+    "backgroundColor": "#f0c5f1"
   },
   {
     "label": "Move Cooldown",
     "value": 13,
     "isSelected": false,
-    "backgroundColor": "#ffffa8"
+    "backgroundColor": "#f0c5f1"
   },
   {
     "label": "Advanced Training",
@@ -93,30 +93,30 @@
     "label": "Seed Gain",
     "value": 15,
     "isSelected": false,
-    "backgroundColor": "#56ce7f"
+    "backgroundColor": "#f0c5f1"
   },
   {
     "label": "Augment Speed",
     "value": 16,
     "isSelected": false,
-    "backgroundColor": "#868686"
+    "backgroundColor": "#dc5422"
   },
   {
     "label": "Wandoos Speed",
     "value": 17,
     "isSelected": false,
-    "backgroundColor": "#9f1af3"
+    "backgroundColor": "#dc5422"
   },
   {
     "label": "Beard Speed",
     "value": 18,
     "isSelected": false,
-    "backgroundColor": "#965da6"
+    "backgroundColor": "#dc5422"
   },
   {
     "label": "NGU Speed",
     "value": 19,
     "isSelected": false,
-    "backgroundColor": "#ffaec9"
+    "backgroundColor": "#dc5422"
   }
 ]
