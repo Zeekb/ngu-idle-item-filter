@@ -34,9 +34,6 @@ const Loadout = (props: LoadoutProps) => {
   }
   getCombinedStats()
 
-  console.log(statsCombined)
-  console.log(statsCombined[2])
-
   useEffect(() => {
     index.current = 0
   }, [props.loadout])

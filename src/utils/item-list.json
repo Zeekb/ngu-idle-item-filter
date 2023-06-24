@@ -486,7 +486,22 @@
       "power": 6
     }
   },
-
+  {
+    "metadata": {
+      "iconUrl": "./items/76.webp",
+      "id": 76,
+      "name": "Ascended Forest Pendant",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 7
+    },
+    "stats": {
+      "power": 200,
+      "toughness": 200,
+      "drop": 40,
+      "gold": 400
+    }
+  },
   {
     "metadata": {
       "iconUrl": "./items/77.webp",
@@ -707,6 +722,36 @@
   },
   {
     "metadata": {
+      "iconUrl": "./items/91.webp",
+      "id": 91,
+      "name": "The Sands of Time",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 9
+    },
+    "stats": {
+      "moveCooldown": 20
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/94.webp",
+      "id": 94,
+      "name": "Ascended Ascended Pendant",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 11
+    },
+    "stats": {
+      "power": 1600,
+      "toughness": 1600,
+      "magicPower": 200,
+      "drop": 80,
+      "gold": 800
+    }
+  },
+  {
+    "metadata": {
       "iconUrl": "./items/95.webp",
       "id": 95,
       "name": "Circle Helmet",
@@ -734,7 +779,7 @@
     "stats": {
       "power": 100,
       "toughness": 1290,
-      "enerygPower": 100,
+      "energyPower": 100,
       "energyBars": 100,
       "magicPower": 80
     }
@@ -800,6 +845,20 @@
     "stats": {
       "power": 1300,
       "toughness": 1300
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/101.webp",
+      "id": 101,
+      "name": "King Circle's Amulet of Helping Random Stuff",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 11
+    },
+    "stats": {
+      "wandoosSpeed": 60,
+      "advancedTraining": 80
     }
   },
   {
@@ -904,7 +963,7 @@
     "metadata": {
       "iconUrl": "./items/109.webp",
       "id": 109,
-      "name": "Amulet of Sunshine, Sparkles, and Gore",
+      "name": "Amulet of Sunshine, Sparkles and Gore",
       "completed": true,
       "slot": "Accessory",
       "zone": 12
@@ -912,6 +971,23 @@
     "stats": {
       "energyPower": 200,
       "magicPower": 200
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/110.webp",
+      "id": 110,
+      "name": "Dragon Wings",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 12
+    },
+    "stats": {
+      "power": 164,
+      "toughness": 164,
+      "magicCap": 45.64,
+      "magicPower": 216.4,
+      "gold": 400
     }
   },
   {
@@ -994,6 +1070,22 @@
   },
   {
     "metadata": {
+      "iconUrl": "./items/116.webp",
+      "id": 116,
+      "name": "A Regular Tie",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 13
+    },
+    "stats": {
+      "toughness": 164,
+      "magicPower": 216.4,
+      "gold": 400,
+      "nguSpeed": 120
+    }
+  },
+  {
+    "metadata": {
       "iconUrl": "./items/117.webp",
       "id": 117,
       "name": "Generic Paperweight",
@@ -1004,6 +1096,34 @@
     "stats": {
       "power": 2900,
       "toughness": 2900
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/118.webp",
+      "id": 118,
+      "name": "Stapler",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 13
+    },
+    "stats": {
+      "power": 1000,
+      "energyCap": 60,
+      "respawn": 12
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/121.webp",
+      "id": 121,
+      "name": "The Triple Flubber",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 4
+    },
+    "stats": {
+      "respawn": 8
     }
   },
   {
@@ -1102,6 +1222,23 @@
   },
   {
     "metadata": {
+      "iconUrl": "./items/128.webp",
+      "id": 128,
+      "name": "Sir Looty McLootington III, Esquire",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 14
+    },
+    "stats": {
+      "power": 400,
+      "toughness": 400,
+      "energyPower": 200,
+      "magicPower": 200,
+      "drop": 80
+    }
+  },
+  {
+    "metadata": {
       "iconUrl": "./items/130.webp",
       "id": 130,
       "name": "Mega Helmet",
@@ -1178,352 +1315,6 @@
       "energyCap": 40,
       "energyPower": 280,
       "energyBars": 200
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/143.webp",
-      "id": 143,
-      "name": "Groucho Marx Disguise",
-      "completed": true,
-      "slot": "Head",
-      "zone": 17
-    },
-    "stats": {
-      "power": 2200,
-      "toughness": 24000,
-      "energyPower": 360,
-      "magicCaps": 96,
-      "magicBars": 480
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/144.webp",
-      "id": 144,
-      "name": "Gossamer Chest",
-      "completed": true,
-      "slot": "Chest",
-      "zone": 17
-    },
-    "stats": {
-      "power": 2200,
-      "toughness": 25000,
-      "energyCap": 124,
-      "magicCap": 100
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/145.webp",
-      "id": 145,
-      "name": "Braided Beard Legs",
-      "completed": true,
-      "slot": "Legs",
-      "zone": 17
-    },
-    "stats": {
-      "power": 2200,
-      "toughness": 25000,
-      "magicCap": 86,
-      "magicPower": 580,
-      "magicBars": 460
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/146.webp",
-      "id": 146,
-      "name": "Fuzzy Orange Cheeto Slippers!",
-      "completed": true,
-      "slot": "Boots",
-      "zone": 17
-    },
-    "stats": {
-      "power": 2400,
-      "toughness": 25000,
-      "energyCap": 40,
-      "energyPower": 440,
-      "energyBars": 660
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/154.webp",
-      "id": 154,
-      "name": "Wanderer's Cane",
-      "completed": true,
-      "slot": "Weapon",
-      "zone": 18
-    },
-    "stats": {
-      "power": 340000,
-      "toughness": 24000
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/170.webp",
-      "id": 170,
-      "name": "Ascended x4 Pendant",
-      "completed": false,
-      "slot": "Accessory",
-      "zone": 20
-    },
-    "stats": {
-      "power": 100000,
-      "toughness": 100000,
-      "energyCap": 120,
-      "magicCap": 120,
-      "drop": 250,
-      "questDrop": 5
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/432.webp",
-      "id": 432,
-      "name": "The Tuba of Time",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 4
-    },
-    "stats": {
-      "power": 20,
-      "toughness": 20,
-      "energyPower": 30
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/433.webp",
-      "id": 433,
-      "name": "Cheese Grater",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 5
-    },
-    "stats": {
-      "power": 30,
-      "energySpeed": 80,
-      "magicSpeed": 60,
-      "drop": 4
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/434.webp",
-      "id": 434,
-      "name": "A Dragon's Left Ball",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 6
-    },
-    "stats": {
-      "magicCap": 6,
-      "magicPower": 100
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/435.webp",
-      "id": 435,
-      "name": "Magicite Crystal",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 7
-    },
-    "stats": {
-      "power": 100,
-      "toughness": 100,
-      "magicCap": 12,
-      "magicSpeed": 100
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/436.webp",
-      "id": 436,
-      "name": "Giant Windup Gear",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 9
-    },
-    "stats": {
-      "power": 300,
-      "toughness": 300,
-      "energyCap": 10,
-      "magicCap": 10,
-      "drop": 16
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/437.webp",
-      "id": 437,
-      "name": "A Sinusoidal Wave",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 11
-    },
-    "stats": {
-      "energyCap": 14,
-      "magicCap": 14
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/438.webp",
-      "id": 438,
-      "name": "Ghost Typewriter",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 12
-    },
-    "stats": {
-      "power": 1200,
-      "toughness": 1200,
-      "energyCap": 32,
-      "magicPower": 120,
-      "drop": 36
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/76.webp",
-      "id": 76,
-      "name": "Ascended Forest Pendant",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 7
-    },
-    "stats": {
-      "power": 200,
-      "toughness": 200,
-      "drop": 40,
-      "gold": 400
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/91.webp",
-      "id": 91,
-      "name": "The Sands of Time",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 9
-    },
-    "stats": {
-      "moveCooldown": 20
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/94.webp",
-      "id": 94,
-      "name": "Ascended Ascended Pendant",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 11
-    },
-    "stats": {
-      "power": 1600,
-      "toughness": 1600,
-      "magicPower": 200,
-      "drop": 80,
-      "gold": 800
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/101.webp",
-      "id": 101,
-      "name": "King Circle's Amulet of Helping Random Stuff",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 11
-    },
-    "stats": {
-      "wandoosSpeed": 60,
-      "advancedTraining": 80
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/110.webp",
-      "id": 110,
-      "name": "Dragon Wings",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 12
-    },
-    "stats": {
-      "power": 164,
-      "toughness": 164,
-      "magicCap": 45.64,
-      "magicPower": 216.4,
-      "gold": 400
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/116.webp",
-      "id": 116,
-      "name": "A Regular Tie",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 13
-    },
-    "stats": {
-      "toughness": 164,
-      "magicPower": 216.4,
-      "gold": 400,
-      "nguSpeed": 120
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/118.webp",
-      "id": 118,
-      "name": "Stapler",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 13
-    },
-    "stats": {
-      "power": 1000,
-      "energyCap": 60,
-      "respawn": 12
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/121.webp",
-      "id": 121,
-      "name": "The Triple Flubber",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 4
-    },
-    "stats": {
-      "respawn": 8
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/128.webp",
-      "id": 128,
-      "name": "Sir Looty McLootington III, Esquire",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 14
-    },
-    "stats": {
-      "power": 400,
-      "toughness": 400,
-      "energyPower": 200,
-      "magicPower": 200,
-      "drop": 80
     }
   },
   {
@@ -1621,6 +1412,73 @@
       "energyPower": 270,
       "drop": 100,
       "gold": 800
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/143.webp",
+      "id": 143,
+      "name": "Groucho Marx Disguise",
+      "completed": true,
+      "slot": "Head",
+      "zone": 17
+    },
+    "stats": {
+      "power": 2200,
+      "toughness": 24000,
+      "energyPower": 360,
+      "magicCaps": 96,
+      "magicBars": 480
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/144.webp",
+      "id": 144,
+      "name": "Gossamer Chest",
+      "completed": true,
+      "slot": "Chest",
+      "zone": 17
+    },
+    "stats": {
+      "power": 2200,
+      "toughness": 25000,
+      "energyCap": 124,
+      "magicCap": 100
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/145.webp",
+      "id": 145,
+      "name": "Braided Beard Legs",
+      "completed": true,
+      "slot": "Legs",
+      "zone": 17
+    },
+    "stats": {
+      "power": 2200,
+      "toughness": 25000,
+      "magicCap": 86,
+      "magicPower": 580,
+      "magicBars": 460
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/146.webp",
+      "id": 146,
+      "name": "Fuzzy Orange Cheeto Slippers!",
+      "completed": true,
+      "slot": "Boots",
+      "zone": 17
+    },
+    "stats": {
+      "power": 2400,
+      "toughness": 25000,
+      "energyCap": 40,
+      "energyPower": 440,
+      "energyBars": 660
     }
   },
   {
@@ -1739,6 +1597,20 @@
       "toughness": 48000,
       "wandoosSpeed": 260,
       "nguSpeed": 120
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/154.webp",
+      "id": 154,
+      "name": "Wanderer's Cane",
+      "completed": true,
+      "slot": "Weapon",
+      "zone": 18
+    },
+    "stats": {
+      "power": 340000,
+      "toughness": 24000
     }
   },
   {
@@ -1962,11 +1834,31 @@
       "zone": 20
     },
     "stats": {
-      "energyCap": 40.8,
-      "energyPower": 408,
-      "magicCap": 40.8,
-      "magicPower": 408,
-      "drop": 102
+      "power": 122000,
+      "toughness": 122000,
+      "energyCap": 48.8,
+      "energyPower": 488,
+      "magicCap": 48.8,
+      "magicPower": 488,
+      "drop": 122
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/170.webp",
+      "id": 170,
+      "name": "Ascended x4 Pendant",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": 20
+    },
+    "stats": {
+      "power": 100000,
+      "toughness": 100000,
+      "energyCap": 120,
+      "magicCap": 120,
+      "drop": 250,
+      "questDrop": 5
     }
   },
   {
@@ -2058,101 +1950,21 @@
   },
   {
     "metadata": {
-      "iconUrl": "./items/439.webp",
-      "id": 439,
-      "name": "Gaudy Epaulettes",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 14
-    },
-    "stats": {
-      "power": 1800,
-      "toughness": 1800,
-      "energyCap": 48,
-      "energyPower": 180,
-      "energyBars": 200
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/440.webp",
-      "id": 440,
-      "name": "The F Tank",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 15
-    },
-    "stats": {
-      "power": 8000,
-      "toughness": 8000,
-      "energyCap": 100,
-      "energyPower": 320,
-      "energyBars": 200
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/441.webp",
-      "id": 441,
-      "name": "A Beard Comb",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 17
-    },
-    "stats": {
-      "energyCap": 120,
-      "magicPower": 900,
-      "beardSpeed": 24
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/442.webp",
-      "id": 442,
-      "name": "Random Crayons",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 19
-    },
-    "stats": {
-      "energyCap": 80,
-      "energyPower": 800,
-      "magicCap": 80,
-      "magicPower": 800,
-      "drop": 80
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/443.webp",
-      "id": 443,
-      "name": "Red Lipstick",
-      "completed": true,
-      "slot": "Accessory",
+      "iconUrl": "./items/178.webp",
+      "id": 178,
+      "name": "The Stealthiest Armour",
+      "completed": false,
+      "slot": "Chest",
       "zone": 20
     },
     "stats": {
-      "energyPower": 2000,
-      "magicCap": 300,
-      "magicPower": 2000,
-      "beardSpeed": 50
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/188.webp",
-      "id": 188,
-      "name": "The Fists of Flubber",
-      "completed": true,
-      "slot": "Weapon",
-      "zone": 21
-    },
-    "stats": {
-      "power": 4400000,
-      "toughness": 200000,
-      "magicBars": 2400,
-      "magicCap": 400,
-      "magicPower": 4000
+      "power": 9840,
+      "toughness": 184500,
+      "energyCap": 231.44,
+      "energyBars": 2460,
+      "magicCap": 231.44,
+      "magicBars": 2460,
+      "nguSpeed": 200
     }
   },
   {
@@ -2231,21 +2043,19 @@
   },
   {
     "metadata": {
-      "iconUrl": "./items/178.webp",
-      "id": 178,
-      "name": "The Stealthiest Armour",
-      "completed": false,
-      "slot": "Chest",
-      "zone": 20
+      "iconUrl": "./items/188.webp",
+      "id": 188,
+      "name": "The Fists of Flubber",
+      "completed": true,
+      "slot": "Weapon",
+      "zone": 21
     },
     "stats": {
-      "power": 9840,
-      "toughness": 184500,
-      "energyCap": 231.44,
-      "energyBars": 2460,
-      "magicCap": 231.44,
-      "magicBars": 2460,
-      "nguSpeed": 200
+      "power": 4400000,
+      "toughness": 200000,
+      "magicBars": 2400,
+      "magicCap": 400,
+      "magicPower": 4000
     }
   },
   {
@@ -2263,6 +2073,197 @@
       "energyCap": 150,
       "magicCap": 150,
       "wandoosSpeed": 200
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/432.webp",
+      "id": 432,
+      "name": "The Tuba of Time",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 4
+    },
+    "stats": {
+      "power": 20,
+      "toughness": 20,
+      "energyPower": 30
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/433.webp",
+      "id": 433,
+      "name": "Cheese Grater",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 5
+    },
+    "stats": {
+      "power": 30,
+      "energySpeed": 80,
+      "magicSpeed": 60,
+      "drop": 4
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/434.webp",
+      "id": 434,
+      "name": "A Dragon's Left Ball",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 6
+    },
+    "stats": {
+      "magicCap": 6,
+      "magicPower": 100
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/435.webp",
+      "id": 435,
+      "name": "Magicite Crystal",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 7
+    },
+    "stats": {
+      "power": 100,
+      "toughness": 100,
+      "magicCap": 12,
+      "magicSpeed": 100
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/436.webp",
+      "id": 436,
+      "name": "Giant Windup Gear",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 9
+    },
+    "stats": {
+      "power": 300,
+      "toughness": 300,
+      "energyCap": 10,
+      "magicCap": 10,
+      "drop": 16
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/437.webp",
+      "id": 437,
+      "name": "A Sinusoidal Wave",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 11
+    },
+    "stats": {
+      "energyCap": 14,
+      "magicCap": 14
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/438.webp",
+      "id": 438,
+      "name": "Ghost Typewriter",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 12
+    },
+    "stats": {
+      "power": 1200,
+      "toughness": 1200,
+      "energyCap": 32,
+      "magicPower": 120,
+      "drop": 36
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/439.webp",
+      "id": 439,
+      "name": "Gaudy Epaulettes",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 14
+    },
+    "stats": {
+      "power": 1800,
+      "toughness": 1800,
+      "energyCap": 48,
+      "energyPower": 180,
+      "energyBars": 200
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/440.webp",
+      "id": 440,
+      "name": "The F Tank",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 15
+    },
+    "stats": {
+      "power": 8000,
+      "toughness": 8000,
+      "energyCap": 100,
+      "energyPower": 320,
+      "energyBars": 200
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/441.webp",
+      "id": 441,
+      "name": "A Beard Comb",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 17
+    },
+    "stats": {
+      "energyCap": 120,
+      "magicPower": 900,
+      "beardSpeed": 24
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/442.webp",
+      "id": 442,
+      "name": "Random Crayons",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 19
+    },
+    "stats": {
+      "energyCap": 80,
+      "energyPower": 800,
+      "magicCap": 80,
+      "magicPower": 800,
+      "drop": 80
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/443.webp",
+      "id": 443,
+      "name": "Red Lipstick",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 20
+    },
+    "stats": {
+      "energyPower": 2000,
+      "magicCap": 300,
+      "magicPower": 2000,
+      "beardSpeed": 50
     }
   }
 ]

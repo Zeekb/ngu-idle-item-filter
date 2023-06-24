@@ -64,6 +64,9 @@ const App = () => {
   ]
   const itemFilter = filters[index]
 
+  // get all items when in need of a sort of the item-list file
+  // console.log(JSON.stringify(getByZone(sorts.sortOnId(getBySlots(items, slots)), zone)))
+
   return (
     <div className="app-container">
       <div className="item-filter-container">
