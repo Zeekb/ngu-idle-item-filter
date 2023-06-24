@@ -1,11 +1,11 @@
 .item-container {
-  height: 334px;
-  margin: 11px;
+  height: 340px;
+  margin: 6px;
   width: 220px;
   background-color: #c0c0c0;
   outline: 2px solid;
   border-radius: 2px;
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
   text-align: center;
 }
 

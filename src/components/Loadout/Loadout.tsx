@@ -80,7 +80,7 @@ const Loadout = (props: LoadoutProps) => {
         </div>
       </div>
       <div className="loadout-stat-container">
-        <h3>Stat Boosts</h3>
+        <h3 className="heading">Stat Boosts</h3>
         {statsCombined.map((stat) => (
           <React.Fragment key={stat[0]}>
             <div className="prop">{getBoostName(stat[0])}</div>

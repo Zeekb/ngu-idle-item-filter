@@ -1,10 +1,9 @@
 .loadout-grid {
-  margin: 2px;
+  margin: 18px 2px 10px 2px;
   background-color: #c0c0c0;
   outline: 2px solid;
   border-radius: 2px;
   padding: 13px 0 13px 18px;
-  margin-top: 38px;
   text-align: center;
   justify-content: center;
   grid-row-start: 200px;

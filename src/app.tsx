@@ -9,7 +9,7 @@ import {
 } from './components/item-lister/item-lister'
 import { ZoneFilter } from './components/zone-filter'
 import { Loadout } from './components/loadout/loadout'
-import { FilterButtons } from './components/loadout-filter/filter-buttons'
+import { FilterButtons } from './components/filter-buttons'
 import { LoadoutFilter } from './components/loadout-filter/loadout-filter'
 
 import { Item, Slot } from './utils/types'

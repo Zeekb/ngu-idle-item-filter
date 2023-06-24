@@ -36,7 +36,7 @@ const LoadoutFilter = (props: LoadoutFilterProps) => {
 
   return (
     <>
-      <h3>Loadout Filter</h3>
+      <h3 className="heading">Loadout Filter</h3>
       <div className="grid">
         {fullSlots.map((slot) => (
           <img
