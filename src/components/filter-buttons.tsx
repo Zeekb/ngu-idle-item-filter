@@ -49,9 +49,7 @@ const FilterButtons = (props: FilterButtonsProps) => {
             console.log(style)
             return (
               <Button
-                className={
-                  isSelected ? 'button text' : 'button text deselected'
-                }
+                className={isSelected ? 'text' : 'text deselected'}
                 styleType="borderless"
                 style={style}
                 key={label}

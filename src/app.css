@@ -18,15 +18,14 @@
 
 .loadout-container {
   margin-top: 20px;
-  margin-right: 44px;
-  width: calc(20% - 40px - 44px);
+  margin-right: 80px;
+  width: calc(20% - 86px);
   height: auto;
-  /* height: calc(100vh - 36px - 20px - 11px - 13px); */
   float: right;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #c0c0c0;
+}
+
+.deselected {
+  opacity: 0.3;
 }
 
 .text {

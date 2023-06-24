@@ -1,13 +1,34 @@
+import { Button } from '@itwin/itwinui-react'
 import React, { useEffect, useRef } from 'react'
 import { Item, Slot } from '../../utils/types'
 import { getBoostName } from '../item-lister/item-container'
 import './loadout.css'
 
+const buttonStyle = {
+  width: '200px',
+  marginTop: '12px',
+  backgroundColor: '#DDD',
+  outline: '2px solid',
+  lineHeight: 1.4,
+}
+
 interface LoadoutProps {
+  slots: Slot[]
+  setSlots: React.Dispatch<React.SetStateAction<Slot[]>>
   loadout: Item[]
 }
 
 const Loadout = (props: LoadoutProps) => {
+  const { slots, setSlots } = props
+  const slotClassName = 'item-icon loadout-slot'
+  const fullSlots: Slot[] = [
+    'Accessory',
+    'Head',
+    'Chest',
+    'Legs',
+    'Boots',
+    'Weapon',
+  ]
   const index = useRef(0)
   const accessories = props.loadout.filter(
     (item) => item.metadata.slot === 'Accessory',
@@ -31,6 +52,12 @@ const Loadout = (props: LoadoutProps) => {
         ],
       ])
     }
+  }
+
+  const handleSetSlots = (slot: Slot) => {
+    slots.includes(slot)
+      ? setSlots(slots.filter((slot_) => slot_ !== slot))
+      : setSlots([...slots, slot])
   }
 
   // TODO: combined stats not ordered in the way I want them, although they are not ordered anywhere its just expected theyll be right
@@ -57,28 +84,86 @@ const Loadout = (props: LoadoutProps) => {
 
   return (
     <>
+      <h2 className="heading">Slot Filter</h2>
+
       <div className="loadout-grid">
         <div className="loadout-row">
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Head')} />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Head')}
+            src={getSlotUrl('Head')}
+          />
         </div>
         <div className="loadout-row">
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Chest')} />
-          <img className="item-icon loadout" src={getSlotUrl('Weapon')} />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Chest')}
+            src={getSlotUrl('Chest')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Weapon')}
+            src={getSlotUrl('Weapon')}
+          />
         </div>
         <div className="loadout-row three-slots">
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Legs')} />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Legs')}
+            src={getSlotUrl('Legs')}
+          />
         </div>
         <div className="loadout-row three-slots">
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Accessory')} />
-          <img className="item-icon loadout" src={getSlotUrl('Boots')} />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Accessory')}
+            src={getSlotUrl('Accessory')}
+          />
+          <img
+            className={slotClassName}
+            onClick={() => handleSetSlots('Boots')}
+            src={getSlotUrl('Boots')}
+          />
         </div>
       </div>
+      <Button
+        className="text"
+        styleType="borderless"
+        style={buttonStyle}
+        onClick={() => setSlots(fullSlots)}
+      >
+        Reset
+      </Button>
       <div className="loadout-stat-container">
         <h3 className="heading">Stat Boosts</h3>
         {statsCombined.map((stat) => (

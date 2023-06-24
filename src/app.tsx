@@ -10,7 +10,6 @@ import {
 import { ZoneFilter } from './components/zone-filter'
 import { Loadout } from './components/loadout/loadout'
 import { FilterButtons } from './components/filter-buttons'
-import { LoadoutFilter } from './components/loadout-filter/loadout-filter'
 
 import { Item, Slot } from './utils/types'
 
@@ -75,8 +74,11 @@ const App = () => {
         <ItemLister filter={itemFilter} />
       </div>
       <div className="item-container loadout-container text">
-        <LoadoutFilter slots={slots} setSlots={setSlots} />
-        <Loadout loadout={getLoadout(itemFilter)} />
+        <Loadout
+          slots={slots}
+          setSlots={setSlots}
+          loadout={getLoadout(itemFilter)}
+        />
       </div>
     </div>
   )
