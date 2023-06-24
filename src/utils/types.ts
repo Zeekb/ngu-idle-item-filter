@@ -39,4 +39,5 @@ export type ButtonType = {
   label: string
   value: number
   isSelected: boolean
+  backgroundColor: string
 }

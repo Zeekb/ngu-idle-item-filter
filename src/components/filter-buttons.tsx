@@ -43,22 +43,28 @@ const FilterButtons = (props: FilterButtonsProps) => {
   return (
     <div className="buttons-container text">
       <ButtonGroup className="button-group" style={buttonGroupStyle}>
-        {buttons.map((button: ButtonType) => (
-          <Button
-            className={
-              button.isSelected ? 'button text' : 'button text deselected'
-            }
-            styleType="borderless"
-            style={buttonStyle}
-            key={button.label}
-            onClick={() => {
-              handleClick(button.value)
-              props.setIndex(button.value)
-            }}
-          >
-            {button.label}
-          </Button>
-        ))}
+        {buttons.map(
+          ({ label, value, isSelected, backgroundColor }: ButtonType) => {
+            const style = { ...buttonStyle, backgroundColor: backgroundColor }
+            console.log(style)
+            return (
+              <Button
+                className={
+                  isSelected ? 'button text' : 'button text deselected'
+                }
+                styleType="borderless"
+                style={style}
+                key={label}
+                onClick={() => {
+                  handleClick(value)
+                  props.setIndex(value)
+                }}
+              >
+                {label}
+              </Button>
+            )
+          },
+        )}
       </ButtonGroup>
     </div>
   )
