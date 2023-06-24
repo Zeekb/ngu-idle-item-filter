@@ -4,4 +4,4 @@
 - Gives suggested loadout for picked stats
 - Can be filtered on zone
   
-![image](https://github.com/Zeekb/ngu-idle-item-filter/assets/24407565/3f6c4aff-43c5-4e8a-ae5b-182d6e45be26)
+![image](https://github.com/Zeekb/ngu-idle-item-filter/assets/24407565/518f3e46-3433-4c65-b2ea-7afc05d1f251)
