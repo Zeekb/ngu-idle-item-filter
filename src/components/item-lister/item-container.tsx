@@ -5,18 +5,18 @@ interface ItemContainerProps {
   item: Item
 }
 
+const getBoostName = (boost: string) => {
+  const name = boost
+    .split(/(?=[A-Z])/)
+    .toString()
+    .replace(',', ' ')
+  return name.charAt(0).toUpperCase() + name.slice(1)
+}
+
 const ItemContainer = (props: ItemContainerProps) => {
   const {
     item: { metadata, stats },
   } = props
-
-  const getBoostName = (boost: string) => {
-    const name = boost
-      .split(/(?=[A-Z])/)
-      .toString()
-      .replace(',', ' ')
-    return name.charAt(0).toUpperCase() + name.slice(1)
-  }
 
   return (
     <div key={metadata.name} className="item-container">
@@ -56,4 +56,4 @@ const ItemContainer = (props: ItemContainerProps) => {
   )
 }
 
-export default ItemContainer
+export { ItemContainer, getBoostName }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Item, Slot } from '../../utils/types'
-import ItemContainer from './item-container'
+import { ItemContainer } from './item-container'
 
 import './item-lister.css'
 

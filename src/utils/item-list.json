@@ -359,7 +359,7 @@
       "name": "Looty McLootFace",
       "completed": true,
       "slot": "Accessory",
-      "zone": -2
+      "zone": 7
     },
     "stats": {
       "power": 4,
@@ -1268,7 +1268,7 @@
       "name": "Ascended x4 Pendant",
       "completed": false,
       "slot": "Accessory",
-      "zone": -1
+      "zone": 20
     },
     "stats": {
       "power": 100000,
@@ -1395,7 +1395,7 @@
       "name": "Ascended Forest Pendant",
       "completed": true,
       "slot": "Accessory",
-      "zone": -1
+      "zone": 7
     },
     "stats": {
       "power": 200,
@@ -1424,7 +1424,7 @@
       "name": "Ascended Ascended Pendant",
       "completed": true,
       "slot": "Accessory",
-      "zone": -1
+      "zone": 11
     },
     "stats": {
       "power": 1600,
@@ -1516,7 +1516,7 @@
       "name": "Sir Looty McLootington III, Esquire",
       "completed": true,
       "slot": "Accessory",
-      "zone": -2
+      "zone": 14
     },
     "stats": {
       "power": 400,
@@ -1613,7 +1613,7 @@
       "name": "Ascended Ascended Ascended Pendant",
       "completed": false,
       "slot": "Accessory",
-      "zone": -1
+      "zone": 17
     },
     "stats": {
       "power": 40000,
@@ -1959,7 +1959,7 @@
       "name": "King Looty",
       "completed": false,
       "slot": "Accessory",
-      "zone": -2
+      "zone": 20
     },
     "stats": {
       "energyCap": 40.8,
@@ -2115,11 +2115,11 @@
       "zone": 19
     },
     "stats": {
-      "energyCap": 42,
-      "energyPower": 759.74,
-      "magicCap": 42,
-      "magicPower": 759.74,
-      "drop": 42
+      "energyCap": 80,
+      "energyPower": 800,
+      "magicCap": 80,
+      "magicPower": 800,
+      "drop": 80
     }
   },
   {
