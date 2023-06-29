@@ -7,7 +7,7 @@ export type Item = {
     name: string
     completed: boolean
     slot: Slot
-    zone: number // TODO: set list of values to list of names? think about why on this
+    zone: number
   }
   stats: {
     power?: number

@@ -24,8 +24,8 @@ const ZoneFilter = (props: ZoneFilterProps) => {
   return (
     <div
       style={{
-        display: 'inline-flex',
-        margin: '0 calc(30% + 3px)',
+        justifyContent: 'center',
+        display: 'flex',
       }}
     >
       <Button

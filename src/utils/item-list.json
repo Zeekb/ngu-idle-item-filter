@@ -2271,15 +2271,15 @@
       "iconUrl": "./items/190.webp",
       "id": 190,
       "name": "A Shrunken Voodoo Doll",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 21
     },
     "stats": {
-      "power": 94665,
-      "toughness": 94665,
-      "beardSpeed": 284,
-      "nguSpeed": 261.77
+      "power": 133332,
+      "toughness": 133332,
+      "beardSpeed": 400,
+      "nguSpeed": 400
     }
   },
   {
@@ -2292,11 +2292,11 @@
       "zone": 22
     },
     "stats": {
-      "power": 30000,
-      "toughness": 352000,
-      "energyPower": 5200,
-      "magicCap": 190,
-      "magicBars": 2800
+      "power": 33000,
+      "toughness": 387200,
+      "energyPower": 2860,
+      "magicCap": 209,
+      "magicBars": 1540
     }
   },
   {
@@ -2309,11 +2309,11 @@
       "zone": 22
     },
     "stats": {
-      "power": 20000,
-      "toughness": 370000,
-      "energyCap": 300,
+      "power": 22600,
+      "toughness": 418100,
+      "energyCap": 309.02,
       "energyPower": 2900,
-      "magicCap": 300,
+      "magicCap": 309.02,
       "magicPower": 2900,
       "magicBars": 2500
     }
@@ -2328,8 +2328,8 @@
       "zone": 22
     },
     "stats": {
-      "power": 20000,
-      "toughness": 355000,
+      "power": 21400,
+      "toughness": 379850,
       "energyCap": 230,
       "energyPower": 2800,
       "energyBars": 1700,
@@ -2346,9 +2346,9 @@
       "zone": 22
     },
     "stats": {
-      "power": 20000,
-      "toughness": 366000,
-      "energyCap": 340,
+      "power": 21800,
+      "toughness": 398940,
+      "energyCap": 359.97,
       "energyPower": 3400,
       "energyBars": 3400
     }
@@ -2363,12 +2363,28 @@
       "zone": 22
     },
     "stats": {
-      "power": 3800000,
-      "toughness": 200000,
-      "energyPower": 6000,
+      "power": 3914000,
+      "toughness": 206000,
+      "energyPower": 3000,
       "energyBars": 1800,
-      "magicCap": 290,
+      "magicCap": 293.73,
       "magicBars": 1800
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/444.webp",
+      "id": 444,
+      "name": "Candy Corn Necklace",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": 22
+    },
+    "stats": {
+      "energyBars": 2000,
+      "magicBars": 2000,
+      "seedGain": 50,
+      "nguSpeed": 200
     }
   }
 ]

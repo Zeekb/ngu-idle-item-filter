@@ -18,6 +18,31 @@ const ItemContainer = (props: ItemContainerProps) => {
     item: { metadata, stats },
   } = props
 
+  const statSortOrder = [
+    'power',
+    'toughness',
+    'energyCap',
+    'energyPower',
+    'energyBars',
+    'energySpeed',
+    'magicCap',
+    'magicPower',
+    'magicBars',
+    'magicSpeed',
+    'drop',
+    'gold',
+    'respawn',
+    'advancedTraining',
+    'seedGain',
+    'moveCooldown',
+    'wandoosSpeed',
+    'nguSpeed',
+    'augSpeed',
+    'beardSpeed',
+    'questDrop',
+    'cooking',
+  ]
+
   return (
     <div key={metadata.name} className="item-container">
       <div style={{ height: '100%' }}>
@@ -33,23 +58,28 @@ const ItemContainer = (props: ItemContainerProps) => {
           <div>{metadata.slot}</div>
         </div>
         <div className="boosts">
-          {Object.entries(stats).map(([statName, statValue]) => {
-            return (
-              statValue && (
-                <React.Fragment key={statName}>
-                  <div className="prop">{getBoostName(statName)}</div>
-                  <div
-                    className={metadata.completed ? 'stat finished' : 'stat'}
-                  >
-                    {statValue.toLocaleString()}
-                    {statName === 'power' || statName === 'toughness'
-                      ? ''
-                      : '%'}
-                  </div>
-                </React.Fragment>
-              )
+          {Object.entries(stats)
+            .sort(
+              (a, b) =>
+                statSortOrder.indexOf(a[0]) - statSortOrder.indexOf(b[0]),
             )
-          })}
+            .map(([statName, statValue]) => {
+              return (
+                statValue && (
+                  <React.Fragment key={statName}>
+                    <div className="prop">{getBoostName(statName)}</div>
+                    <div
+                      className={metadata.completed ? 'stat finished' : 'stat'}
+                    >
+                      {statValue.toLocaleString()}
+                      {statName === 'power' || statName === 'toughness'
+                        ? ''
+                        : '%'}
+                    </div>
+                  </React.Fragment>
+                )
+              )
+            })}
         </div>
       </div>
     </div>

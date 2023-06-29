@@ -41,8 +41,8 @@ const FilterButtons = (props: FilterButtonsProps) => {
   }
 
   return (
-    <div className="buttons-container text">
-      <ButtonGroup className="button-group" style={buttonGroupStyle}>
+    <div>
+      <ButtonGroup style={buttonGroupStyle}>
         {buttons.map(
           ({ label, value, isSelected, backgroundColor }: ButtonType) => {
             const style = { ...buttonStyle, backgroundColor: backgroundColor }

@@ -20,7 +20,7 @@ interface LoadoutProps {
 
 const Loadout = (props: LoadoutProps) => {
   const { slots, setSlots } = props
-  const slotClassName = 'item-icon loadout-slot'
+  const slotClassName = 'item-icon '
   const fullSlots: Slot[] = [
     'Accessory',
     'Head',
@@ -28,6 +28,30 @@ const Loadout = (props: LoadoutProps) => {
     'Legs',
     'Boots',
     'Weapon',
+  ]
+  const statSortOrder = [
+    'power',
+    'toughness',
+    'energyCap',
+    'energyPower',
+    'energyBars',
+    'energySpeed',
+    'magicCap',
+    'magicPower',
+    'magicBars',
+    'magicSpeed',
+    'drop',
+    'gold',
+    'respawn',
+    'advancedTraining',
+    'seedGain',
+    'moveCooldown',
+    'wandoosSpeed',
+    'nguSpeed',
+    'augSpeed',
+    'beardSpeed',
+    'questDrop',
+    'cooking',
   ]
   const index = useRef(0)
   const accessories = props.loadout.filter(
@@ -43,14 +67,18 @@ const Loadout = (props: LoadoutProps) => {
   let statsCombined: [string, number][] = []
   const getCombinedStats = () => {
     for (const [key] of statMap) {
-      statsCombined = statsCombined.concat([
-        [
-          key,
-          loadoutStats
-            .filter((stat) => stat[0] === key)
-            .reduce((partialSum, a) => partialSum + a[1], 0),
-        ],
-      ])
+      statsCombined = statsCombined
+        .concat([
+          [
+            key,
+            loadoutStats
+              .filter((stat) => stat[0] === key)
+              .reduce((partialSum, a) => partialSum + a[1], 0),
+          ],
+        ])
+        .sort(
+          (a, b) => statSortOrder.indexOf(a[0]) - statSortOrder.indexOf(b[0]),
+        )
     }
   }
 
@@ -59,10 +87,6 @@ const Loadout = (props: LoadoutProps) => {
       ? setSlots(slots.filter((slot_) => slot_ !== slot))
       : setSlots([...slots, slot])
   }
-
-  // TODO: combined stats not ordered in the way I want them, although they are not ordered anywhere its just expected theyll be right
-  //          - see stat boosts in power and toughness with no weapon or
-  //              accessories, same items but ordered differently
 
   getCombinedStats()
 
@@ -79,14 +103,24 @@ const Loadout = (props: LoadoutProps) => {
       const item = props.loadout.find(
         (item) => item.metadata.slot === slot && slot !== 'Accessory',
       )
-      if (item) url = item.metadata.iconUrl
+      if (item) {
+        url = item.metadata.iconUrl
+      }
     }
     return url
   }
 
-  // TODO: show more obviously when a slot is disabled,
-  //            - a different icon change?
-  //            - styles?
+  const getSlot = (slot: Slot) => {
+    return (
+      <img
+        className={
+          slots.includes(slot) ? slotClassName : slotClassName + 'deselected'
+        }
+        onClick={() => handleSetSlots(slot)}
+        src={getSlotUrl(slot)}
+      />
+    )
+  }
 
   return (
     <>
@@ -94,72 +128,24 @@ const Loadout = (props: LoadoutProps) => {
 
       <div className="loadout-grid">
         <div className="loadout-row">
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Head')}
-            src={getSlotUrl('Head')}
-          />
+          {getSlot('Accessory')}
+          {getSlot('Head')}
         </div>
         <div className="loadout-row">
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Chest')}
-            src={getSlotUrl('Chest')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Weapon')}
-            src={getSlotUrl('Weapon')}
-          />
+          {getSlot('Accessory')}
+          {getSlot('Accessory')}
+          {getSlot('Chest')}
+          {getSlot('Weapon')}
         </div>
         <div className="loadout-row three-slots">
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Legs')}
-            src={getSlotUrl('Legs')}
-          />
+          {getSlot('Accessory')}
+          {getSlot('Accessory')}
+          {getSlot('Legs')}
         </div>
         <div className="loadout-row three-slots">
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Accessory')}
-            src={getSlotUrl('Accessory')}
-          />
-          <img
-            className={slotClassName}
-            onClick={() => handleSetSlots('Boots')}
-            src={getSlotUrl('Boots')}
-          />
+          {getSlot('Accessory')}
+          {getSlot('Accessory')}
+          {getSlot('Boots')}
         </div>
       </div>
       <Button
