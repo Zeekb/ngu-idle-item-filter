@@ -1,5 +1,6 @@
 import React from 'react'
 import { Item } from '../../utils/types'
+import Sorts from '../../utils/sorts'
 
 interface ItemContainerProps {
   item: Item
@@ -17,31 +18,7 @@ const ItemContainer = (props: ItemContainerProps) => {
   const {
     item: { metadata, stats },
   } = props
-
-  const statSortOrder = [
-    'power',
-    'toughness',
-    'energyCap',
-    'energyPower',
-    'energyBars',
-    'energySpeed',
-    'magicCap',
-    'magicPower',
-    'magicBars',
-    'magicSpeed',
-    'drop',
-    'gold',
-    'respawn',
-    'advancedTraining',
-    'seedGain',
-    'moveCooldown',
-    'wandoosSpeed',
-    'nguSpeed',
-    'augSpeed',
-    'beardSpeed',
-    'questDrop',
-    'cooking',
-  ]
+  const sorts = new Sorts()
 
   return (
     <div key={metadata.name} className="item-container">
@@ -61,7 +38,8 @@ const ItemContainer = (props: ItemContainerProps) => {
           {Object.entries(stats)
             .sort(
               (a, b) =>
-                statSortOrder.indexOf(a[0]) - statSortOrder.indexOf(b[0]),
+                sorts.statSortOrder.indexOf(a[0]) -
+                sorts.statSortOrder.indexOf(b[0]),
             )
             .map(([statName, statValue]) => {
               return (

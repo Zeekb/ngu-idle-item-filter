@@ -2,6 +2,7 @@ import { Button } from '@itwin/itwinui-react'
 import React, { useEffect, useRef } from 'react'
 import { Item, Slot } from '../../utils/types'
 import { getBoostName } from '../item-lister/item-container'
+import Sorts from '../../utils/sorts'
 import './loadout.css'
 
 const buttonStyle = {
@@ -20,6 +21,7 @@ interface LoadoutProps {
 
 const Loadout = (props: LoadoutProps) => {
   const { slots, setSlots } = props
+  const sorts = new Sorts()
   const slotClassName = 'item-icon '
   const fullSlots: Slot[] = [
     'Accessory',
@@ -28,30 +30,6 @@ const Loadout = (props: LoadoutProps) => {
     'Legs',
     'Boots',
     'Weapon',
-  ]
-  const statSortOrder = [
-    'power',
-    'toughness',
-    'energyCap',
-    'energyPower',
-    'energyBars',
-    'energySpeed',
-    'magicCap',
-    'magicPower',
-    'magicBars',
-    'magicSpeed',
-    'drop',
-    'gold',
-    'respawn',
-    'advancedTraining',
-    'seedGain',
-    'moveCooldown',
-    'wandoosSpeed',
-    'nguSpeed',
-    'augSpeed',
-    'beardSpeed',
-    'questDrop',
-    'cooking',
   ]
   const index = useRef(0)
   const accessories = props.loadout.filter(
@@ -77,7 +55,9 @@ const Loadout = (props: LoadoutProps) => {
           ],
         ])
         .sort(
-          (a, b) => statSortOrder.indexOf(a[0]) - statSortOrder.indexOf(b[0]),
+          (a, b) =>
+            sorts.statSortOrder.indexOf(a[0]) -
+            sorts.statSortOrder.indexOf(b[0]),
         )
     }
   }

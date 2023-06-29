@@ -171,4 +171,29 @@ export default class Sorts {
       return 1
     })
   }
+
+  statSortOrder = [
+    'power',
+    'toughness',
+    'energyCap',
+    'energyPower',
+    'energyBars',
+    'energySpeed',
+    'magicCap',
+    'magicPower',
+    'magicBars',
+    'magicSpeed',
+    'drop',
+    'gold',
+    'respawn',
+    'advancedTraining',
+    'seedGain',
+    'moveCooldown',
+    'wandoosSpeed',
+    'nguSpeed',
+    'augSpeed',
+    'beardSpeed',
+    'questDrop',
+    'cooking',
+  ]
 }
