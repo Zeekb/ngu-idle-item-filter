@@ -30,16 +30,16 @@
     "backgroundColor": "#56ce7f"
   },
   {
-    "label": "Gold",
+    "label": "Augment Speed",
     "value": 5,
     "isSelected": false,
-    "backgroundColor": "#ffd33c"
+    "backgroundColor": "#dc5422"
   },
   {
-    "label": "Drop",
+    "label": "Wandoos Speed",
     "value": 6,
     "isSelected": false,
-    "backgroundColor": "#ffd33c"
+    "backgroundColor": "#dc5422"
   },
   {
     "label": "Unfinished Items",
@@ -72,57 +72,57 @@
     "backgroundColor": "#7b95f6"
   },
   {
-    "label": "Respawn",
-    "value": 12,
-    "isSelected": false,
-    "backgroundColor": "#f0c5f1"
-  },
-  {
-    "label": "Move Cooldown",
-    "value": 13,
-    "isSelected": false,
-    "backgroundColor": "#f0c5f1"
-  },
-  {
-    "label": "Advanced Training",
-    "value": 14,
-    "isSelected": false,
-    "backgroundColor": "#f0c5f1"
-  },
-  {
-    "label": "Seed Gain",
-    "value": 15,
-    "isSelected": false,
-    "backgroundColor": "#f0c5f1"
-  },
-  {
-    "label": "Yggdrasil Yield",
-    "value": 16,
-    "isSelected": false,
-    "backgroundColor": "#f0c5f1"
-  },
-  {
-    "label": "Augment Speed",
-    "value": 17,
-    "isSelected": false,
-    "backgroundColor": "#dc5422"
-  },
-  {
-    "label": "Wandoos Speed",
-    "value": 18,
-    "isSelected": false,
-    "backgroundColor": "#dc5422"
-  },
-  {
     "label": "Beard Speed",
-    "value": 19,
+    "value": 12,
     "isSelected": false,
     "backgroundColor": "#dc5422"
   },
   {
     "label": "NGU Speed",
-    "value": 20,
+    "value": 13,
     "isSelected": false,
     "backgroundColor": "#dc5422"
+  },
+  {
+    "label": "Gold",
+    "value": 14,
+    "isSelected": false,
+    "backgroundColor": "#ffd33c"
+  },
+  {
+    "label": "Drop",
+    "value": 15,
+    "isSelected": false,
+    "backgroundColor": "#ffd33c"
+  },
+  {
+    "label": "Respawn",
+    "value": 16,
+    "isSelected": false,
+    "backgroundColor": "#f0c5f1"
+  },
+  {
+    "label": "Move Cooldown",
+    "value": 17,
+    "isSelected": false,
+    "backgroundColor": "#f0c5f1"
+  },
+  {
+    "label": "Advanced Training",
+    "value": 18,
+    "isSelected": false,
+    "backgroundColor": "#f0c5f1"
+  },
+  {
+    "label": "Seed Gain",
+    "value": 19,
+    "isSelected": false,
+    "backgroundColor": "#f0c5f1"
+  },
+  {
+    "label": "Yggdrasil Yield",
+    "value": 20,
+    "isSelected": false,
+    "backgroundColor": "#f0c5f1"
   }
 ]
