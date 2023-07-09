@@ -96,26 +96,32 @@
     "backgroundColor": "#f0c5f1"
   },
   {
-    "label": "Augment Speed",
+    "label": "Yggdrasil Yield",
     "value": 16,
     "isSelected": false,
-    "backgroundColor": "#dc5422"
+    "backgroundColor": "#f0c5f1"
   },
   {
-    "label": "Wandoos Speed",
+    "label": "Augment Speed",
     "value": 17,
     "isSelected": false,
     "backgroundColor": "#dc5422"
   },
   {
-    "label": "Beard Speed",
+    "label": "Wandoos Speed",
     "value": 18,
     "isSelected": false,
     "backgroundColor": "#dc5422"
   },
   {
-    "label": "NGU Speed",
+    "label": "Beard Speed",
     "value": 19,
+    "isSelected": false,
+    "backgroundColor": "#dc5422"
+  },
+  {
+    "label": "NGU Speed",
+    "value": 20,
     "isSelected": false,
     "backgroundColor": "#dc5422"
   }

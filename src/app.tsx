@@ -56,6 +56,7 @@ const App = () => {
     sorts.sortOnMoveCooldown(filteredItems('moveCooldown')),
     sorts.sortOnAdvancedTraining(filteredItems('advancedTraining')),
     sorts.sortOnSeedGain(filteredItems('seedGain')),
+    sorts.sortOnYggdrasilYield(filteredItems('yggdrasilYield')),
     sorts.sortOnAugSpeed(filteredItems('augSpeed')),
     sorts.sortOnWandoosSpeed(filteredItems('wandoosSpeed')),
     sorts.sortOnBeardSpeed(filteredItems('beardSpeed')),

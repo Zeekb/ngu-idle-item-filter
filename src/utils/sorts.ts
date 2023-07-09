@@ -127,6 +127,15 @@ export default class Sorts {
     })
   }
 
+  sortOnYggdrasilYield = (list: Item[]): Item[] => {
+    return list.sort((a, b) => {
+      if (a.stats.yggdrasilYield && b.stats.yggdrasilYield) {
+        return a.stats.yggdrasilYield < b.stats.yggdrasilYield ? 1 : -1
+      }
+      return 1
+    })
+  }
+
   sortOnMoveCooldown = (list: Item[]): Item[] => {
     return list.sort((a, b) => {
       if (a.stats.moveCooldown && b.stats.moveCooldown) {
@@ -188,6 +197,7 @@ export default class Sorts {
     'respawn',
     'advancedTraining',
     'seedGain',
+    'yggdrasilYield',
     'moveCooldown',
     'wandoosSpeed',
     'nguSpeed',

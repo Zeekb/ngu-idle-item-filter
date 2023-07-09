@@ -25,6 +25,7 @@ export type Item = {
     respawn?: number
     advancedTraining?: number
     seedGain?: number
+    yggdrasilYield?: number
     moveCooldown?: number
     wandoosSpeed?: number
     nguSpeed?: number

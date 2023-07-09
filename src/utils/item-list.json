@@ -2292,11 +2292,11 @@
       "zone": 22
     },
     "stats": {
-      "power": 33000,
-      "toughness": 387200,
-      "energyPower": 2860,
-      "magicCap": 209,
-      "magicBars": 1540
+      "power": 35700,
+      "toughness": 418880,
+      "energyPower": 3094,
+      "magicCap": 226.1,
+      "magicBars": 1666
     }
   },
   {
@@ -2309,13 +2309,13 @@
       "zone": 22
     },
     "stats": {
-      "power": 22600,
-      "toughness": 418100,
-      "energyCap": 309.02,
-      "energyPower": 2900,
-      "magicCap": 309.02,
-      "magicPower": 2900,
-      "magicBars": 2500
+      "power": 23800,
+      "toughness": 440300,
+      "energyCap": 357,
+      "energyPower": 3451,
+      "magicCap": 357,
+      "magicPower": 3451,
+      "magicBars": 2833.94
     }
   },
   {
@@ -2346,11 +2346,11 @@
       "zone": 22
     },
     "stats": {
-      "power": 21800,
-      "toughness": 398940,
-      "energyCap": 359.97,
-      "energyPower": 3400,
-      "energyBars": 3400
+      "power": 22600,
+      "toughness": 413580,
+      "energyCap": 370.6,
+      "energyPower": 3706,
+      "energyBars": 3706
     }
   },
   {
@@ -2363,12 +2363,12 @@
       "zone": 22
     },
     "stats": {
-      "power": 3914000,
-      "toughness": 206000,
-      "energyPower": 3000,
-      "energyBars": 1800,
-      "magicCap": 293.73,
-      "magicBars": 1800
+      "power": 4712000,
+      "toughness": 248000,
+      "energyPower": 3720,
+      "energyBars": 2232,
+      "magicCap": 359.6,
+      "magicBars": 2232
     }
   },
   {
@@ -2381,10 +2381,26 @@
       "zone": 22
     },
     "stats": {
-      "energyBars": 2000,
-      "magicBars": 2000,
-      "seedGain": 50,
-      "nguSpeed": 200
+      "energyBars": 2280,
+      "magicBars": 2280,
+      "seedGain": 57,
+      "nguSpeed": 228
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/193.webp",
+      "id": 193,
+      "name": "A Giant Apple",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": 21
+    },
+    "stats": {
+      "power": 52500,
+      "toughness": 52500,
+      "seedGain": 52.5,
+      "yggdrasilYield": 10.5
     }
   }
 ]
