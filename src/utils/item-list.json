@@ -1834,13 +1834,13 @@
       "zone": 20
     },
     "stats": {
-      "power": 122000,
-      "toughness": 122000,
-      "energyCap": 48.8,
-      "energyPower": 488,
-      "magicCap": 48.8,
-      "magicPower": 488,
-      "drop": 122
+      "power": 157000,
+      "toughness": 157000,
+      "energyCap": 62.8,
+      "energyPower": 628,
+      "magicCap": 62.8,
+      "magicPower": 628,
+      "drop": 157
     }
   },
   {
@@ -2077,6 +2077,167 @@
   },
   {
     "metadata": {
+      "iconUrl": "./items/190.webp",
+      "id": 190,
+      "name": "A Shrunken Voodoo Doll",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 21
+    },
+    "stats": {
+      "power": 133332,
+      "toughness": 133332,
+      "beardSpeed": 400,
+      "nguSpeed": 400
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/192.webp",
+      "id": 192,
+      "name": "A Priceless Van-Gogh Painting",
+      "completed": true,
+      "slot": "Accessory",
+      "zone": 21
+    },
+    "stats": {
+      "power": 60000,
+      "toughness": 60000,
+      "energyCap": 400,
+      "magicCap": 400,
+      "gold": 6000
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/193.webp",
+      "id": 193,
+      "name": "A Giant Apple",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": 21
+    },
+    "stats": {
+      "power": 88000,
+      "toughness": 88000,
+      "seedGain": 88,
+      "yggdrasilYield": 17.6
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/221.webp",
+      "id": 221,
+      "name": "Chocolate Helmet",
+      "completed": true,
+      "slot": "Head",
+      "zone": 22
+    },
+    "stats": {
+      "power": 60000,
+      "toughness": 704000,
+      "energyPower": 5200,
+      "magicCap": 380,
+      "magicBars": 2800
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/222.webp",
+      "id": 222,
+      "name": "Chocolate Chest",
+      "completed": true,
+      "slot": "Chest",
+      "zone": 22
+    },
+    "stats": {
+      "power": 40000,
+      "toughness": 740000,
+      "energyCap": 600,
+      "energyPower": 5800,
+      "magicCap": 600,
+      "magicPower": 5800,
+      "magicBars": 5000
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/223.webp",
+      "id": 223,
+      "name": "Chocolate Pants",
+      "completed": true,
+      "slot": "Legs",
+      "zone": 22
+    },
+    "stats": {
+      "power": 40000,
+      "toughness": 710000,
+      "energyCap": 460,
+      "energyPower": 5600,
+      "energyBars": 3400,
+      "magicPower": 5600
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/224.webp",
+      "id": 224,
+      "name": "Chocolate Boots",
+      "completed": true,
+      "slot": "Boots",
+      "zone": 22
+    },
+    "stats": {
+      "power": 40000,
+      "toughness": 732000,
+      "energyCap": 680,
+      "energyPower": 6800,
+      "energyBars": 6800
+    }
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/225.webp",
+      "id": 225,
+      "name": "Chocolate Crowbar",
+      "completed": false,
+      "slot": "Weapon",
+      "zone": 22
+    },
+    "stats": {
+      "power": 7600000,
+      "toughness": 400000,
+      "energyPower": 6000,
+      "energyBars": 3600,
+      "magicCap": 580,
+      "magicBars": 3600
+    }
+  },
+
+  {
+    "metadata": {
+      "iconUrl": "./items/226.webp",
+      "id": 226,
+      "name": "Energy Bar Bar",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": 22
+    },
+    "stats": {}
+  },
+  {
+    "metadata": {
+      "iconUrl": "./items/227.webp",
+      "id": 227,
+      "name": "Magic Bar Bar",
+      "completed": false,
+      "slot": "Accessory",
+      "zone": 22
+    },
+    "stats": {}
+  },
+  {
+    "metadata": {
       "iconUrl": "./items/432.webp",
       "id": 432,
       "name": "The Tuba of Time",
@@ -2268,139 +2429,18 @@
   },
   {
     "metadata": {
-      "iconUrl": "./items/190.webp",
-      "id": 190,
-      "name": "A Shrunken Voodoo Doll",
-      "completed": true,
-      "slot": "Accessory",
-      "zone": 21
-    },
-    "stats": {
-      "power": 133332,
-      "toughness": 133332,
-      "beardSpeed": 400,
-      "nguSpeed": 400
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/221.webp",
-      "id": 221,
-      "name": "Chocolate Helmet",
-      "completed": false,
-      "slot": "Head",
-      "zone": 22
-    },
-    "stats": {
-      "power": 35700,
-      "toughness": 418880,
-      "energyPower": 3094,
-      "magicCap": 226.1,
-      "magicBars": 1666
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/222.webp",
-      "id": 222,
-      "name": "Chocolate Chest",
-      "completed": false,
-      "slot": "Chest",
-      "zone": 22
-    },
-    "stats": {
-      "power": 23800,
-      "toughness": 440300,
-      "energyCap": 357,
-      "energyPower": 3451,
-      "magicCap": 357,
-      "magicPower": 3451,
-      "magicBars": 2833.94
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/223.webp",
-      "id": 223,
-      "name": "Chocolate Pants",
-      "completed": false,
-      "slot": "Legs",
-      "zone": 22
-    },
-    "stats": {
-      "power": 21400,
-      "toughness": 379850,
-      "energyCap": 230,
-      "energyPower": 2800,
-      "energyBars": 1700,
-      "magicPower": 2800
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/224.webp",
-      "id": 224,
-      "name": "Chocolate Boots",
-      "completed": false,
-      "slot": "Boots",
-      "zone": 22
-    },
-    "stats": {
-      "power": 22600,
-      "toughness": 413580,
-      "energyCap": 370.6,
-      "energyPower": 3706,
-      "energyBars": 3706
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/225.webp",
-      "id": 225,
-      "name": "Chocolate Crowbar",
-      "completed": false,
-      "slot": "Weapon",
-      "zone": 22
-    },
-    "stats": {
-      "power": 4712000,
-      "toughness": 248000,
-      "energyPower": 3720,
-      "energyBars": 2232,
-      "magicCap": 359.6,
-      "magicBars": 2232
-    }
-  },
-  {
-    "metadata": {
       "iconUrl": "./items/444.webp",
       "id": 444,
       "name": "Candy Corn Necklace",
-      "completed": false,
+      "completed": true,
       "slot": "Accessory",
       "zone": 22
     },
     "stats": {
-      "energyBars": 2280,
-      "magicBars": 2280,
-      "seedGain": 57,
-      "nguSpeed": 228
-    }
-  },
-  {
-    "metadata": {
-      "iconUrl": "./items/193.webp",
-      "id": 193,
-      "name": "A Giant Apple",
-      "completed": false,
-      "slot": "Accessory",
-      "zone": 21
-    },
-    "stats": {
-      "power": 52500,
-      "toughness": 52500,
-      "seedGain": 52.5,
-      "yggdrasilYield": 10.5
+      "energyBars": 4000,
+      "magicBars": 4000,
+      "seedGain": 100,
+      "nguSpeed": 400
     }
   }
 ]

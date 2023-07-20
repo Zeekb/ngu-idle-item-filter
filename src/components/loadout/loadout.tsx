@@ -107,7 +107,8 @@ const Loadout = (props: LoadoutProps) => {
       <h2 className="heading">Slot Filter</h2>
 
       <div className="loadout-grid">
-        <div className="loadout-row">
+        <div className="loadout-row three-slots">
+          {getSlot('Accessory')}
           {getSlot('Accessory')}
           {getSlot('Head')}
         </div>

@@ -14,6 +14,7 @@ import { FilterButtons } from './components/filter-buttons'
 import { Item, Slot } from './utils/types'
 
 import Sorts from './utils/sorts'
+const sorts = new Sorts()
 
 import itemData from './utils/item-list.json'
 import zones from './utils/zones-list.json'
@@ -21,9 +22,8 @@ import zones from './utils/zones-list.json'
 import './app.css'
 
 const App = () => {
-  const sorts = new Sorts()
-
   const [index, setIndex] = useState(0)
+  const [zone, setZone] = useState(zones.length - 1)
   const [slots, setSlots] = useState([
     'Head',
     'Chest',
@@ -32,9 +32,7 @@ const App = () => {
     'Weapon',
     'Accessory',
   ] as Slot[])
-
   const items = itemData as Item[]
-  const [zone, setZone] = useState(zones.length - 1)
 
   const filteredItems = (boost: string) =>
     getByZone(getByBoost(getBySlots(items, slots), boost), zone)
@@ -62,7 +60,9 @@ const App = () => {
     sorts.sortOnSeedGain(filteredItems('seedGain')),
     sorts.sortOnYggdrasilYield(filteredItems('yggdrasilYield')),
   ]
-  const itemFilter = filters[index]
+  const sortedItems = filters[index]
+
+  // TODO: click on items to remove them from list (deselected on click)
 
   // get all items when in need of a sort of the item-list file
   // console.log(JSON.stringify(getByZone(sorts.sortOnId(getBySlots(items, slots)), zone)))
@@ -72,13 +72,13 @@ const App = () => {
       <div className="item-filter-container">
         <FilterButtons setIndex={setIndex} />
         <ZoneFilter zone={zone} setZone={setZone} />
-        <ItemLister filter={itemFilter} />
+        <ItemLister items={sortedItems} />
       </div>
       <div className="item-container loadout-container text">
         <Loadout
           slots={slots}
           setSlots={setSlots}
-          loadout={getLoadout(itemFilter)}
+          loadout={getLoadout(sortedItems)}
         />
       </div>
     </div>

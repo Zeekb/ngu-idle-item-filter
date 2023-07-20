@@ -5,7 +5,7 @@ import { ItemContainer } from './item-container'
 import './item-lister.css'
 
 interface ItemListerProps {
-  filter: Item[]
+  items: Item[]
 }
 
 const displayItemContainers = (list: Item[]): JSX.Element[] => {
@@ -48,6 +48,7 @@ const getLoadout = (list: Item[]) => {
     'Accessory',
     'Accessory',
     'Accessory',
+    'Accessory',
   ]
   const loadout = [] as Item[]
   for (const item of list) {
@@ -61,10 +62,10 @@ const getLoadout = (list: Item[]) => {
 }
 
 const ItemLister = (props: ItemListerProps) => {
-  const { filter } = props
+  const { items } = props
 
   return (
-    <div className="items-container text">{displayItemContainers(filter)}</div>
+    <div className="items-container text">{displayItemContainers(items)}</div>
   )
 }
 export {

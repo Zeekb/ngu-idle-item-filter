@@ -46,7 +46,6 @@ const FilterButtons = (props: FilterButtonsProps) => {
         {buttons.map(
           ({ label, value, isSelected, backgroundColor }: ButtonType) => {
             const style = { ...buttonStyle, backgroundColor: backgroundColor }
-            console.log(style)
             return (
               <Button
                 className={isSelected ? 'text' : 'text deselected'}
